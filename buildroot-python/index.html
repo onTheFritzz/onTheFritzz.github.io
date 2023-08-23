@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.2.0
+    Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEV8VPW64E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEV8VPW64E');
+  </script>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Adventure: Buildroot | Uneducated Technology</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Adventure: Buildroot" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Follow a meandering career in tech…" />
+<meta property="og:description" content="Follow a meandering career in tech…" />
+<link rel="canonical" href="https://onthefritzz.com/buildroot-python/" />
+<meta property="og:url" content="https://onthefritzz.com/buildroot-python/" />
+<meta property="og:site_name" content="Uneducated Technology" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-02-05T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Adventure: Buildroot" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-02-05T00:00:00-06:00","datePublished":"2023-02-05T00:00:00-06:00","description":"Follow a meandering career in tech…","headline":"Adventure: Buildroot","mainEntityOfPage":{"@type":"WebPage","@id":"https://onthefritzz.com/buildroot-python/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://onthefritzz.com/images/ij-logo-round.png"}},"url":"https://onthefritzz.com/buildroot-python/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/skins/dark.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Lora:400,400i,700,700i">
+  <link rel="alternate" type="application/atom+xml" title="Uneducated Technology" href="/feed.xml">
+<!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+
+  <body class="layout--post  adventure-buildroot">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+  <div class="navigation-wrapper">
+    <a href="#menu-toggle" id="menu-toggle">Menu</a>
+    <nav id="primary-nav" class="site-nav animated drop">
+      <ul><li><a href="/stats/">Stats</a></li><li><a href="/">Posts</a></li><li><a href="/tags/">Tags</a></li></ul>
+    </nav>
+  </div><!-- /.navigation-wrapper -->
+
+
+    <header class="masthead">
+  <div class="wrap">
+    
+      <a href="/" class="site-logo" rel="home" title="Uneducated Technology">
+        <img src="/images/ij-logo-round.png" class="site-logo-img animated fadeInDown" alt="Uneducated Technology">
+      </a>
+    
+    
+    
+      
+        <div class="site-title animated fadeIn"><a href="/">Uneducated Technology</a></div>
+      
+      <p class="site-description animated fadeIn" itemprop="description">Follow a meandering career in tech...</p>
+    
+  </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article class="h-entry">
+    
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title p-name">Adventure: Buildroot
+</h1>
+        
+      </header>
+
+      <div class="page-sidebar">
+        <div class="page-author h-card p-author"><div class="author-info"><ul class="author-links"><li class="author-link">
+            <a class="u-url" rel="me" href=""><i class="fas fa-link fa-lg" title=""></i></a>
+          </li></ul>
+    <time class="page-date dt-published" datetime="2023-02-05T00:00:00-06:00"><a class="u-url" href="">February 5, 2023</a>
+</time>
+
+  </div>
+</div>
+
+        
+
+        
+  <h3 class="page-taxonomies-title">Tags</h3>
+  
+  <ul class="page-taxonomies"><li class="page-taxonomy">Buildroot</li><li class="page-taxonomy">GPIO</li><li class="page-taxonomy">NanoPi Neo</li><li class="page-taxonomy">Python</li>
+  </ul>
+
+
+      </div>
+
+      <div class="page-content">
+        <div class="e-content">
+          <p><img src="/images/buildroot-example.png" /></p>
+
+<p>Objective: Boot to a python controlled GPIO pin as fast as possible.<br />
+TL;DR: Image that supports python, nano and libgpio while booting in 4 seconds: <a href="/images/boots-in-four-secs-with-libgpiod-python.img">Download</a></p>
+
+<p>Using python to manipulate GPIOs on a SBC is old news. Doing it in 4 seconds, is not. Stock Armbian has gotten me pretty far and honestly, 35 seconds to login prompt from a base install is much appreciated. At the same time, waiting 35 seconds to flip a switch is far too long. How fast can we boot to trigger a GPIO pin? Enter buildroot.</p>
+
+<p>Never touched buildroot, only ever had it referenced in passing. Simply put, its roll your own linux. However, you’re welcoming a hard time in terms of device and driver support. Good thing we only need two things. Python and libgpiod. The end result will not even support the onboard USB or ethernet port, literally attached to the device.</p>
+
+<p>Here’s where we ended after alot of trial and error.</p>
+
+<ul>
+  <li>Download buildroot: https://git.busybox.net/buildroot/</li>
+  <li>Extract the contents</li>
+  <li><code class="language-plaintext highlighter-rouge">cd</code> into it’s directory</li>
+</ul>
+
+<p>Make sure the version downloaded contains defconfigs for the desired board. Here’s an example of where it would be located for the NanoPi Neo board we’re using: <br />
+<code class="language-plaintext highlighter-rouge">buildroot-2022.02.9\configs\friendlyarm_nanopi_neo_defconfig</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>build-essential
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>python3-dev <span class="nt">-y</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>libncurses5-dev libncursesw5-dev <span class="nt">-y</span>
+<span class="nb">cd</span> ./buildroot-buildroot-2022.02.9 <span class="c"># Replace with your buildroot version</span>
+make friendlyarm_nanopi_neo_defconfig
+</code></pre></div></div>
+
+<p>There should be a command prompt UI now. Here’s the following prompts/boxes that were checked in order to support <code class="language-plaintext highlighter-rouge">python</code>, <code class="language-plaintext highlighter-rouge">libgpiod</code> and <code class="language-plaintext highlighter-rouge">nano</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make menuconfig
+</code></pre></div></div>
+<ul>
+  <li>Toolchain –&gt; Enable WCHAR support</li>
+  <li>Target packages –&gt; Interpreter languages and scripting –&gt; python3 –&gt; <em>select</em></li>
+  <li>Target packages –&gt; Interpreter languages and scripting –&gt; pythonn3 module format to install –&gt; .py sources and .pyc compiled</li>
+  <li>Target packages –&gt; Text editors and viewers –&gt; nano –&gt; <em>select</em></li>
+  <li>Target packages –&gt; Libraries –&gt; Hardware handling –&gt; libgpiod –&gt; <em>select</em></li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make uboot-menuconfig
+</code></pre></div></div>
+<ul>
+  <li>delay in seconds before automatically booting –&gt; Set to 0</li>
+  <li>Device drivers —&gt; USB Support –&gt; Uncheck evertything here</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
+</code></pre></div></div>
+
+<p>There should now be an sdcard.img file in the <code class="language-plaintext highlighter-rouge">buildroot-2022.02.9/output/images/</code> folder.
+The following commands are to start a python script immediately after boot, prior to even logging in.</p>
+
+<p>The following will save a file <code class="language-plaintext highlighter-rouge">999app.sh</code> into <code class="language-plaintext highlighter-rouge">/etc/init.d</code> which will start python script on boot.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&lt;&lt;</span><span class="no">EOT</span><span class="sh"> &gt;&gt; /etc/init.d/999app.sh
+#!/bin/sh
+python3 /etc/init.d/buildrootGPIO.py
+</span><span class="no">EOT
+</span></code></pre></div></div>
+
+<p>Create a dead simple python script that will trigger a relay using libgrpiod:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&lt;&lt;</span><span class="no">EOT</span><span class="sh"> &gt;&gt; /etc/init.d/buildrootGPIO.py
+import time, os
+
+PG11 = 203
+PG11Down = f'gpioset 0 {PG11}=0'
+PG11Up = f'gpioset 0 {PG11}=1'
+
+for x in range(5):
+  time.sleep(1)
+  os.system(PG11Down)
+  #print(f'os.system({PG11Down})')
+  
+  time.sleep(1)
+  os.system(PG11Up)
+  #print(f'os.system({PG11Up})')
+print('Done.')
+</span><span class="no">EOT
+</span></code></pre></div></div>
+
+        </div>
+
+        
+          <!--<div class="page-share">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonthefritzz.com%2Fbuildroot-python%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--facebook btn--small"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> <span>Share</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Adventure%3A+Buildroot%20https%3A%2F%2Fonthefritzz.com%2Fbuildroot-python%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--twitter btn--small"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> <span>Tweet</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fonthefritzz.com%2Fbuildroot-python%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--linkedin btn--small"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> <span>LinkedIn</span></a>
+  <a href="https://reddit.com/submit?title=Adventure%3A+Buildroot&url=https%3A%2F%2Fonthefritzz.com%2Fbuildroot-python%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--reddit btn--small"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i> <span>Reddit</span></a>
+</div>-->
+
+        
+
+        
+
+        <nav class="page-pagination" role="navigation">
+  
+    <a class="page-previous" href="/vfd/">
+      <h4 class="page-pagination-label">Previous</h4>
+      <span class="page-pagination-title">
+        <i class="fas fa-arrow-left"></i> VFD 4 UnMe
+
+      </span>
+    </a>
+  
+
+  
+    <a class="page-next" href="/memer/">
+      <h4 class="page-pagination-label">Next</h4>
+      <span class="page-pagination-title">
+        Meme Scraper + Randomizer
+ <i class="fas fa-arrow-right"></i>
+      </span>
+    </a>
+  
+</nav>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="copyright">
+    
+      <p>&copy; 2023 Uneducated Technology. <br> Powered by <a href="https://www.vultr.com/">Vultr</a>, <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> and <a href="https://mademistakes.com/"> mademistakes </a></p>
+    
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><!---->
+
+
+  </body>
+
+</html>

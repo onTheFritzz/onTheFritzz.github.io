@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://onthefritzz.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://onthefritzz.com/" rel="alternate" type="text/html" /><updated>2023-08-06T21:59:50-05:00</updated><id>https://onthefritzz.com/feed.xml</id><title type="html">Uneducated Technology</title><subtitle>Follow a meandering career in tech...</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><entry><title type="html">Zzz….</title><link href="https://onthefritzz.com/sleeper/" rel="alternate" type="text/html" title="Zzz…." /><published>2023-08-04T00:00:00-05:00</published><updated>2023-08-04T00:00:00-05:00</updated><id>https://onthefritzz.com/sleeper</id><content type="html" xml:base="https://onthefritzz.com/sleeper/"><![CDATA[<table>
+  <thead>
+    <tr>
+      <th>Part</th>
+      <th>Model</th>
+      <th>Cost</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPU</td>
+      <td>Ryzen 5 1400</td>
+      <td>$0.00</td>
+      <td>$110.00</td>
+    </tr>
+    <tr>
+      <td>GPU</td>
+      <td>RTX 3060</td>
+      <td>$0.00</td>
+      <td>$299.99</td>
+    </tr>
+    <tr>
+      <td>MOBO</td>
+      <td>MSI Bazook B350M</td>
+      <td>$0.00</td>
+      <td>$149.99</td>
+    </tr>
+    <tr>
+      <td>RAM</td>
+      <td>32GB DDR4</td>
+      <td>$0.00</td>
+      <td>$59.99</td>
+    </tr>
+    <tr>
+      <td>1TB NVMe SSD</td>
+      <td>-</td>
+      <td>$0.00</td>
+      <td>$39.99</td>
+    </tr>
+    <tr>
+      <td>8TB HDDs (4x2TB)*</td>
+      <td>WD20EZAZ</td>
+      <td>$0.00</td>
+      <td>$224.99</td>
+    </tr>
+    <tr>
+      <td>Case</td>
+      <td>-</td>
+      <td>$0.00</td>
+      <td>$89.99</td>
+    </tr>
+    <tr>
+      <td>5.25in to 3.5in HDD Adapter (x4)</td>
+      <td>-</td>
+      <td>$27.16</td>
+      <td>$27.16</td>
+    </tr>
+    <tr>
+      <td>RGB 92mm Fans (x2)</td>
+      <td>-</td>
+      <td>$25.90</td>
+      <td>$25.90</td>
+    </tr>
+    <tr>
+      <td>Thermal Paste</td>
+      <td>-</td>
+      <td>$8.97</td>
+      <td>$8.97</td>
+    </tr>
+    <tr>
+      <td>Rubber Mouting Screws (x12)</td>
+      <td>-</td>
+      <td>$5.89</td>
+      <td>$5.89</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>-</td>
+      <td>$67.92</td>
+      <td>$1042.86</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>The HDDs are ~1 year old and from an older RAID project. The RAID is now incorporated into the desktop so their cost isn’t considered as part of the build. Not to mentioned, they could have been free if required.</li>
+</ul>
+
+<p>Cheapest custom build ever? Prolly not, but it’s quite a steal. Never judge a book by it’s cover.
+Special appreciation to B.L.D.Z.R.</p>
+
+<p><img src="/images/sleeper-off.jpg" class="align-center" alt="" />
+<br />
+<img src="/images/sleeper-on.jpg" class="align-center" alt="" /></p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Sleeper" /><summary type="html"><![CDATA[Part Model Cost Value CPU Ryzen 5 1400 $0.00 $110.00 GPU RTX 3060 $0.00 $299.99 MOBO MSI Bazook B350M $0.00 $149.99 RAM 32GB DDR4 $0.00 $59.99 1TB NVMe SSD - $0.00 $39.99 8TB HDDs (4x2TB)* WD20EZAZ $0.00 $224.99 Case - $0.00 $89.99 5.25in to 3.5in HDD Adapter (x4) - $27.16 $27.16 RGB 92mm Fans (x2) - $25.90 $25.90 Thermal Paste - $8.97 $8.97 Rubber Mouting Screws (x12) - $5.89 $5.89 Total - $67.92 $1042.86]]></summary></entry><entry><title type="html">Sticky situation</title><link href="https://onthefritzz.com/sticky-controller/" rel="alternate" type="text/html" title="Sticky situation" /><published>2023-04-30T00:00:00-05:00</published><updated>2023-04-30T00:00:00-05:00</updated><id>https://onthefritzz.com/sticky-controller</id><content type="html" xml:base="https://onthefritzz.com/sticky-controller/"><![CDATA[<p><img src="/images/xbox-one-exploded-controller.jpg" class="align-center" alt="" />
+<br />
+Pretty straight forward. Someone got the ‘B’ button sticky. Take apart, clean with isopropol alcohol. Put back together. Done.
+<br />
+<br />
+Interesting note is that the ‘B’ button is actually more accessible than the other 3 action buttons. ‘B’ is accessible after dissassembling the main housing components, whereas the other 3 buttons require internal components/boards to be removed from each other.</p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Xbox" /><category term="Hardware" /><summary type="html"><![CDATA[Pretty straight forward. Someone got the ‘B’ button sticky. Take apart, clean with isopropol alcohol. Put back together. Done. Interesting note is that the ‘B’ button is actually more accessible than the other 3 action buttons. ‘B’ is accessible after dissassembling the main housing components, whereas the other 3 buttons require internal components/boards to be removed from each other.]]></summary></entry><entry><title type="html">Reducing Xbox One S Load Times</title><link href="https://onthefritzz.com/xbox-ssd-upgrade/" rel="alternate" type="text/html" title="Reducing Xbox One S Load Times" /><published>2023-04-15T00:00:00-05:00</published><updated>2023-04-15T00:00:00-05:00</updated><id>https://onthefritzz.com/xbox-ssd-upgrade</id><content type="html" xml:base="https://onthefritzz.com/xbox-ssd-upgrade/"><![CDATA[<p><img src="/images/xbox-one-s.jpg" class="align-center" alt="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Process</th>
+      <th>HDD (sec)</th>
+      <th>SSD (sec)</th>
+      <th>Net (sec)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Boot To Home - #1</td>
+      <td>54.68</td>
+      <td>54.35</td>
+      <td><strike>-0.33</strike></td>
+    </tr>
+    <tr>
+      <td>Boot To Home - #2</td>
+      <td>58.79</td>
+      <td>54.12</td>
+      <td><strike>-4.67</strike></td>
+    </tr>
+    <tr>
+      <td>Home To Spyro Start Page - #1</td>
+      <td>73.18</td>
+      <td>56.27</td>
+      <td>-16.91</td>
+    </tr>
+    <tr>
+      <td>Home To Spyro Start Page - #2</td>
+      <td>77.19</td>
+      <td>47.09</td>
+      <td>-30.10</td>
+    </tr>
+    <tr>
+      <td>Spyro Start To Gameplay - #1</td>
+      <td>38.82</td>
+      <td>30.13</td>
+      <td>-8.69</td>
+    </tr>
+    <tr>
+      <td>Spyro Start To Gameplay - #2</td>
+      <td>38.90</td>
+      <td>22.04</td>
+      <td>-16.86</td>
+    </tr>
+    <tr>
+      <td>Home To Dredge Start Page - #1</td>
+      <td>76.67</td>
+      <td>34.88</td>
+      <td>-41.79</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Noticed that when getting a gameover in some games the reloading or ‘continue’ process takes just an extra tick longer than expected. If this happens a couple times in a row, the load time is just insult to injury. So it’s time for an SSD.</p>
+
+<p>The old 500GB platter drive was cloned with Clonezilla using the ‘expert’ default prompts with -k1 flag. This expanded the imaged partitions to make better use of the slightly bigger, 512GB SSD.</p>
+
+<p><img src="/images/xbox-one-s-clonezilla.jpg" class="align-center" alt="" /></p>
+
+<p>Then we put it back together.</p>
+
+<p><img src="/images/xbox-one-s-done.jpg" class="align-center" alt="" /></p>
+
+<p>Cloning was an excellent solution as I’ve reached the maximum number of account/console transfers allowed with GamePass. This way all games, accounts, passwords, etc… remain intact and I don’t have to fuss with the paid GamePass subscription becoming unusable.</p>
+
+<p>All in all:</p>
+<ul>
+  <li>Average savings is 22 seconds per action</li>
+  <li>~45 seconds saved per game</li>
+  <li>Load times after a gameover feel much more transitory</li>
+  <li>Over 18 emails and passwords required absolutey <strong>zero</strong> setup</li>
+  <li>The ‘Boot To Home’ times are not included because there really wasn’t a noticeable difference
+    <ul>
+      <li>Indicating everything leading up to the home page on power up is BIOS/ROM/Embedded and unrelated to storage load times.</li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Xbox" /><category term="Hardware" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Webscraping Healthy Recipes</title><link href="https://onthefritzz.com/webscraping-healthy-recipes/" rel="alternate" type="text/html" title="Webscraping Healthy Recipes" /><published>2023-03-29T00:00:00-05:00</published><updated>2023-03-29T00:00:00-05:00</updated><id>https://onthefritzz.com/webscraping-healthy-recipes</id><content type="html" xml:base="https://onthefritzz.com/webscraping-healthy-recipes/"><![CDATA[<ul>
+  <li>Another recipe scraper!</li>
+  <li>Killed ~5103 ads</li>
+  <li>Added 500+ recipes to my collection</li>
+  <li>Same format as usual for scraping recipes
+    <ul>
+      <li>Get links corresponding to each food category</li>
+      <li>Get total amount of pages for each category</li>
+      <li>Get header, picture, pdf, etc.. of each recipes occuring on each page</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">scrapy</span><span class="p">,</span> <span class="n">logging</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">json</span><span class="p">,</span> <span class="n">re</span><span class="p">,</span> <span class="n">os</span>
+<span class="kn">import</span> <span class="nn">requests</span><span class="p">,</span> <span class="n">pdfkit</span><span class="p">,</span> <span class="n">unidecode</span>
+<span class="kn">from</span> <span class="nn">scrapy.crawler</span> <span class="kn">import</span> <span class="n">CrawlerProcess</span>
+<span class="kn">from</span> <span class="nn">scrapy</span> <span class="kn">import</span> <span class="n">Selector</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+
+<span class="k">class</span> <span class="nc">sallySpider</span><span class="p">(</span><span class="n">scrapy</span><span class="p">.</span><span class="n">Spider</span><span class="p">):</span>
+  <span class="s">"""Collect food recipes without the abhorrently excessive ads and life stories
+  Will crawl any site that is formatted as follows (with minor tweaking).
+  Category drop down/url suffixs. Grab all links for every page in pagination footer. Get header, picture and card (to pdf) download."""</span>
+  <span class="n">name</span> <span class="o">=</span> <span class="s">'healthy-nommer'</span>
+  <span class="n">outputFolder</span> <span class="o">=</span> <span class="s">'healthy-database'</span>
+  <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s">'https://healthyrecipesblogs.com'</span><span class="p">]</span>
+  <span class="n">logging</span><span class="p">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s">'scrapy'</span><span class="p">).</span><span class="n">propagate</span> <span class="o">=</span> <span class="bp">False</span> <span class="c1"># No Excessive Log
+</span>  <span class="n">custom_settings</span> <span class="o">=</span> <span class="p">{</span><span class="s">'LOG_LEVEL'</span><span class="p">:</span> <span class="s">'ERROR'</span><span class="p">}</span>
+  <span class="n">convertPdfPath</span> <span class="o">=</span> <span class="sa">r</span><span class="s">'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'</span> <span class="c1"># force path for html to pdf bin
+</span>  <span class="n">config</span> <span class="o">=</span> <span class="n">pdfkit</span><span class="p">.</span><span class="n">configuration</span><span class="p">(</span><span class="n">wkhtmltopdf</span><span class="o">=</span><span class="n">convertPdfPath</span><span class="p">)</span>
+  <span class="n">articlesGrabbed</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="n">articleOn</span> <span class="o">=</span> <span class="mi">0</span>
+
+  <span class="k">def</span> <span class="nf">start_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># Scrape several food category urls
+</span>    <span class="n">urlSuffix</span> <span class="o">=</span> <span class="p">[</span><span class="s">'meat-recipes'</span><span class="p">,</span> <span class="s">'chicken-recipes'</span><span class="p">,</span> <span class="s">'seafood-recipes'</span><span class="p">,</span> <span class="s">'casserole-recipes'</span><span class="p">,</span>
+          <span class="s">'vegetable-recipes'</span><span class="p">,</span> <span class="s">'side-dishes'</span><span class="p">,</span> <span class="s">'dips-dressings-sauces'</span><span class="p">,</span> <span class="s">'healthy-appetizers'</span><span class="p">,</span>
+          <span class="s">'healthy-snack-recipes'</span><span class="p">,</span> <span class="s">'healthy-pizza-recipes'</span><span class="p">,</span> <span class="s">'soup-recipes'</span><span class="p">,</span>
+          <span class="s">'healthy-breakfast-recipes'</span><span class="p">,</span> <span class="s">'healthy-desserts'</span><span class="p">,</span> <span class="s">'gluten-free-bread-recipes'</span><span class="p">]</span> <span class="c1"># 'meat-recipes'
+</span>
+    <span class="n">urls</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">start_urls</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s">/category/</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">'</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">urlSuffix</span><span class="p">]</span> <span class="c1"># List of full URLs, domain + category
+</span>    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span> <span class="c1"># For each url/category, run pagination function
+</span>      <span class="n">category</span> <span class="o">=</span> <span class="n">url</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'/'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+      <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">getAllCategoryPages</span><span class="p">,</span> <span class="n">cb_kwargs</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="n">category</span><span class="p">))</span> <span class="c1"># Carry category as function
+</span>  
+  <span class="k">def</span> <span class="nf">getAllCategoryPages</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span> <span class="c1"># Get highest 'page number' from bottom of category page
+</span>    <span class="n">categoryUrls</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span> <span class="c1"># Al dente code. There is no category that has more than 3 pages. There is no go to 'last' page button
+</span>      <span class="k">if</span> <span class="n">page</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># If first page, use 0 page instead of 1, which doesn't work
+</span>        <span class="n">categoryUrls</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="si">}</span><span class="s">page/0'</span><span class="p">)</span>
+      <span class="k">else</span><span class="p">:</span>
+        <span class="n">categoryUrls</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="si">}</span><span class="s">page/</span><span class="si">{</span><span class="n">page</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">categoryUrls</span><span class="p">:</span>
+      <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">parse</span><span class="p">,</span> <span class="n">cb_kwargs</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="n">category</span><span class="p">))</span>
+  
+  <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span>
+    <span class="n">recipes</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//div[@class="feast-category-index  feast-recipe-index"]'</span><span class="p">).</span><span class="n">getall</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Only get main category recipes, not side bar recommendations [1]
+</span>    <span class="n">recipeHtmlString</span> <span class="o">=</span> <span class="n">Selector</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">recipes</span><span class="p">)</span> <span class="c1"># Convert .getall() string back into parseable xpath
+</span>    <span class="n">recipeUrls</span> <span class="o">=</span> <span class="n">recipeHtmlString</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//li[@class="listing-item"]/a/@href'</span><span class="p">).</span><span class="n">getall</span><span class="p">()</span>
+    
+    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">recipeUrls</span><span class="p">:</span>
+      <span class="bp">self</span><span class="p">.</span><span class="n">articlesGrabbed</span> <span class="o">+=</span> <span class="mi">1</span>
+      <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">recursiveParse</span><span class="p">,</span> <span class="n">cb_kwargs</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="n">category</span><span class="p">))</span>
+
+  <span class="k">def</span> <span class="nf">recursiveParse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">articleOn</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//h1[@class="entry-title"]/text()'</span><span class="p">).</span><span class="n">get</span><span class="p">()</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">'[^a-zA-Z0-9\s]+'</span><span class="p">,</span> <span class="s">''</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'  '</span><span class="p">,</span> <span class="s">' '</span><span class="p">)</span>
+    
+    <span class="n">mainImage</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//figure/img/@src'</span><span class="p">).</span><span class="n">get</span><span class="p">()</span>
+    <span class="n">recipeCardUrl</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//div[@class="wprm-container-float-right"]/a/@href'</span><span class="p">).</span><span class="n">getall</span><span class="p">()[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># If recipe card doesn't exist, scrapy errors but moves on. Page likely cooking tip, utensil/accessory desccription
+</span>    <span class="n">recipeID</span> <span class="o">=</span> <span class="n">recipeCardUrl</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'/'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Article: </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">articleOn</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">articlesGrabbed</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">"/"</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+
+    <span class="n">recipeJson</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="s">'url'</span><span class="p">:</span> <span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="p">,</span>
+      <span class="s">'name'</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+      <span class="s">'image'</span><span class="p">:</span> <span class="n">mainImage</span><span class="p">,</span>
+      <span class="s">'id'</span><span class="p">:</span> <span class="n">recipeID</span><span class="p">,</span>
+      <span class="s">'category'</span><span class="p">:</span> <span class="n">category</span><span class="p">,</span>
+      <span class="s">'card'</span><span class="p">:</span> <span class="n">recipeCardUrl</span>
+    <span class="p">}</span>
+    
+    <span class="n">filename</span> <span class="o">=</span> <span class="n">name</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">" "</span><span class="p">,</span> <span class="s">"-"</span><span class="p">).</span><span class="n">lower</span><span class="p">()</span> <span class="c1"># Format header into lowercase, dash seperated for file naming
+</span>    <span class="n">nestedFolder</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'.</span><span class="se">\\</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">outputFolder</span><span class="si">}</span><span class="se">\\</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="se">\\</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="se">\\</span><span class="s">'</span> <span class="c1"># Nest a folder named 'Recipe' within folder name of 'Category'
+</span>    
+    <span class="k">try</span><span class="p">:</span>
+      <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">nestedFolder</span><span class="p">):</span> <span class="c1"># If \Category\Recipe folder doesn't exist...
+</span>        <span class="n">os</span><span class="p">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">nestedFolder</span><span class="p">)</span> <span class="c1"># make it
+</span>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">nestedFolder</span><span class="si">}{</span><span class="n">filename</span><span class="si">}</span><span class="s">.json'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">j</span><span class="p">:</span> <span class="c1"># Create json log file of scraped info
+</span>          <span class="n">json</span><span class="p">.</span><span class="n">dump</span><span class="p">(</span><span class="n">recipeJson</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+
+        <span class="n">rawImg</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">mainImage</span><span class="p">).</span><span class="n">content</span> <span class="c1"># Dirty get/dl img jpg without using builtin scrapy pipelines...
+</span>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">nestedFolder</span><span class="si">}{</span><span class="n">filename</span><span class="si">}</span><span class="s">.jpg'</span><span class="p">,</span> <span class="s">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">i</span><span class="p">:</span> 
+          <span class="n">i</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">rawImg</span><span class="p">)</span> <span class="c1"># ..this nix's excessive scrapy files and reqs only one scipt
+</span>        <span class="c1">#Especially since using htmltopdf to avoid [intentionally] atrocious html code inside main recipe table 
+</span>        <span class="n">pdfkit</span><span class="p">.</span><span class="n">from_url</span><span class="p">(</span><span class="n">recipeCardUrl</span><span class="p">,</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">nestedFolder</span><span class="si">}{</span><span class="n">filename</span><span class="si">}</span><span class="s">.pdf'</span><span class="p">,</span> <span class="n">configuration</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">config</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+      <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'.</span><span class="se">\\</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">outputFolder</span><span class="si">}</span><span class="se">\\</span><span class="s">errors.txt'</span><span class="p">,</span> <span class="s">'w+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+        <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n">mainImage</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n">recipeCardUrl</span><span class="si">}</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+  
+    <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+  <span class="n">process</span> <span class="o">=</span> <span class="n">CrawlerProcess</span><span class="p">()</span>
+  <span class="n">process</span><span class="p">.</span><span class="n">crawl</span><span class="p">(</span><span class="n">sallySpider</span><span class="p">)</span>
+  <span class="n">process</span><span class="p">.</span><span class="n">start</span><span class="p">()</span>
+</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Webscraping" /><category term="Python" /><category term="Scrapy" /><summary type="html"><![CDATA[Another recipe scraper! Killed ~5103 ads Added 500+ recipes to my collection Same format as usual for scraping recipes Get links corresponding to each food category Get total amount of pages for each category Get header, picture, pdf, etc.. of each recipes occuring on each page]]></summary></entry><entry><title type="html">Dummies for a dummy.</title><link href="https://onthefritzz.com/dummys/" rel="alternate" type="text/html" title="Dummies for a dummy." /><published>2023-03-18T00:00:00-05:00</published><updated>2023-03-18T00:00:00-05:00</updated><id>https://onthefritzz.com/dummys</id><content type="html" xml:base="https://onthefritzz.com/dummys/"><![CDATA[<p><img src="/images/vga-dummy-exploded.jpg" class="align-center" alt="" /></p>
+
+<p>Overview: HP’s are trash imo. HP’s excel at being ever so slightly annoying, even when nothing is wrong and <strong>especially</strong> when something needs to be fixed. Nothing ever seems to go ‘smoothly’ in a repair and they always have weird quirks. Not enough to convince people not to purchase them but more than enough for an experienced tech to know what to expect when HP’s are involved.</p>
+
+<p>Issue: HP boots to BIOS fine but has no video output if a display is not connected <strong>prior</strong> to powering on.</p>
+
+<p>Why: HP’s seem to be the only Desktop brand that has models where the display driver isn’t loaded with BIOS, unless it physically detects a connected monitor. This is an issue when I can boot/test 10+ Dells at once and simply connect a display adapter one at a time to perform tasks in BIOS. However, when I perform the same task on some HP models, the unit clearly fires up and boots. Although if there was not a monitor plugged in prior to the unit power on, there is no visual. In essence HP’s can either reduce testing efficiency by 90% or we can create some VGA dummies. This is done by pulling select pins to ground with a resitor, a monitor is connected through simulation. Plug in or remove monitors to your hearts content without losing visuals. Here’s a diagram of what worked. Any <strong>50-150ohm</strong> resistor will work.</p>
+
+<p><img src="/images/vga-dummy-schematic.jpg" class="align-center" alt="" /></p>
+
+<p>(Source: https://www.geeks3d.com/20091230/vga-hack-how-to-make-a-vga-dummy-plug/)</p>
+
+<p>Pay attention to the numbered pinout <strong>not</strong> the shape. The diagram above is for a <strong>female</strong> vga. I required the <strong>male</strong> connection which more or less inverted the diagram. Pro tip: Most, if not all, VGA cords actually have tiny numbers inside the shielding which correspond correctly to the numbers in the diagram. So to reiterate, base soldering on the numbers not the shape.</p>
+
+<p><img src="/images/vga-ducks-in-a-row.jpg" class="align-center" alt="" /></p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Hardware" /><category term="Soldering" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Meme Scraper + Randomizer</title><link href="https://onthefritzz.com/memer/" rel="alternate" type="text/html" title="Meme Scraper + Randomizer" /><published>2023-02-11T00:00:00-06:00</published><updated>2023-02-11T00:00:00-06:00</updated><id>https://onthefritzz.com/memer</id><content type="html" xml:base="https://onthefritzz.com/memer/"><![CDATA[<h3 id="memerpy">Memer.py</h3>
+<ul>
+  <li>Scrape frontpage memes from Ebaumsworld.com</li>
+  <li>Polite scraping sleep timer</li>
+  <li>Scrape unique meme article number
+    <ul>
+      <li>Save <code class="language-plaintext highlighter-rouge">article-number.json</code> to folder of the same number</li>
+      <li>This json contains article-number, image url and image title</li>
+    </ul>
+  </li>
+  <li>Output <code class="language-plaintext highlighter-rouge">README.md</code> with titles, images, <code class="language-plaintext highlighter-rouge">Back</code>, <code class="language-plaintext highlighter-rouge">Go To Top</code> and <code class="language-plaintext highlighter-rouge">Source</code> buttons</li>
+</ul>
+
+<h3 id="getrandommemespy">getRandomMemes.py</h3>
+<ul>
+  <li>Generate random collection of memes after folders and json files have been created
+    <ul>
+      <li>Save article number to <code class="language-plaintext highlighter-rouge">memer-config.json</code></li>
+    </ul>
+  </li>
+  <li>Always have the freshest memes and do not reuse article number if in <code class="language-plaintext highlighter-rouge">memer-config.json</code>.
+    <ul>
+      <li>ie: Never see the same article twice!</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Memer.py
+</span><span class="kn">import</span> <span class="nn">scrapy</span><span class="p">,</span> <span class="n">logging</span><span class="p">,</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">json</span><span class="p">,</span> <span class="n">os</span>
+<span class="kn">from</span> <span class="nn">scrapy.crawler</span> <span class="kn">import</span> <span class="n">CrawlerProcess</span>
+<span class="kn">from</span> <span class="nn">git</span> <span class="kn">import</span> <span class="n">Repo</span>
+
+<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">().</span><span class="n">strftime</span><span class="p">(</span><span class="s">"%m/%d/%Y-%H:%M:%S"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">baumerSpider</span><span class="p">(</span><span class="n">scrapy</span><span class="p">.</span><span class="n">Spider</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s">'https://www.ebaumsworld.com'</span><span class="p">]</span>
+    <span class="n">logging</span><span class="p">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s">'scrapy'</span><span class="p">).</span><span class="n">propagate</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">header</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'# All ur Memes R belog to Uz&lt;br&gt;</span><span class="se">\n</span><span class="s">Last updated: </span><span class="si">{</span><span class="n">now</span><span class="si">}</span><span class="se">\n</span><span class="s">&lt;br&gt;</span><span class="se">\n</span><span class="s">All credits to ebaumsworld.com'</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">urlPageStart</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">urlPageEnd</span> <span class="o">=</span> <span class="mi">6</span> <span class="c1"># Get memes from page 1 through this number
+</span>    <span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Counter designation for each article/meme dump
+</span>    <span class="bp">self</span><span class="p">.</span><span class="n">sleepBetweenArticles</span> <span class="o">=</span> <span class="mi">30</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">outputHtml</span> <span class="o">=</span> <span class="s">'FRONTPAGES-README.MD'</span><span class="c1">#f'Article {self.urlPageStart}-{self.urlPageEnd}.md'
+</span>
+    <span class="k">try</span><span class="p">:</span>
+      <span class="n">os</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">outputHtml</span><span class="p">)</span>
+    
+    <span class="k">except</span><span class="p">:</span>
+      <span class="k">pass</span>
+    
+    <span class="k">finally</span><span class="p">:</span>
+      <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">outputHtml</span><span class="p">,</span> <span class="s">'a+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span> 
+        <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">header</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">sleeper</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seconds</span><span class="p">,</span> <span class="n">note</span><span class="o">=</span><span class="s">''</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">sec</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">seconds</span><span class="p">):</span>
+      <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Sleeping </span><span class="si">{</span><span class="n">sec</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">seconds</span><span class="si">}</span><span class="s"> (sec/s)...'</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">'</span><span class="se">\r</span><span class="s">'</span><span class="p">)</span>
+      <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  
+  <span class="k">def</span> <span class="nf">jMaker</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
+    <span class="n">jFileName</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="s">'article-number'</span><span class="p">]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">jFileName</span><span class="p">):</span>
+      <span class="n">os</span><span class="p">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">jFileName</span><span class="p">)</span>
+
+    <span class="n">fileOut</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'./</span><span class="si">{</span><span class="n">jFileName</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">jFileName</span><span class="si">}</span><span class="s">.json'</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fileOut</span><span class="p">,</span> <span class="s">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">wf</span><span class="p">:</span>
+      <span class="n">json</span><span class="p">.</span><span class="n">dump</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">wf</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span> <span class="c1"># Get all front page article in start urls
+</span>    <span class="n">urlSuffix</span> <span class="o">=</span> <span class="s">'/?page='</span> <span class="c1"># Page url suffix
+</span>    <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">urlPageStart</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">urlPageEnd</span><span class="p">):</span>
+      <span class="n">pageUrl</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">start_urls</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}{</span><span class="n">urlSuffix</span><span class="si">}{</span><span class="n">page</span><span class="si">}</span><span class="s">'</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">)</span>
+      <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">recursiveParse</span><span class="p">)</span> <span class="c1"># Recursively parse each page
+</span>
+  <span class="k">def</span> <span class="nf">recursiveParse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span> <span class="c1"># Get links for any list item in 'Featured' front page
+</span>    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//div[@class="featureFeedDetails"]//a/@href'</span><span class="p">).</span><span class="n">getall</span><span class="p">():</span>
+      <span class="k">if</span> <span class="n">url</span><span class="p">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">'https://gaming.ebaumsworld.com'</span><span class="p">):</span> <span class="c1"># Exclude gaming articles which are categorized under 'pictures'
+</span>        <span class="k">pass</span>
+
+      <span class="k">elif</span> <span class="s">'pictures'</span> <span class="ow">in</span> <span class="n">url</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">start_urls</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}{</span><span class="n">url</span><span class="si">}</span><span class="s">'</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">getMemes</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">getMemes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># Crawling a successful link, up article counter.
+</span>    <span class="n">headerXpath</span> <span class="o">=</span> <span class="s">'//*[@id="detailPage"]/header/h1/text()'</span> <span class="c1"># Xpath for article header
+</span>    <span class="n">memeXpath</span> <span class="o">=</span> <span class="s">'//img[@class="galleryListImage"]/@src'</span> <span class="c1"># Xpath for meme images
+</span>    <span class="n">titleXpath</span> <span class="o">=</span> <span class="s">'//li[@class="galleryListItem"]/text()'</span> <span class="c1"># Xpath for meme titles
+</span>    
+    <span class="n">articleHeader</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="n">headerXpath</span><span class="p">).</span><span class="n">get</span><span class="p">()</span>
+    <span class="n">memes</span> <span class="o">=</span> <span class="p">[</span><span class="n">meme</span><span class="p">.</span><span class="n">get</span><span class="p">()</span> <span class="k">for</span> <span class="n">meme</span> <span class="ow">in</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="n">memeXpath</span><span class="p">)]</span>
+    <span class="n">titles</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="n">titleXpath</span><span class="p">):</span> <span class="c1"># Get each title text
+</span>      <span class="n">title</span> <span class="o">=</span> <span class="n">title</span><span class="p">.</span><span class="n">get</span><span class="p">().</span><span class="n">strip</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">title</span> <span class="o">!=</span> <span class="s">''</span><span class="p">:</span> <span class="c1"># Discard extraneous empty values that get scraped
+</span>        <span class="n">titles</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    
+    <span class="n">memeBlock</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">titles</span><span class="p">,</span> <span class="n">memes</span><span class="p">))</span> <span class="c1"># Generate 2D array and associate meme images with title
+</span>
+    <span class="n">nextNumber</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># Markdown link to next article/meme collection
+</span>    <span class="n">previousNumber</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="n">html</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'## &lt;a href="#linky</span><span class="si">{</span><span class="n">nextNumber</span><span class="si">}</span><span class="s">" id="linky</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span><span class="si">}</span><span class="s">"&gt;</span><span class="si">{</span><span class="n">articleHeader</span><span class="si">}</span><span class="s">&lt;/a&gt;&lt;br&gt;</span><span class="se">\n\n</span><span class="s">'</span>
+
+    <span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">meme</span> <span class="ow">in</span> <span class="n">memeBlock</span><span class="p">:</span>
+      <span class="n">html</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'&lt;span style="font-size:4em"&gt;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s">&lt;/span&gt;&lt;br&gt;&lt;img src="</span><span class="si">{</span><span class="n">meme</span><span class="si">}</span><span class="s">" style="width:100%"&gt;&lt;br&gt;</span><span class="se">\n\n</span><span class="s">'</span>
+    <span class="n">html</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'&lt;a href="#linky</span><span class="si">{</span><span class="n">previousNumber</span><span class="si">}</span><span class="s">"&gt;GO TO PREVIOUS&lt;/a&gt;</span><span class="se">\n\n</span><span class="s">'</span>  
+    <span class="n">html</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'&lt;a href="</span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="si">}</span><span class="s">"&gt;Source URL &lt;b&gt;with&lt;/b&gt; Ads&lt;/a&gt;</span><span class="se">\n\n</span><span class="s">'</span>
+    <span class="n">html</span> <span class="o">+=</span> <span class="s">'&lt;a href="#linky1"&gt;GO TO TOP&lt;/a&gt;</span><span class="se">\n</span><span class="s">'</span>
+
+    <span class="n">j</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="s">'article-number'</span><span class="p">:</span> <span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'/'</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+      <span class="s">'header'</span><span class="p">:</span> <span class="n">articleHeader</span><span class="p">,</span>
+      <span class="s">'titles-images'</span><span class="p">:</span> <span class="n">memeBlock</span>
+    <span class="p">}</span>
+    
+    <span class="bp">self</span><span class="p">.</span><span class="n">jMaker</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'/'</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span><span class="si">}</span><span class="s"> - Scraped ...</span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="p">[</span><span class="o">-</span><span class="mi">50</span><span class="si">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s"> successfully.'</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">outputHtml</span><span class="p">,</span> <span class="s">'a+'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+      <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">sleeper</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">sleepBetweenArticles</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+  <span class="n">process</span> <span class="o">=</span> <span class="n">CrawlerProcess</span><span class="p">()</span>
+  <span class="n">process</span><span class="p">.</span><span class="n">crawl</span><span class="p">(</span><span class="n">baumerSpider</span><span class="p">)</span>
+  <span class="n">process</span><span class="p">.</span><span class="n">start</span><span class="p">()</span>
+
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#getRandomMemes.py
+</span><span class="kn">import</span> <span class="nn">random</span><span class="p">,</span> <span class="n">json</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">os</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">choice</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span> <span class="k">as</span> <span class="n">dt</span>
+
+<span class="k">def</span> <span class="nf">jLoad</span><span class="p">(</span><span class="n">fileName</span><span class="p">):</span>
+  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">r</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">json</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">getValue</span><span class="p">(</span><span class="n">jFile</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+  <span class="k">try</span><span class="p">:</span>
+    <span class="n">jk</span> <span class="o">=</span> <span class="n">jFile</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">jk</span>
+  <span class="k">except</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="nb">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s">'"</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s">" is prolly not a valid key'</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">getRandomMemes</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+  <span class="n">articleBlock</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'# All Ur Meemz R Belog to Uz</span><span class="se">\n</span><span class="s">Last Updated </span><span class="si">{</span><span class="n">dt</span><span class="p">.</span><span class="n">now</span><span class="p">().</span><span class="n">strftime</span><span class="p">(</span><span class="s">"%m.%d.%Y-%H</span><span class="si">:</span><span class="o">%</span><span class="n">M</span><span class="si">:</span><span class="o">%</span><span class="n">S</span><span class="s">")</span><span class="si">}</span><span class="s">&lt;br&gt;All credits to ebaumsworld.com</span><span class="se">\n\n</span><span class="s">'</span>
+  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">number</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="c1"># Generate random number provided it has not been used before
+</span>    <span class="n">articleNo</span> <span class="o">=</span> <span class="n">choice</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">memeFiles</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">j</span><span class="p">[</span><span class="s">'memes-used'</span><span class="p">]])</span>
+    <span class="n">j</span><span class="p">[</span><span class="s">'memes-used'</span><span class="p">].</span><span class="n">append</span><span class="p">(</span><span class="n">articleNo</span><span class="p">)</span>
+    <span class="c1"># After meme index number has been generated, add to 'do not use' list
+</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">memerConfig</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+      <span class="n">json</span><span class="p">.</span><span class="n">dump</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="c1"># Dump new list, including current random, 'do not use' number
+</span>
+    <span class="n">folder</span> <span class="o">=</span> <span class="n">memeFiles</span><span class="p">[</span><span class="n">articleNo</span><span class="p">].</span><span class="n">split</span><span class="p">(</span><span class="s">'.json'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Folder of article number that was picked at random
+</span>    <span class="n">folderFileArticle</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">walkDir</span><span class="si">}</span><span class="se">\\</span><span class="si">{</span><span class="n">folder</span><span class="si">}</span><span class="se">\\</span><span class="si">{</span><span class="n">memeFiles</span><span class="p">[</span><span class="n">articleNo</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="c1"># Full file path of randomly selected meme article
+</span>
+    <span class="n">article</span> <span class="o">=</span> <span class="n">jLoad</span><span class="p">(</span><span class="n">folderFileArticle</span><span class="p">)</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="n">getValue</span><span class="p">(</span><span class="n">article</span><span class="p">,</span> <span class="s">'header'</span><span class="p">)</span>
+    <span class="n">titlesImages</span> <span class="o">=</span> <span class="n">getValue</span><span class="p">(</span><span class="n">article</span><span class="p">,</span> <span class="s">'titles-images'</span><span class="p">)</span>
+
+    <span class="n">gototop</span> <span class="o">=</span> <span class="s">'&lt;a href="#link0"&gt;GO TO TOP&lt;/a&gt;'</span>
+    <span class="n">previous</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'&lt;a href="#link</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">"&gt;GO TO PREVIOUS&lt;/a&gt;'</span>
+    <span class="n">sourceLink</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'&lt;a href="https://www.ebaumsworld.com/pictures/-/</span><span class="si">{</span><span class="n">folder</span><span class="si">}</span><span class="s">/"&gt;Original Article &lt;b&gt;with&lt;/b&gt; Ads&lt;/a&gt;'</span>
+
+    <span class="n">articleBlock</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'## &lt;a href="#link</span><span class="si">{</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s">" id="link</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">"&gt;</span><span class="si">{</span><span class="n">header</span><span class="si">}</span><span class="s">&lt;/a&gt;</span><span class="se">\n</span><span class="s">'</span>
+
+    <span class="k">for</span> <span class="n">ti</span> <span class="ow">in</span> <span class="n">titlesImages</span><span class="p">:</span>
+      <span class="n">title</span><span class="p">,</span> <span class="n">image</span> <span class="o">=</span> <span class="n">ti</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ti</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+      <span class="n">articleBlock</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="se">\n</span><span class="s">&lt;img src="</span><span class="si">{</span><span class="n">image</span><span class="si">}</span><span class="s">"&gt;</span><span class="se">\n\n</span><span class="s">'</span>
+    
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Writing article </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+    <span class="n">articleBlock</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'</span><span class="se">\n</span><span class="si">{</span><span class="n">sourceLink</span><span class="si">}</span><span class="se">\n\n</span><span class="si">{</span><span class="n">gototop</span><span class="si">}</span><span class="se">\n\n</span><span class="si">{</span><span class="n">previous</span><span class="si">}</span><span class="se">\n\n</span><span class="s">'</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'README.MD'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">a</span><span class="p">:</span>
+      <span class="n">a</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">articleBlock</span><span class="p">)</span>
+    <span class="n">articleBlock</span> <span class="o">=</span> <span class="s">''</span>
+
+<span class="n">memerConfig</span> <span class="o">=</span> <span class="s">'memer-config.json'</span>
+<span class="n">walkDir</span> <span class="o">=</span> <span class="s">'./all-files'</span> <span class="c1">#f'{os.environ["USERPROFILE"]}\\Desktop\\files' # Location of article jsons
+</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'README.md'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span> <span class="c1"># Generate file if doesn't exist or clear file from previous run
+</span>  <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">''</span><span class="p">)</span>
+
+<span class="n">j</span> <span class="o">=</span> <span class="n">jLoad</span><span class="p">(</span><span class="n">memerConfig</span><span class="p">)</span>
+<span class="n">memeFiles</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># List of all meme json files
+</span><span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="p">.</span><span class="n">walk</span><span class="p">(</span><span class="n">walkDir</span><span class="p">):</span>
+  <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># Do not include files in parent directory
+</span>    <span class="n">memeFiles</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">getRandomMemes</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Python" /><category term="Webscraping" /><category term="Scrapy" /><summary type="html"><![CDATA[Memer.py Scrape frontpage memes from Ebaumsworld.com Polite scraping sleep timer Scrape unique meme article number Save article-number.json to folder of the same number This json contains article-number, image url and image title Output README.md with titles, images, Back, Go To Top and Source buttons]]></summary></entry><entry><title type="html">Adventure: Buildroot</title><link href="https://onthefritzz.com/buildroot-python/" rel="alternate" type="text/html" title="Adventure: Buildroot" /><published>2023-02-05T00:00:00-06:00</published><updated>2023-02-05T00:00:00-06:00</updated><id>https://onthefritzz.com/buildroot-python</id><content type="html" xml:base="https://onthefritzz.com/buildroot-python/"><![CDATA[<p><img src="/images/buildroot-example.png" /></p>
+
+<p>Objective: Boot to a python controlled GPIO pin as fast as possible.<br />
+TL;DR: Image that supports python, nano and libgpio while booting in 4 seconds: <a href="/images/boots-in-four-secs-with-libgpiod-python.img">Download</a></p>
+
+<p>Using python to manipulate GPIOs on a SBC is old news. Doing it in 4 seconds, is not. Stock Armbian has gotten me pretty far and honestly, 35 seconds to login prompt from a base install is much appreciated. At the same time, waiting 35 seconds to flip a switch is far too long. How fast can we boot to trigger a GPIO pin? Enter buildroot.</p>
+
+<p>Never touched buildroot, only ever had it referenced in passing. Simply put, its roll your own linux. However, you’re welcoming a hard time in terms of device and driver support. Good thing we only need two things. Python and libgpiod. The end result will not even support the onboard USB or ethernet port, literally attached to the device.</p>
+
+<p>Here’s where we ended after alot of trial and error.</p>
+
+<ul>
+  <li>Download buildroot: https://git.busybox.net/buildroot/</li>
+  <li>Extract the contents</li>
+  <li><code class="language-plaintext highlighter-rouge">cd</code> into it’s directory</li>
+</ul>
+
+<p>Make sure the version downloaded contains defconfigs for the desired board. Here’s an example of where it would be located for the NanoPi Neo board we’re using: <br />
+<code class="language-plaintext highlighter-rouge">buildroot-2022.02.9\configs\friendlyarm_nanopi_neo_defconfig</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>build-essential
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>python3-dev <span class="nt">-y</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>libncurses5-dev libncursesw5-dev <span class="nt">-y</span>
+<span class="nb">cd</span> ./buildroot-buildroot-2022.02.9 <span class="c"># Replace with your buildroot version</span>
+make friendlyarm_nanopi_neo_defconfig
+</code></pre></div></div>
+
+<p>There should be a command prompt UI now. Here’s the following prompts/boxes that were checked in order to support <code class="language-plaintext highlighter-rouge">python</code>, <code class="language-plaintext highlighter-rouge">libgpiod</code> and <code class="language-plaintext highlighter-rouge">nano</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make menuconfig
+</code></pre></div></div>
+<ul>
+  <li>Toolchain –&gt; Enable WCHAR support</li>
+  <li>Target packages –&gt; Interpreter languages and scripting –&gt; python3 –&gt; <em>select</em></li>
+  <li>Target packages –&gt; Interpreter languages and scripting –&gt; pythonn3 module format to install –&gt; .py sources and .pyc compiled</li>
+  <li>Target packages –&gt; Text editors and viewers –&gt; nano –&gt; <em>select</em></li>
+  <li>Target packages –&gt; Libraries –&gt; Hardware handling –&gt; libgpiod –&gt; <em>select</em></li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make uboot-menuconfig
+</code></pre></div></div>
+<ul>
+  <li>delay in seconds before automatically booting –&gt; Set to 0</li>
+  <li>Device drivers —&gt; USB Support –&gt; Uncheck evertything here</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
+</code></pre></div></div>
+
+<p>There should now be an sdcard.img file in the <code class="language-plaintext highlighter-rouge">buildroot-2022.02.9/output/images/</code> folder.
+The following commands are to start a python script immediately after boot, prior to even logging in.</p>
+
+<p>The following will save a file <code class="language-plaintext highlighter-rouge">999app.sh</code> into <code class="language-plaintext highlighter-rouge">/etc/init.d</code> which will start python script on boot.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&lt;&lt;</span><span class="no">EOT</span><span class="sh"> &gt;&gt; /etc/init.d/999app.sh
+#!/bin/sh
+python3 /etc/init.d/buildrootGPIO.py
+</span><span class="no">EOT
+</span></code></pre></div></div>
+
+<p>Create a dead simple python script that will trigger a relay using libgrpiod:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&lt;&lt;</span><span class="no">EOT</span><span class="sh"> &gt;&gt; /etc/init.d/buildrootGPIO.py
+import time, os
+
+PG11 = 203
+PG11Down = f'gpioset 0 {PG11}=0'
+PG11Up = f'gpioset 0 {PG11}=1'
+
+for x in range(5):
+  time.sleep(1)
+  os.system(PG11Down)
+  #print(f'os.system({PG11Down})')
+  
+  time.sleep(1)
+  os.system(PG11Up)
+  #print(f'os.system({PG11Up})')
+print('Done.')
+</span><span class="no">EOT
+</span></code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Buildroot" /><category term="Python" /><category term="GPIO" /><category term="NanoPi Neo" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">VFD 4 UnMe</title><link href="https://onthefritzz.com/vfd/" rel="alternate" type="text/html" title="VFD 4 UnMe" /><published>2023-02-02T00:00:00-06:00</published><updated>2023-02-02T00:00:00-06:00</updated><id>https://onthefritzz.com/vfd</id><content type="html" xml:base="https://onthefritzz.com/vfd/"><![CDATA[<p><img src="/images/vfd.jpg" class="align-center" alt="" /></p>
+
+<p>Made a fun lil weekend project outta some Noritake itron GU140x16G7000 Vacuum Flourescent Display’s that had GPIO pins. Let see what we can do.</p>
+
+<p>First things first. Find the pinout of the display. <a href="https://www.digikey.com/en/products/detail/noritake-company-inc/GU140X16J-7000B/5218726">Digikey</a> please. Good thing the PDF got <em>yoinked</em> cuz it’s a dead link now. Here go: <a href="/images/GU140X16J-datasheet.pdf">Datasheet</a></p>
+
+<p>Referencing the ‘asynchronous serial’ table we know off the top which pins are positive and negative (VCC/GND). We will then assume that SIN stands for Serial IN. Which would require TX from the NanoPi Neo. Little to no history using SBUSY/NC but /RESET pin rings a bell. Lets use that for the 4th pin. Below is the correct setup for attaching the VFD to a NanoPi Neo.</p>
+
+<p><img src="/images/vfd-pinout.jpg" class="align-center" alt="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>VFD Function</th>
+      <th>VFD Pin #</th>
+      <th>Wire Color</th>
+      <th>NPiNeo Pin #</th>
+      <th>NPiNeo GPIO Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VCC</td>
+      <td>1</td>
+      <td>RED</td>
+      <td>4</td>
+      <td>5V OUT</td>
+    </tr>
+    <tr>
+      <td>Serial IN (SIN)</td>
+      <td>2</td>
+      <td>YELLOW</td>
+      <td>8</td>
+      <td>UART1-TX</td>
+    </tr>
+    <tr>
+      <td>GND</td>
+      <td>3</td>
+      <td>BROWN</td>
+      <td>6</td>
+      <td>GND</td>
+    </tr>
+    <tr>
+      <td>RESET</td>
+      <td>6</td>
+      <td>ORANGE</td>
+      <td>10</td>
+      <td>UART1-RX</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>NPiNeo schematic used for reference, below.</p>
+
+<p><img src="/images/npineo-pinout.jpg" /></p>
+
+<p>You can also use the above table to talk to this display using a USB2UART adapter over a COM port on another computer. e.g: Windows –&gt; Putty –&gt; COM4 –&gt; USB2UART Adapter –&gt; VFD</p>
+
+<p>Here are the following instructions for programatically manipulating the VFD on a NanoPi Neo running Armbian. First we install dependencies</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>python3-pip
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>python-is-python3
+pip <span class="nb">install </span>pyserial
+<span class="nb">sudo </span>armbian-config
+</code></pre></div></div>
+
+<ul>
+  <li>system –&gt; hardware –&gt; enable UART 1,2,3<br /></li>
+  <li>reboot!!!</li>
+</ul>
+
+<p>Use python to orient the display. Here’s a quick lil test. It can work on a Windows device too but you need to change <code class="language-plaintext highlighter-rouge">/dev/ttyS1</code> –&gt; <code class="language-plaintext highlighter-rouge">COM4</code> where 4 is the COM port of UART adapter on Windows machine in device manager. ie: <code class="language-plaintext highlighter-rouge">devmgmt.msc</code></p>
+
+<p>Default BAUD rate of 38400 discerned from manufacturer’s <a href="https://www.noritake-elec.com/support/design-resources/tools/gud-10k"> GUD-10K </a> application. BAUD rate wasn’t referenced in original datasheet found and the application never did work properly but served a purpose at least.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">datetime</span><span class="p">,</span> <span class="n">serial</span>
+
+<span class="k">class</span> <span class="nc">GU140x16G7000</span><span class="p">():</span>
+  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">port</span> <span class="o">=</span> <span class="n">serial</span><span class="p">.</span><span class="n">Serial</span><span class="p">(</span><span class="s">'/dev/ttyS1'</span><span class="p">,</span> <span class="mi">38400</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="p">.</span><span class="mi">01</span><span class="p">)</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">port</span> <span class="o">=</span> <span class="n">port</span>
+
+  <span class="k">def</span> <span class="nf">clearScreen</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">port</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">b</span><span class="s">'</span><span class="se">\x0C</span><span class="s">'</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">content</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">list</span><span class="p">:</span>
+      <span class="n">content</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">content</span><span class="p">:</span>
+      <span class="n">x</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s">'utf-8'</span><span class="p">)</span>
+      <span class="bp">self</span><span class="p">.</span><span class="n">port</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">breakTime</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">down</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'      BREAKTIME!    '</span>
+    <span class="n">clear</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="n">hms</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">().</span><span class="n">strftime</span><span class="p">(</span><span class="s">'%H:%M:%S'</span><span class="p">)</span>
+    <span class="n">up</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'      </span><span class="si">{</span><span class="n">hms</span><span class="si">}</span><span class="s">     '</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">write</span><span class="p">([</span><span class="n">up</span><span class="p">,</span> <span class="n">down</span><span class="p">])</span>
+
+<span class="n">vfd</span> <span class="o">=</span> <span class="n">GU140x16G7000</span><span class="p">()</span>
+<span class="n">vfd</span><span class="p">.</span><span class="n">breakTime</span><span class="p">()</span>
+</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="VFD" /><category term="Serial" /><category term="NanoPi Neo" /><category term="GPIO" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Kenmore Can… more.</title><link href="https://onthefritzz.com/kenmore-can-more/" rel="alternate" type="text/html" title="Kenmore Can… more." /><published>2023-01-17T00:00:00-06:00</published><updated>2023-01-17T00:00:00-06:00</updated><id>https://onthefritzz.com/kenmore-can-more</id><content type="html" xml:base="https://onthefritzz.com/kenmore-can-more/"><![CDATA[<p><img src="/images/kenmore-hero.jpg" /></p>
+
+<p>Q: Why are there applicances on a tech blog?</p>
+
+<p>A: A welcomed consequence of taking apart laptops is that organizing the size and location of ~50 screws. Keeping track of the reverse order when dissassembling of bezels, hinges, ribbon cables and more is that many things end up not being as involved by comparison. Well… that and my family needs clean clothes.</p>
+
+<p><img src="/images/icft.jpg" class="align-center" alt="" /></p>
+
+<p>Model: Kenmore 400 Dryer</p>
+
+<p>Issues/Diagnostic</p>
+<ul>
+  <li>Machine noticeably struggles when spinning timer.</li>
+  <li>Machine will sometimes run endlessly. Literally.
+    <ul>
+      <li>A dryer that doesn’t turn off is dangerous.</li>
+      <li>A dryer that doesn’t turn off is expensive and not eco friendly.</li>
+    </ul>
+  </li>
+  <li>Machine hard shuts off at specific timer intervals
+    <ul>
+      <li>This shows, issue is unrelated to thermistors/temp regulators in the dryer</li>
+      <li>Dryer shuts off when timer is exactly “50” regardless of run time.</li>
+      <li>Dryer does not start when timer is “started” below “40”</li>
+    </ul>
+  </li>
+  <li>Machine will run like normal but not provide heat</li>
+</ul>
+
+<p>Armed with this information, the sucker got popped open, cleaned up and fixed. The issue was the timer, where 240v (yes, unplug a dryer before you go poking) completes the circuit within the timer. The tiny nubs that disconnect/reconnect every cycle, likely arc and get quite hot carrying that 240v.
+It’s a temporary fix, to have dry, clean clothes while a replacement is shipped.</p>
+
+<p>Part Number: W10185976</p>
+
+<p>Das good.
+<img src="/images/timer-good.jpg" class="align-center" alt="" /></p>
+
+<p>Datz bad.
+<img src="/images/timer-bad.jpg" class="align-center" alt="" /></p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Appliance Repair" /><category term="Refurbish" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">whoami</title><link href="https://onthefritzz.com/whoami/" rel="alternate" type="text/html" title="whoami" /><published>2023-01-15T00:00:00-06:00</published><updated>2023-01-15T00:00:00-06:00</updated><id>https://onthefritzz.com/whoami</id><content type="html" xml:base="https://onthefritzz.com/whoami/"><![CDATA[<p><img src="/images/ij.png" class="align-center" alt="" /></p>
+
+<p>Q: What’s with all the different names? Your branding sucks.</p>
+
+<h2 id="onthefritzz"><u>onTheFritzz</u>:</h2>
+<p>Is a broad concept with sister blogs and ‘brother utilities’ because many things can be on the fritz. This blog depicts the IT portion of my communities ability to fix and create many different things while providing room for expansion.</p>
+
+<h2 id="uneducated-technology"><u>Uneducated Technology</u>:</h2>
+<p>The oxymoronic name given to this blog. For as smart as tech is, it sure does act pretty dumb. Information Technology can be an infinetly wide or narrow skill set but experience rules the day. The full phrase is…</p>
+
+<p><code class="language-plaintext highlighter-rouge">"A jack of all trades is a master of none, but oftentimes better than a master of one."</code></p>
+
+<p>This blog intends to informally provide a reference point for skills and log the pursuit or achievements gained in the process of becoming an Ace of Trades. This may be the beginning of a blog but it is not the beginning of a carreer.</p>
+
+<h2 id="ij"><u>ij</u>:</h2>
+<p>thisisme.</p>
+
+<p>Fun fact: The SSL certs, registration and ‘A’ names for this domain, points to a ipv4/ipv6 accessible Vultr cloud server which hosts an open sourced jekyll theme using NGINX. Put together entirely by yours truly.</p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><summary type="html"><![CDATA[]]></summary></entry></feed>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.2.0
+    Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEV8VPW64E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEV8VPW64E');
+  </script>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Webscraping Preppy Kitchen | Uneducated Technology</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Webscraping Preppy Kitchen" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Killed 11214 ads In bed by 10:32PM. Nice. Time Saved: This site and 801 recipes wouldn’t exist without code so… all of it? Workhorse.py class is in the… works.. heh. Scrapy spider that scraped 801 recipes ~ Hundo liner with 10 redundant lines that could be refactored Runtime of 40+min (record scrape) Had to be run multiple times due to site errors (timeouts?) Recipes that were not scraped get logged to errors.txt Markdown generator used scrape logs to output files for ‘recipe’ tab of this blog, which is not on public display Spent prolly 6 hrs totz on scripts and tinkering with markdown blog 27 lines of gnarly, throw away code but parses/generates 1600 files in a blink Recursively Meta Dynamically generate a static website from generated markdown files of log files generated from a scraped website." />
+<meta property="og:description" content="Killed 11214 ads In bed by 10:32PM. Nice. Time Saved: This site and 801 recipes wouldn’t exist without code so… all of it? Workhorse.py class is in the… works.. heh. Scrapy spider that scraped 801 recipes ~ Hundo liner with 10 redundant lines that could be refactored Runtime of 40+min (record scrape) Had to be run multiple times due to site errors (timeouts?) Recipes that were not scraped get logged to errors.txt Markdown generator used scrape logs to output files for ‘recipe’ tab of this blog, which is not on public display Spent prolly 6 hrs totz on scripts and tinkering with markdown blog 27 lines of gnarly, throw away code but parses/generates 1600 files in a blink Recursively Meta Dynamically generate a static website from generated markdown files of log files generated from a scraped website." />
+<link rel="canonical" href="https://onthefritzz.com/scraping-recipes/" />
+<meta property="og:url" content="https://onthefritzz.com/scraping-recipes/" />
+<meta property="og:site_name" content="Uneducated Technology" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-04-03T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Webscraping Preppy Kitchen" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-04-03T00:00:00-05:00","datePublished":"2022-04-03T00:00:00-05:00","description":"Killed 11214 ads In bed by 10:32PM. Nice. Time Saved: This site and 801 recipes wouldn’t exist without code so… all of it? Workhorse.py class is in the… works.. heh. Scrapy spider that scraped 801 recipes ~ Hundo liner with 10 redundant lines that could be refactored Runtime of 40+min (record scrape) Had to be run multiple times due to site errors (timeouts?) Recipes that were not scraped get logged to errors.txt Markdown generator used scrape logs to output files for ‘recipe’ tab of this blog, which is not on public display Spent prolly 6 hrs totz on scripts and tinkering with markdown blog 27 lines of gnarly, throw away code but parses/generates 1600 files in a blink Recursively Meta Dynamically generate a static website from generated markdown files of log files generated from a scraped website.","headline":"Webscraping Preppy Kitchen","mainEntityOfPage":{"@type":"WebPage","@id":"https://onthefritzz.com/scraping-recipes/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://onthefritzz.com/images/ij-logo-round.png"}},"url":"https://onthefritzz.com/scraping-recipes/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/skins/dark.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Lora:400,400i,700,700i">
+  <link rel="alternate" type="application/atom+xml" title="Uneducated Technology" href="/feed.xml">
+<!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+
+  <body class="layout--post  webscraping-preppy-kitchen">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+  <div class="navigation-wrapper">
+    <a href="#menu-toggle" id="menu-toggle">Menu</a>
+    <nav id="primary-nav" class="site-nav animated drop">
+      <ul><li><a href="/stats/">Stats</a></li><li><a href="/">Posts</a></li><li><a href="/tags/">Tags</a></li></ul>
+    </nav>
+  </div><!-- /.navigation-wrapper -->
+
+
+    <header class="masthead">
+  <div class="wrap">
+    
+      <a href="/" class="site-logo" rel="home" title="Uneducated Technology">
+        <img src="/images/ij-logo-round.png" class="site-logo-img animated fadeInDown" alt="Uneducated Technology">
+      </a>
+    
+    
+    
+      
+        <div class="site-title animated fadeIn"><a href="/">Uneducated Technology</a></div>
+      
+      <p class="site-description animated fadeIn" itemprop="description">Follow a meandering career in tech...</p>
+    
+  </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article class="h-entry">
+    
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title p-name">Webscraping Preppy Kitchen
+</h1>
+        
+      </header>
+
+      <div class="page-sidebar">
+        <div class="page-author h-card p-author"><div class="author-info"><ul class="author-links"><li class="author-link">
+            <a class="u-url" rel="me" href=""><i class="fas fa-link fa-lg" title=""></i></a>
+          </li></ul>
+    <time class="page-date dt-published" datetime="2022-04-03T00:00:00-05:00"><a class="u-url" href="">April 3, 2022</a>
+</time>
+
+  </div>
+</div>
+
+        
+
+        
+  <h3 class="page-taxonomies-title">Tags</h3>
+  
+  <ul class="page-taxonomies"><li class="page-taxonomy">Python</li><li class="page-taxonomy">Scrapy</li><li class="page-taxonomy">Webscraping</li>
+  </ul>
+
+
+      </div>
+
+      <div class="page-content">
+        <div class="e-content">
+          <ul>
+  <li>Killed 11214 ads</li>
+  <li>In bed by 10:32PM. Nice.</li>
+  <li>Time Saved: This site and 801 recipes wouldn’t exist without code so… all of it?
+    <ul>
+      <li>Workhorse.py class is in the… works.. heh.</li>
+    </ul>
+  </li>
+  <li>Scrapy spider that scraped 801 recipes
+    <ul>
+      <li>~ Hundo liner with 10 redundant lines that could be refactored</li>
+      <li>Runtime of 40+min (record scrape)</li>
+      <li>Had to be run multiple times due to site errors (timeouts?)</li>
+      <li>Recipes that were not scraped get logged to errors.txt</li>
+    </ul>
+  </li>
+  <li>Markdown generator used scrape logs to output files for ‘recipe’ tab of this blog, which is not on public display</li>
+  <li>Spent prolly 6 hrs totz on scripts and tinkering with markdown blog
+    <ul>
+      <li>27 lines of gnarly, throw away code but parses/generates 1600 files in a blink</li>
+    </ul>
+  </li>
+  <li>Recursively Meta
+    <ul>
+      <li>Dynamically generate a static website from generated markdown files of log files generated from a scraped website.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Code for scraper…</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">scrapy</span><span class="p">,</span> <span class="n">logging</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">json</span><span class="p">,</span> <span class="n">re</span><span class="p">,</span> <span class="n">os</span>
+<span class="kn">import</span> <span class="nn">requests</span><span class="p">,</span> <span class="n">pdfkit</span><span class="p">,</span> <span class="n">unidecode</span>
+<span class="kn">from</span> <span class="nn">scrapy.crawler</span> <span class="kn">import</span> <span class="n">CrawlerProcess</span>
+
+<span class="k">class</span> <span class="nc">preppySpider</span><span class="p">(</span><span class="n">scrapy</span><span class="p">.</span><span class="n">Spider</span><span class="p">):</span>
+  <span class="s">"""Collect food recipes without the abhorrently excessive ads and life stories"""</span>
+  <span class="n">name</span> <span class="o">=</span> <span class="s">'preppy-nommer'</span>
+  <span class="n">outputFolder</span> <span class="o">=</span> <span class="s">'database'</span>
+  <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s">'https://preppykitchen.com/category/recipes/'</span><span class="p">]</span>
+  <span class="n">handle_httpstatus_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">404</span><span class="p">]</span>
+  <span class="n">logging</span><span class="p">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s">'scrapy'</span><span class="p">).</span><span class="n">propagate</span> <span class="o">=</span> <span class="bp">False</span> <span class="c1"># No Excessive Log
+</span>  <span class="n">convertPdfPath</span> <span class="o">=</span> <span class="sa">r</span><span class="s">'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'</span> <span class="c1"># force path for html to pdf bin
+</span>  <span class="n">config</span> <span class="o">=</span> <span class="n">pdfkit</span><span class="p">.</span><span class="n">configuration</span><span class="p">(</span><span class="n">wkhtmltopdf</span><span class="o">=</span><span class="n">convertPdfPath</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">start_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># Scrape several food category urls
+</span>    <span class="n">urlSuffix</span> <span class="o">=</span> <span class="p">[</span><span class="s">"main-dishes"</span><span class="p">,</span> <span class="s">"desserts"</span><span class="p">,</span> <span class="s">"breakfast"</span><span class="p">,</span> <span class="s">"side-dishes"</span><span class="p">,</span>
+          <span class="s">"breads"</span><span class="p">,</span> <span class="s">"soups"</span><span class="p">,</span> <span class="s">"salads"</span><span class="p">,</span> <span class="s">"casseroles"</span><span class="p">,</span><span class="s">"instant-pot"</span><span class="p">,</span>
+          <span class="s">"appetizers"</span><span class="p">,</span> <span class="s">"drinks"</span><span class="p">,</span> <span class="s">"holiday"</span><span class="p">]</span>
+
+    <span class="n">urls</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">start_urls</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}{</span><span class="n">x</span><span class="si">}</span><span class="s">'</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">urlSuffix</span><span class="p">]</span> <span class="c1"># List of full URLs, domain + category
+</span>    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span> <span class="c1"># For each url/category, run pagination function
+</span>      <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">getPagination</span><span class="p">,</span> <span class="n">cb_kwargs</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="n">url</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'/'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span> <span class="c1"># Carry category as function
+</span>  
+  <span class="k">def</span> <span class="nf">getPagination</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span> <span class="c1"># Get highest 'page number' from bottom of category url
+</span>    <span class="n">pageList</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># Empty array for parsing highest page number
+</span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//*[@id="genesis-content"]/div[2]/ul/li/a/@href'</span><span class="p">):</span> <span class="c1"># Xpath for 'pagination' footer section
+</span>      <span class="n">pageList</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">get</span><span class="p">())</span> <span class="c1"># Append array with url of each listed page
+</span>    
+    <span class="n">highPage</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Initialize variable as integer
+</span>    <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="n">pageList</span><span class="p">:</span> 
+      <span class="n">indx</span> <span class="o">=</span> <span class="n">page</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># Index of page number within url string
+</span>
+      <span class="k">try</span><span class="p">:</span> <span class="c1"># Try to convert index to integer
+</span>        <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">indx</span><span class="p">)</span>
+      <span class="k">except</span><span class="p">:</span> <span class="c1"># Otherwise index is not a number, do nothing
+</span>        <span class="k">continue</span>
+
+      <span class="k">if</span> <span class="n">highPage</span> <span class="o">&lt;</span> <span class="n">num</span><span class="p">:</span> <span class="c1"># If current index is greater than previous page integer
+</span>        <span class="n">highPage</span> <span class="o">=</span> <span class="n">num</span> <span class="c1"># Set as new highest page integer
+</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">highPage</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span> <span class="c1"># Generate urls for every page number up to and including highest page
+</span>      <span class="n">fullUrl</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">url</span><span class="si">}</span><span class="s">/page/</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">'</span>
+      <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">fullUrl</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">parse</span><span class="p">,</span> <span class="n">cb_kwargs</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="n">category</span><span class="p">))</span>
+
+  <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">recip</span> <span class="ow">in</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//header[@class="entry-header"]'</span><span class="p">):</span>
+      <span class="n">urls</span> <span class="o">=</span> <span class="n">recip</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//a[@class="entry-image-link"]//@href'</span><span class="p">).</span><span class="n">getall</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+      <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">recursiveParse</span><span class="p">,</span> <span class="n">cb_kwargs</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="n">category</span><span class="p">))</span>
+      
+    <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span> <span class="c1"># Redundant and ugly but w/e
+</span>      <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'error.txt'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">)</span> <span class="k">as</span> <span class="n">a</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">url</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">url</span><span class="si">}</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">recursiveParse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+      <span class="n">header</span> <span class="o">=</span> <span class="n">unidecode</span><span class="p">.</span><span class="n">unidecode</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//h1[@class="entry-title"]/text()'</span><span class="p">).</span><span class="n">get</span><span class="p">())</span> <span class="c1"># Some recipes have accented characters, gross.
+</span>      <span class="n">img</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//div[@class="featured-image-class"]//noscript'</span><span class="p">).</span><span class="n">get</span><span class="p">()</span> <span class="c1"># Direct img src returns embedded URI
+</span>      <span class="n">imgUrl</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s">'src="(.+?)"'</span><span class="p">,</span> <span class="n">img</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Using regex on 'noscript' element to pull link within matched src="" regex
+</span>      <span class="n">recipeID</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//div[@class="entry-content"]//a/@data-recipe'</span><span class="p">).</span><span class="n">get</span><span class="p">()</span>
+      <span class="n">recipeUrl</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'https://preppykitchen.com/wprm_print/recipe/</span><span class="si">{</span><span class="n">recipeID</span><span class="si">}</span><span class="s">'</span> <span class="c1"># All recipe print cards are on same subdomain
+</span>    
+      <span class="n">jLog</span> <span class="o">=</span> <span class="p">{</span><span class="s">'name'</span> <span class="p">:</span> <span class="n">header</span><span class="p">,</span>
+          <span class="s">'image'</span> <span class="p">:</span> <span class="n">imgUrl</span><span class="p">,</span>
+          <span class="s">'id'</span> <span class="p">:</span> <span class="n">recipeID</span><span class="p">,</span>
+          <span class="s">'category'</span> <span class="p">:</span> <span class="n">category</span><span class="p">,</span>
+          <span class="s">'card'</span> <span class="p">:</span> <span class="n">recipeUrl</span><span class="p">}</span>
+
+      <span class="n">filename</span> <span class="o">=</span> <span class="n">header</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">" "</span><span class="p">,</span> <span class="s">"-"</span><span class="p">).</span><span class="n">lower</span><span class="p">()</span> <span class="c1"># Format header into lowercase, dash seperated for file naming
+</span>      <span class="n">nestedFolder</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'.</span><span class="se">\\</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">outputFolder</span><span class="si">}</span><span class="se">\\</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="se">\\</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="se">\\</span><span class="s">'</span> <span class="c1"># Nest a folder named 'Recipe' within folder name of 'Category'
+</span>      
+      <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">nestedFolder</span><span class="p">):</span> <span class="c1"># If \Category\Recipe folder doesn't exist...
+</span>        <span class="n">os</span><span class="p">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">nestedFolder</span><span class="p">)</span> <span class="c1"># make it
+</span>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">nestedFolder</span><span class="si">}{</span><span class="n">filename</span><span class="si">}</span><span class="s">.txt'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">j</span><span class="p">:</span> <span class="c1"># Create json log file of scraped info
+</span>          <span class="n">json</span><span class="p">.</span><span class="n">dump</span><span class="p">(</span><span class="n">jLog</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+
+        <span class="n">rawImg</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">imgUrl</span><span class="p">).</span><span class="n">content</span> <span class="c1"># Dirty get/dl img jpg without using builtin scrapy pipelines...
+</span>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">nestedFolder</span><span class="si">}{</span><span class="n">filename</span><span class="si">}</span><span class="s">.jpg'</span><span class="p">,</span> <span class="s">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">i</span><span class="p">:</span> 
+          <span class="n">i</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">rawImg</span><span class="p">)</span> <span class="c1"># ..this nix's excessive scrapy files and reqs only one scipt
+</span>        <span class="c1">#Especially since using htmltopdf to avoid [intentionally] atrocious html code inside main recipe table 
+</span>        <span class="n">pdfkit</span><span class="p">.</span><span class="n">from_url</span><span class="p">(</span><span class="n">recipeUrl</span><span class="p">,</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">nestedFolder</span><span class="si">}{</span><span class="n">filename</span><span class="si">}</span><span class="s">.pdf'</span><span class="p">,</span> <span class="n">configuration</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">config</span><span class="p">)</span>
+    
+    <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span> <span class="c1"># Redundant and ugly but w/e
+</span>      <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'error.txt'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">)</span> <span class="k">as</span> <span class="n">a</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">url</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">url</span><span class="si">}</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+  <span class="n">process</span> <span class="o">=</span> <span class="n">CrawlerProcess</span><span class="p">()</span>
+  <span class="n">process</span><span class="p">.</span><span class="n">crawl</span><span class="p">(</span><span class="n">preppySpider</span><span class="p">)</span>
+  <span class="n">process</span><span class="p">.</span><span class="n">start</span><span class="p">()</span>
+</code></pre></div></div>
+<p>Throwie code for generating markdown/jekyll tiles</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">json</span><span class="p">,</span> <span class="n">os</span>
+
+<span class="n">dr</span> <span class="o">=</span> <span class="sa">r</span><span class="s">'C:\Users\Host\Desktop\nommer'</span>
+
+<span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="p">.</span><span class="n">walk</span><span class="p">(</span><span class="n">dr</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">jLog</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">jLog</span><span class="p">.</span><span class="n">endswith</span><span class="p">(</span><span class="s">'.json'</span><span class="p">)</span> <span class="ow">and</span> <span class="n">jLog</span> <span class="o">!=</span> <span class="s">'error.txt'</span><span class="p">:</span>
+      <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">root</span><span class="si">}</span><span class="se">\\</span><span class="si">{</span><span class="n">jLog</span><span class="si">}</span><span class="s">'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">r</span><span class="p">:</span>
+        <span class="n">jj</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+
+        <span class="n">title</span> <span class="o">=</span> <span class="n">jj</span><span class="p">[</span><span class="s">'name'</span><span class="p">]</span>
+        <span class="n">category</span> <span class="o">=</span> <span class="n">jj</span><span class="p">[</span><span class="s">'category'</span><span class="p">].</span><span class="n">replace</span><span class="p">(</span><span class="s">'-'</span><span class="p">,</span> <span class="s">' '</span><span class="p">).</span><span class="n">title</span><span class="p">()</span>
+        <span class="n">catDash</span> <span class="o">=</span> <span class="n">category</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">' '</span><span class="p">,</span> <span class="s">'-'</span><span class="p">).</span><span class="n">lower</span><span class="p">()</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">jj</span><span class="p">[</span><span class="s">'name'</span><span class="p">].</span><span class="n">replace</span><span class="p">(</span><span class="s">' '</span><span class="p">,</span> <span class="s">'-'</span><span class="p">).</span><span class="n">lower</span><span class="p">()</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'.</span><span class="se">\\</span><span class="s">mds</span><span class="se">\\</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s">.md'</span><span class="p">,</span> <span class="s">'w+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+          <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">'''---
+title: "</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s">"
+image:
+    path: /images/recipes/</span><span class="si">{</span><span class="n">catDash</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s">.jpg
+    thumbnail: /images/recipes/</span><span class="si">{</span><span class="n">catDash</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s">.jpg
+tags:
+- Recipe
+- </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s">
+---
+&lt;center&gt;&lt;a href="/example/images/recipes/</span><span class="si">{</span><span class="n">catDash</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s">.pdf"&gt;Recipe PDF&lt;/a&gt;&lt;/center&gt;
+'''</span><span class="p">)</span>
+</code></pre></div></div>
+
+        </div>
+
+        
+          <!--<div class="page-share">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonthefritzz.com%2Fscraping-recipes%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--facebook btn--small"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> <span>Share</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Webscraping+Preppy+Kitchen%20https%3A%2F%2Fonthefritzz.com%2Fscraping-recipes%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--twitter btn--small"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> <span>Tweet</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fonthefritzz.com%2Fscraping-recipes%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--linkedin btn--small"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> <span>LinkedIn</span></a>
+  <a href="https://reddit.com/submit?title=Webscraping+Preppy+Kitchen&url=https%3A%2F%2Fonthefritzz.com%2Fscraping-recipes%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--reddit btn--small"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i> <span>Reddit</span></a>
+</div>-->
+
+        
+
+        
+
+        <nav class="page-pagination" role="navigation">
+  
+    <a class="page-previous" href="/hellow-orld/">
+      <h4 class="page-pagination-label">Previous</h4>
+      <span class="page-pagination-title">
+        <i class="fas fa-arrow-left"></i> Hellow Orld
+
+      </span>
+    </a>
+  
+
+  
+    <a class="page-next" href="/new-edc/">
+      <h4 class="page-pagination-label">Next</h4>
+      <span class="page-pagination-title">
+        New EDC, broken out of box.
+ <i class="fas fa-arrow-right"></i>
+      </span>
+    </a>
+  
+</nav>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="copyright">
+    
+      <p>&copy; 2023 Uneducated Technology. <br> Powered by <a href="https://www.vultr.com/">Vultr</a>, <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> and <a href="https://mademistakes.com/"> mademistakes </a></p>
+    
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><!---->
+
+
+  </body>
+
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.2.0
+    Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEV8VPW64E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEV8VPW64E');
+  </script>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Meme Scraper + Randomizer | Uneducated Technology</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Meme Scraper + Randomizer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Memer.py Scrape frontpage memes from Ebaumsworld.com Polite scraping sleep timer Scrape unique meme article number Save article-number.json to folder of the same number This json contains article-number, image url and image title Output README.md with titles, images, Back, Go To Top and Source buttons" />
+<meta property="og:description" content="Memer.py Scrape frontpage memes from Ebaumsworld.com Polite scraping sleep timer Scrape unique meme article number Save article-number.json to folder of the same number This json contains article-number, image url and image title Output README.md with titles, images, Back, Go To Top and Source buttons" />
+<link rel="canonical" href="https://onthefritzz.com/memer/" />
+<meta property="og:url" content="https://onthefritzz.com/memer/" />
+<meta property="og:site_name" content="Uneducated Technology" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-02-11T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Meme Scraper + Randomizer" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-02-11T00:00:00-06:00","datePublished":"2023-02-11T00:00:00-06:00","description":"Memer.py Scrape frontpage memes from Ebaumsworld.com Polite scraping sleep timer Scrape unique meme article number Save article-number.json to folder of the same number This json contains article-number, image url and image title Output README.md with titles, images, Back, Go To Top and Source buttons","headline":"Meme Scraper + Randomizer","mainEntityOfPage":{"@type":"WebPage","@id":"https://onthefritzz.com/memer/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://onthefritzz.com/images/ij-logo-round.png"}},"url":"https://onthefritzz.com/memer/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/skins/dark.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Lora:400,400i,700,700i">
+  <link rel="alternate" type="application/atom+xml" title="Uneducated Technology" href="/feed.xml">
+<!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+
+  <body class="layout--post  meme-scraper-randomizer">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+  <div class="navigation-wrapper">
+    <a href="#menu-toggle" id="menu-toggle">Menu</a>
+    <nav id="primary-nav" class="site-nav animated drop">
+      <ul><li><a href="/stats/">Stats</a></li><li><a href="/">Posts</a></li><li><a href="/tags/">Tags</a></li></ul>
+    </nav>
+  </div><!-- /.navigation-wrapper -->
+
+
+    <header class="masthead">
+  <div class="wrap">
+    
+      <a href="/" class="site-logo" rel="home" title="Uneducated Technology">
+        <img src="/images/ij-logo-round.png" class="site-logo-img animated fadeInDown" alt="Uneducated Technology">
+      </a>
+    
+    
+    
+      
+        <div class="site-title animated fadeIn"><a href="/">Uneducated Technology</a></div>
+      
+      <p class="site-description animated fadeIn" itemprop="description">Follow a meandering career in tech...</p>
+    
+  </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article class="h-entry">
+    
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title p-name">Meme Scraper + Randomizer
+</h1>
+        
+      </header>
+
+      <div class="page-sidebar">
+        <div class="page-author h-card p-author"><div class="author-info"><ul class="author-links"><li class="author-link">
+            <a class="u-url" rel="me" href=""><i class="fas fa-link fa-lg" title=""></i></a>
+          </li></ul>
+    <time class="page-date dt-published" datetime="2023-02-11T00:00:00-06:00"><a class="u-url" href="">February 11, 2023</a>
+</time>
+
+  </div>
+</div>
+
+        
+
+        
+  <h3 class="page-taxonomies-title">Tags</h3>
+  
+  <ul class="page-taxonomies"><li class="page-taxonomy">Python</li><li class="page-taxonomy">Scrapy</li><li class="page-taxonomy">Webscraping</li>
+  </ul>
+
+
+      </div>
+
+      <div class="page-content">
+        <div class="e-content">
+          <h3 id="memerpy">Memer.py</h3>
+<ul>
+  <li>Scrape frontpage memes from Ebaumsworld.com</li>
+  <li>Polite scraping sleep timer</li>
+  <li>Scrape unique meme article number
+    <ul>
+      <li>Save <code class="language-plaintext highlighter-rouge">article-number.json</code> to folder of the same number</li>
+      <li>This json contains article-number, image url and image title</li>
+    </ul>
+  </li>
+  <li>Output <code class="language-plaintext highlighter-rouge">README.md</code> with titles, images, <code class="language-plaintext highlighter-rouge">Back</code>, <code class="language-plaintext highlighter-rouge">Go To Top</code> and <code class="language-plaintext highlighter-rouge">Source</code> buttons</li>
+</ul>
+
+<h3 id="getrandommemespy">getRandomMemes.py</h3>
+<ul>
+  <li>Generate random collection of memes after folders and json files have been created
+    <ul>
+      <li>Save article number to <code class="language-plaintext highlighter-rouge">memer-config.json</code></li>
+    </ul>
+  </li>
+  <li>Always have the freshest memes and do not reuse article number if in <code class="language-plaintext highlighter-rouge">memer-config.json</code>.
+    <ul>
+      <li>ie: Never see the same article twice!</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Memer.py
+</span><span class="kn">import</span> <span class="nn">scrapy</span><span class="p">,</span> <span class="n">logging</span><span class="p">,</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">json</span><span class="p">,</span> <span class="n">os</span>
+<span class="kn">from</span> <span class="nn">scrapy.crawler</span> <span class="kn">import</span> <span class="n">CrawlerProcess</span>
+<span class="kn">from</span> <span class="nn">git</span> <span class="kn">import</span> <span class="n">Repo</span>
+
+<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">().</span><span class="n">strftime</span><span class="p">(</span><span class="s">"%m/%d/%Y-%H:%M:%S"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">baumerSpider</span><span class="p">(</span><span class="n">scrapy</span><span class="p">.</span><span class="n">Spider</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s">'https://www.ebaumsworld.com'</span><span class="p">]</span>
+    <span class="n">logging</span><span class="p">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s">'scrapy'</span><span class="p">).</span><span class="n">propagate</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">header</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'# All ur Memes R belog to Uz&lt;br&gt;</span><span class="se">\n</span><span class="s">Last updated: </span><span class="si">{</span><span class="n">now</span><span class="si">}</span><span class="se">\n</span><span class="s">&lt;br&gt;</span><span class="se">\n</span><span class="s">All credits to ebaumsworld.com'</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">urlPageStart</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">urlPageEnd</span> <span class="o">=</span> <span class="mi">6</span> <span class="c1"># Get memes from page 1 through this number
+</span>    <span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Counter designation for each article/meme dump
+</span>    <span class="bp">self</span><span class="p">.</span><span class="n">sleepBetweenArticles</span> <span class="o">=</span> <span class="mi">30</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">outputHtml</span> <span class="o">=</span> <span class="s">'FRONTPAGES-README.MD'</span><span class="c1">#f'Article {self.urlPageStart}-{self.urlPageEnd}.md'
+</span>
+    <span class="k">try</span><span class="p">:</span>
+      <span class="n">os</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">outputHtml</span><span class="p">)</span>
+    
+    <span class="k">except</span><span class="p">:</span>
+      <span class="k">pass</span>
+    
+    <span class="k">finally</span><span class="p">:</span>
+      <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">outputHtml</span><span class="p">,</span> <span class="s">'a+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span> 
+        <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">header</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">sleeper</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seconds</span><span class="p">,</span> <span class="n">note</span><span class="o">=</span><span class="s">''</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">sec</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">seconds</span><span class="p">):</span>
+      <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Sleeping </span><span class="si">{</span><span class="n">sec</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">seconds</span><span class="si">}</span><span class="s"> (sec/s)...'</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">'</span><span class="se">\r</span><span class="s">'</span><span class="p">)</span>
+      <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  
+  <span class="k">def</span> <span class="nf">jMaker</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
+    <span class="n">jFileName</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="s">'article-number'</span><span class="p">]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">jFileName</span><span class="p">):</span>
+      <span class="n">os</span><span class="p">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">jFileName</span><span class="p">)</span>
+
+    <span class="n">fileOut</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'./</span><span class="si">{</span><span class="n">jFileName</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">jFileName</span><span class="si">}</span><span class="s">.json'</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fileOut</span><span class="p">,</span> <span class="s">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">wf</span><span class="p">:</span>
+      <span class="n">json</span><span class="p">.</span><span class="n">dump</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">wf</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span> <span class="c1"># Get all front page article in start urls
+</span>    <span class="n">urlSuffix</span> <span class="o">=</span> <span class="s">'/?page='</span> <span class="c1"># Page url suffix
+</span>    <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">urlPageStart</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">urlPageEnd</span><span class="p">):</span>
+      <span class="n">pageUrl</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">start_urls</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}{</span><span class="n">urlSuffix</span><span class="si">}{</span><span class="n">page</span><span class="si">}</span><span class="s">'</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">)</span>
+      <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">recursiveParse</span><span class="p">)</span> <span class="c1"># Recursively parse each page
+</span>
+  <span class="k">def</span> <span class="nf">recursiveParse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span> <span class="c1"># Get links for any list item in 'Featured' front page
+</span>    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//div[@class="featureFeedDetails"]//a/@href'</span><span class="p">).</span><span class="n">getall</span><span class="p">():</span>
+      <span class="k">if</span> <span class="n">url</span><span class="p">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">'https://gaming.ebaumsworld.com'</span><span class="p">):</span> <span class="c1"># Exclude gaming articles which are categorized under 'pictures'
+</span>        <span class="k">pass</span>
+
+      <span class="k">elif</span> <span class="s">'pictures'</span> <span class="ow">in</span> <span class="n">url</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">start_urls</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}{</span><span class="n">url</span><span class="si">}</span><span class="s">'</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">getMemes</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">getMemes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># Crawling a successful link, up article counter.
+</span>    <span class="n">headerXpath</span> <span class="o">=</span> <span class="s">'//*[@id="detailPage"]/header/h1/text()'</span> <span class="c1"># Xpath for article header
+</span>    <span class="n">memeXpath</span> <span class="o">=</span> <span class="s">'//img[@class="galleryListImage"]/@src'</span> <span class="c1"># Xpath for meme images
+</span>    <span class="n">titleXpath</span> <span class="o">=</span> <span class="s">'//li[@class="galleryListItem"]/text()'</span> <span class="c1"># Xpath for meme titles
+</span>    
+    <span class="n">articleHeader</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="n">headerXpath</span><span class="p">).</span><span class="n">get</span><span class="p">()</span>
+    <span class="n">memes</span> <span class="o">=</span> <span class="p">[</span><span class="n">meme</span><span class="p">.</span><span class="n">get</span><span class="p">()</span> <span class="k">for</span> <span class="n">meme</span> <span class="ow">in</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="n">memeXpath</span><span class="p">)]</span>
+    <span class="n">titles</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="n">titleXpath</span><span class="p">):</span> <span class="c1"># Get each title text
+</span>      <span class="n">title</span> <span class="o">=</span> <span class="n">title</span><span class="p">.</span><span class="n">get</span><span class="p">().</span><span class="n">strip</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">title</span> <span class="o">!=</span> <span class="s">''</span><span class="p">:</span> <span class="c1"># Discard extraneous empty values that get scraped
+</span>        <span class="n">titles</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    
+    <span class="n">memeBlock</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">titles</span><span class="p">,</span> <span class="n">memes</span><span class="p">))</span> <span class="c1"># Generate 2D array and associate meme images with title
+</span>
+    <span class="n">nextNumber</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># Markdown link to next article/meme collection
+</span>    <span class="n">previousNumber</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="n">html</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'## &lt;a href="#linky</span><span class="si">{</span><span class="n">nextNumber</span><span class="si">}</span><span class="s">" id="linky</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span><span class="si">}</span><span class="s">"&gt;</span><span class="si">{</span><span class="n">articleHeader</span><span class="si">}</span><span class="s">&lt;/a&gt;&lt;br&gt;</span><span class="se">\n\n</span><span class="s">'</span>
+
+    <span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">meme</span> <span class="ow">in</span> <span class="n">memeBlock</span><span class="p">:</span>
+      <span class="n">html</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'&lt;span style="font-size:4em"&gt;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s">&lt;/span&gt;&lt;br&gt;&lt;img src="</span><span class="si">{</span><span class="n">meme</span><span class="si">}</span><span class="s">" style="width:100%"&gt;&lt;br&gt;</span><span class="se">\n\n</span><span class="s">'</span>
+    <span class="n">html</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'&lt;a href="#linky</span><span class="si">{</span><span class="n">previousNumber</span><span class="si">}</span><span class="s">"&gt;GO TO PREVIOUS&lt;/a&gt;</span><span class="se">\n\n</span><span class="s">'</span>  
+    <span class="n">html</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'&lt;a href="</span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="si">}</span><span class="s">"&gt;Source URL &lt;b&gt;with&lt;/b&gt; Ads&lt;/a&gt;</span><span class="se">\n\n</span><span class="s">'</span>
+    <span class="n">html</span> <span class="o">+=</span> <span class="s">'&lt;a href="#linky1"&gt;GO TO TOP&lt;/a&gt;</span><span class="se">\n</span><span class="s">'</span>
+
+    <span class="n">j</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="s">'article-number'</span><span class="p">:</span> <span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'/'</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+      <span class="s">'header'</span><span class="p">:</span> <span class="n">articleHeader</span><span class="p">,</span>
+      <span class="s">'titles-images'</span><span class="p">:</span> <span class="n">memeBlock</span>
+    <span class="p">}</span>
+    
+    <span class="bp">self</span><span class="p">.</span><span class="n">jMaker</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'/'</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span><span class="si">}</span><span class="s"> - Scraped ...</span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="p">[</span><span class="o">-</span><span class="mi">50</span><span class="si">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s"> successfully.'</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">outputHtml</span><span class="p">,</span> <span class="s">'a+'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+      <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">sleeper</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">sleepBetweenArticles</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+  <span class="n">process</span> <span class="o">=</span> <span class="n">CrawlerProcess</span><span class="p">()</span>
+  <span class="n">process</span><span class="p">.</span><span class="n">crawl</span><span class="p">(</span><span class="n">baumerSpider</span><span class="p">)</span>
+  <span class="n">process</span><span class="p">.</span><span class="n">start</span><span class="p">()</span>
+
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#getRandomMemes.py
+</span><span class="kn">import</span> <span class="nn">random</span><span class="p">,</span> <span class="n">json</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">os</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">choice</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span> <span class="k">as</span> <span class="n">dt</span>
+
+<span class="k">def</span> <span class="nf">jLoad</span><span class="p">(</span><span class="n">fileName</span><span class="p">):</span>
+  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">r</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">json</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">getValue</span><span class="p">(</span><span class="n">jFile</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+  <span class="k">try</span><span class="p">:</span>
+    <span class="n">jk</span> <span class="o">=</span> <span class="n">jFile</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">jk</span>
+  <span class="k">except</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="nb">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s">'"</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s">" is prolly not a valid key'</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">getRandomMemes</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+  <span class="n">articleBlock</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'# All Ur Meemz R Belog to Uz</span><span class="se">\n</span><span class="s">Last Updated </span><span class="si">{</span><span class="n">dt</span><span class="p">.</span><span class="n">now</span><span class="p">().</span><span class="n">strftime</span><span class="p">(</span><span class="s">"%m.%d.%Y-%H</span><span class="si">:</span><span class="o">%</span><span class="n">M</span><span class="si">:</span><span class="o">%</span><span class="n">S</span><span class="s">")</span><span class="si">}</span><span class="s">&lt;br&gt;All credits to ebaumsworld.com</span><span class="se">\n\n</span><span class="s">'</span>
+  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">number</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="c1"># Generate random number provided it has not been used before
+</span>    <span class="n">articleNo</span> <span class="o">=</span> <span class="n">choice</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">memeFiles</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">j</span><span class="p">[</span><span class="s">'memes-used'</span><span class="p">]])</span>
+    <span class="n">j</span><span class="p">[</span><span class="s">'memes-used'</span><span class="p">].</span><span class="n">append</span><span class="p">(</span><span class="n">articleNo</span><span class="p">)</span>
+    <span class="c1"># After meme index number has been generated, add to 'do not use' list
+</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">memerConfig</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+      <span class="n">json</span><span class="p">.</span><span class="n">dump</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="c1"># Dump new list, including current random, 'do not use' number
+</span>
+    <span class="n">folder</span> <span class="o">=</span> <span class="n">memeFiles</span><span class="p">[</span><span class="n">articleNo</span><span class="p">].</span><span class="n">split</span><span class="p">(</span><span class="s">'.json'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Folder of article number that was picked at random
+</span>    <span class="n">folderFileArticle</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">walkDir</span><span class="si">}</span><span class="se">\\</span><span class="si">{</span><span class="n">folder</span><span class="si">}</span><span class="se">\\</span><span class="si">{</span><span class="n">memeFiles</span><span class="p">[</span><span class="n">articleNo</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="c1"># Full file path of randomly selected meme article
+</span>
+    <span class="n">article</span> <span class="o">=</span> <span class="n">jLoad</span><span class="p">(</span><span class="n">folderFileArticle</span><span class="p">)</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="n">getValue</span><span class="p">(</span><span class="n">article</span><span class="p">,</span> <span class="s">'header'</span><span class="p">)</span>
+    <span class="n">titlesImages</span> <span class="o">=</span> <span class="n">getValue</span><span class="p">(</span><span class="n">article</span><span class="p">,</span> <span class="s">'titles-images'</span><span class="p">)</span>
+
+    <span class="n">gototop</span> <span class="o">=</span> <span class="s">'&lt;a href="#link0"&gt;GO TO TOP&lt;/a&gt;'</span>
+    <span class="n">previous</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'&lt;a href="#link</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">"&gt;GO TO PREVIOUS&lt;/a&gt;'</span>
+    <span class="n">sourceLink</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'&lt;a href="https://www.ebaumsworld.com/pictures/-/</span><span class="si">{</span><span class="n">folder</span><span class="si">}</span><span class="s">/"&gt;Original Article &lt;b&gt;with&lt;/b&gt; Ads&lt;/a&gt;'</span>
+
+    <span class="n">articleBlock</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'## &lt;a href="#link</span><span class="si">{</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s">" id="link</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">"&gt;</span><span class="si">{</span><span class="n">header</span><span class="si">}</span><span class="s">&lt;/a&gt;</span><span class="se">\n</span><span class="s">'</span>
+
+    <span class="k">for</span> <span class="n">ti</span> <span class="ow">in</span> <span class="n">titlesImages</span><span class="p">:</span>
+      <span class="n">title</span><span class="p">,</span> <span class="n">image</span> <span class="o">=</span> <span class="n">ti</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ti</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+      <span class="n">articleBlock</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="se">\n</span><span class="s">&lt;img src="</span><span class="si">{</span><span class="n">image</span><span class="si">}</span><span class="s">"&gt;</span><span class="se">\n\n</span><span class="s">'</span>
+    
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Writing article </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+    <span class="n">articleBlock</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'</span><span class="se">\n</span><span class="si">{</span><span class="n">sourceLink</span><span class="si">}</span><span class="se">\n\n</span><span class="si">{</span><span class="n">gototop</span><span class="si">}</span><span class="se">\n\n</span><span class="si">{</span><span class="n">previous</span><span class="si">}</span><span class="se">\n\n</span><span class="s">'</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'README.MD'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">a</span><span class="p">:</span>
+      <span class="n">a</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">articleBlock</span><span class="p">)</span>
+    <span class="n">articleBlock</span> <span class="o">=</span> <span class="s">''</span>
+
+<span class="n">memerConfig</span> <span class="o">=</span> <span class="s">'memer-config.json'</span>
+<span class="n">walkDir</span> <span class="o">=</span> <span class="s">'./all-files'</span> <span class="c1">#f'{os.environ["USERPROFILE"]}\\Desktop\\files' # Location of article jsons
+</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'README.md'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span> <span class="c1"># Generate file if doesn't exist or clear file from previous run
+</span>  <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">''</span><span class="p">)</span>
+
+<span class="n">j</span> <span class="o">=</span> <span class="n">jLoad</span><span class="p">(</span><span class="n">memerConfig</span><span class="p">)</span>
+<span class="n">memeFiles</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># List of all meme json files
+</span><span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="p">.</span><span class="n">walk</span><span class="p">(</span><span class="n">walkDir</span><span class="p">):</span>
+  <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># Do not include files in parent directory
+</span>    <span class="n">memeFiles</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">getRandomMemes</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div></div>
+
+        </div>
+
+        
+          <!--<div class="page-share">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonthefritzz.com%2Fmemer%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--facebook btn--small"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> <span>Share</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Meme+Scraper+%2B+Randomizer%20https%3A%2F%2Fonthefritzz.com%2Fmemer%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--twitter btn--small"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> <span>Tweet</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fonthefritzz.com%2Fmemer%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--linkedin btn--small"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> <span>LinkedIn</span></a>
+  <a href="https://reddit.com/submit?title=Meme+Scraper+%2B+Randomizer&url=https%3A%2F%2Fonthefritzz.com%2Fmemer%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--reddit btn--small"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i> <span>Reddit</span></a>
+</div>-->
+
+        
+
+        
+
+        <nav class="page-pagination" role="navigation">
+  
+    <a class="page-previous" href="/buildroot-python/">
+      <h4 class="page-pagination-label">Previous</h4>
+      <span class="page-pagination-title">
+        <i class="fas fa-arrow-left"></i> Adventure: Buildroot
+
+      </span>
+    </a>
+  
+
+  
+    <a class="page-next" href="/dummys/">
+      <h4 class="page-pagination-label">Next</h4>
+      <span class="page-pagination-title">
+        Dummies for a dummy.
+ <i class="fas fa-arrow-right"></i>
+      </span>
+    </a>
+  
+</nav>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="copyright">
+    
+      <p>&copy; 2023 Uneducated Technology. <br> Powered by <a href="https://www.vultr.com/">Vultr</a>, <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> and <a href="https://mademistakes.com/"> mademistakes </a></p>
+    
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><!---->
+
+
+  </body>
+
+</html>

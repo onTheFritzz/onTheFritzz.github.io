@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.2.0
+    Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEV8VPW64E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEV8VPW64E');
+  </script>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Career Stats | Uneducated Technology</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Career Stats" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Follow a meandering career in tech…" />
+<meta property="og:description" content="Follow a meandering career in tech…" />
+<link rel="canonical" href="https://onthefritzz.com/stats/" />
+<meta property="og:url" content="https://onthefritzz.com/stats/" />
+<meta property="og:site_name" content="Uneducated Technology" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Career Stats" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Follow a meandering career in tech…","headline":"Career Stats","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://onthefritzz.com/images/ij-logo-round.png"}},"url":"https://onthefritzz.com/stats/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/skins/dark.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Lora:400,400i,700,700i">
+  <link rel="alternate" type="application/atom+xml" title="Uneducated Technology" href="/feed.xml">
+<!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+
+  <body class="layout--posts  career-stats">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+  <div class="navigation-wrapper">
+    <a href="#menu-toggle" id="menu-toggle">Menu</a>
+    <nav id="primary-nav" class="site-nav animated drop">
+      <ul><li><a href="/stats/">Stats</a></li><li><a href="/">Posts</a></li><li><a href="/tags/">Tags</a></li></ul>
+    </nav>
+  </div><!-- /.navigation-wrapper -->
+
+
+    <header class="masthead">
+  <div class="wrap">
+    
+      <a href="/" class="site-logo" rel="home" title="Uneducated Technology">
+        <img src="/images/ij-logo-round.png" class="site-logo-img animated fadeInDown" alt="Uneducated Technology">
+      </a>
+    
+    
+    
+      
+        <div class="site-title animated fadeIn"><a href="/">Uneducated Technology</a></div>
+      
+      <p class="site-description animated fadeIn" itemprop="description">Follow a meandering career in tech...</p>
+    
+  </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article>
+    
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title">Career Stats</h1>
+        
+      </header>
+      <div class="page-content">
+        
+
+
+<script>
+  window.onload = function () {
+    // Month Day, Year Hour:Minute:Second, id-of-element-container
+    countUpFromTime("Aug 14, 2012 9:00:00", "countup1"); // ****** Change this line!
+  };
+  function countUpFromTime(countFrom, id) {
+    countFrom = new Date(countFrom).getTime();
+    var now = new Date(),
+      countFrom = new Date(countFrom),
+      timeDifference = now - countFrom;
+
+    var secondsInADay = 60 * 60 * 1000 * 24,
+      secondsInAHour = 60 * 60 * 1000;
+
+    days = Math.floor((timeDifference / secondsInADay) * 1);
+    years = Math.floor(days / 365);
+    if (years > 1) {
+      days = days - years * 365;
+    }
+    hours = Math.floor(((timeDifference % secondsInADay) / secondsInAHour) * 1);
+    mins = Math.floor(
+      (((timeDifference % secondsInADay) % secondsInAHour) / (60 * 1000)) * 1
+    );
+    secs = Math.floor(
+      ((((timeDifference % secondsInADay) % secondsInAHour) % (60 * 1000)) /
+        1000) *
+        1
+    );
+
+    var idEl = document.getElementById(id);
+    idEl.getElementsByClassName("years")[0].innerHTML = years;
+    idEl.getElementsByClassName("days")[0].innerHTML = days;
+    idEl.getElementsByClassName("hours")[0].innerHTML = hours;
+    idEl.getElementsByClassName("minutes")[0].innerHTML = mins;
+    idEl.getElementsByClassName("seconds")[0].innerHTML = secs;
+
+    clearTimeout(countUpFromTime.interval);
+    countUpFromTime.interval = setTimeout(function () {
+      countUpFromTime(countFrom, id);
+    }, 1000);
+  }
+</script>
+
+<style>
+  .countup {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .countup .timeel {
+    display: inline-block;
+    padding: 10px;
+    background: #151515;
+    margin: 0;
+    color: white;
+    min-width: 2.6rem;
+    margin-left: 13px;
+    border-radius: 10px 0 0 10px;
+  }
+  .countup span[class*="timeRef"] {
+    border-radius: 0 10px 10px 0;
+    margin-left: 0;
+    background: #00adb5;
+    color: black;
+  }
+</style>
+
+<div class="countup" id="countup1">
+  <span class="timeel years">00</span>
+  <span class="timeel timeRefYears">years</span>
+  <span class="timeel days">00</span>
+  <span class="timeel timeRefDays">days</span>
+  <span class="timeel hours">00</span>
+  <span class="timeel timeRefHours">hours</span>
+  <br><br>
+  <span class="timeel minutes">00</span>
+  <span class="timeel timeRefMinutes">minutes</span>
+  <span class="timeel seconds">00</span>
+  <span class="timeel timeRefSeconds">seconds</span>
+</div>
+
+<center>
+  <h4>Experience snapshot:</h4>
+  <!--<h4>In "X" Days ij averaged "Y" units/day and saved "Z" days utilizing automation.</h4>-->
+</center>
+
+<table>
+  <tr>
+    <th>Device</th>
+    <th>Qty</th>
+  </tr>
+  <tr>
+    <td>Desktops</td>
+    <td>6894</td>
+  </tr>
+  <tr>
+    <td>Laptops</td>
+    <td>991</td>
+  </tr>
+  <tr>
+    <td>Servers</td>
+    <td>410</td>
+  </tr>
+    <tr>
+    <td>Docks</td>
+    <td>199</td>
+  </tr>
+  </tr>
+    <tr>
+    <td>All-In-Ones</td>
+    <td>191</td>
+  </tr>
+  </tr>
+    <tr>
+    <td>Monitors</td>
+    <td>65</td>
+  </tr>
+  </tr>
+    <tr>
+    <td>Printers</td>
+    <td>53</td>
+  </tr>
+  </tr>
+    <tr>
+    <td>Routers</td>
+    <td>48</td>
+  </tr>
+  </tr>
+    <tr>
+    <td>Routers</td>
+    <td>48</td>
+  </tr>
+  <tr>
+    <td>Total Units</td>
+    <td>10249</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Top Brands</th>
+    <th>Qty</th>
+  </tr>
+  <tr>
+    <td>Dell</td>
+    <td>4014</td>
+  </tr>
+    <tr>
+    <td>HP</td>
+    <td>2663</td>
+  </tr>
+  <tr>
+    <td>Lenovo</td>
+    <td>1205</td>
+  </tr>
+</table>
+
+<!--
+<ul class="taxonomy-index">
+  
+  
+    <li>
+      <a href="#2023">
+        <strong>2023</strong> <span class="taxonomy-count">11</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2022">
+        <strong>2022</strong> <span class="taxonomy-count">15</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+  <section id="2023" class="taxonomy-section">
+    <h2 class="taxonomy-title">2023</h2>
+    <div class="entries-list">
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/sleeper/" rel="bookmark">Zzz….
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <table>
+  <thead>
+    <tr>
+      <th>Part</th>
+      <th>Model</th>
+      <th>Cost</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPU</td>
+      <td>Ryzen 5 1400</td>
+      <td>$0.00</td>
+      <td>$110.00</td>
+    </tr>
+    <tr>
+      <td>GPU</td>
+      <td>RTX 3060</td>
+      <td>$0.00</td>
+      <td>$299.99</td>
+    </tr>
+    <tr>
+      <td>MOBO</td>
+      <td>MSI Bazook B350M</td>
+      <td>$0.00</td>
+      <td>$149.99</td>
+    </tr>
+    <tr>
+      <td>RAM</td>
+      <td>32GB DDR4</td>
+      <td>$0.00</td>
+      <td>$59.99</td>
+    </tr>
+    <tr>
+      <td>1TB NVMe SSD</td>
+      <td>-</td>
+      <td>$0.00</td>
+      <td>$39.99</td>
+    </tr>
+    <tr>
+      <td>8TB HDDs (4x2TB)*</td>
+      <td>WD20EZAZ</td>
+      <td>$0.00</td>
+      <td>$224.99</td>
+    </tr>
+    <tr>
+      <td>Case</td>
+      <td>-</td>
+      <td>$0.00</td>
+      <td>$89.99</td>
+    </tr>
+    <tr>
+      <td>5.25in to 3.5in HDD Adapter (x4)</td>
+      <td>-</td>
+      <td>$27.16</td>
+      <td>$27.16</td>
+    </tr>
+    <tr>
+      <td>RGB 92mm Fans (x2)</td>
+      <td>-</td>
+      <td>$25.90</td>
+      <td>$25.90</td>
+    </tr>
+    <tr>
+      <td>Thermal Paste</td>
+      <td>-</td>
+      <td>$8.97</td>
+      <td>$8.97</td>
+    </tr>
+    <tr>
+      <td>Rubber Mouting Screws (x12)</td>
+      <td>-</td>
+      <td>$5.89</td>
+      <td>$5.89</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>-</td>
+      <td>$67.92</td>
+      <td>$1042.86</td>
+    </tr>
+  </tbody>
+</table>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2023-08-04T00:00:00-05:00">August 4, 2023
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/sticky-controller/" rel="bookmark">Sticky situation
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/xbox-one-exploded-controller.jpg" class="align-center" alt="" />
+<br />
+Pretty straight forward. Someone got the ‘B’ button sticky. Take apart, clean with isopropol alcohol. Put back together. Done.
+<br />
+<br />
+Interesting note is that the ‘B’ button is actually more accessible than the other 3 action buttons. ‘B’ is accessible after dissassembling the main housing components, whereas the other 3 buttons require internal components/boards to be removed from each other.</p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2023-04-30T00:00:00-05:00">April 30, 2023
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/xbox-ssd-upgrade/" rel="bookmark">Reducing Xbox One S Load Times
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/xbox-one-s.jpg" class="align-center" alt="" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2023-04-15T00:00:00-05:00">April 15, 2023
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/webscraping-healthy-recipes/" rel="bookmark">Webscraping Healthy Recipes
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <ul>
+  <li>Another recipe scraper!</li>
+  <li>Killed ~5103 ads</li>
+  <li>Added 500+ recipes to my collection</li>
+  <li>Same format as usual for scraping recipes
+    <ul>
+      <li>Get links corresponding to each food category</li>
+      <li>Get total amount of pages for each category</li>
+      <li>Get header, picture, pdf, etc.. of each recipes occuring on each page</li>
+    </ul>
+  </li>
+</ul>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2023-03-29T00:00:00-05:00">March 29, 2023
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/dummys/" rel="bookmark">Dummies for a dummy.
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/vga-dummy-exploded.jpg" class="align-center" alt="" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2023-03-18T00:00:00-05:00">March 18, 2023
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/memer/" rel="bookmark">Meme Scraper + Randomizer
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <h3 id="memerpy">Memer.py</h3>
+<ul>
+  <li>Scrape frontpage memes from Ebaumsworld.com</li>
+  <li>Polite scraping sleep timer</li>
+  <li>Scrape unique meme article number
+    <ul>
+      <li>Save <code class="language-plaintext highlighter-rouge">article-number.json</code> to folder of the same number</li>
+      <li>This json contains article-number, image url and image title</li>
+    </ul>
+  </li>
+  <li>Output <code class="language-plaintext highlighter-rouge">README.md</code> with titles, images, <code class="language-plaintext highlighter-rouge">Back</code>, <code class="language-plaintext highlighter-rouge">Go To Top</code> and <code class="language-plaintext highlighter-rouge">Source</code> buttons</li>
+</ul>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2023-02-11T00:00:00-06:00">February 11, 2023
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/buildroot-python/" rel="bookmark">Adventure: Buildroot
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/buildroot-example.png" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2023-02-05T00:00:00-06:00">February 5, 2023
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/vfd/" rel="bookmark">VFD 4 UnMe
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/vfd.jpg" class="align-center" alt="" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2023-02-02T00:00:00-06:00">February 2, 2023
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/kenmore-can-more/" rel="bookmark">Kenmore Can… more.
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/kenmore-hero.jpg" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2023-01-17T00:00:00-06:00">January 17, 2023
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/whoami/" rel="bookmark">whoami
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/ij.png" class="align-center" alt="" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2023-01-15T00:00:00-06:00">January 15, 2023
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/kitchenaid/" rel="bookmark">Made the KitchenAid Glaze
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/cleaned-broad-exploded-view.jpg" class="align-center" alt="" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2023-01-07T00:00:00-06:00">January 7, 2023
+  </time>
+    </footer>
+  
+</article>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2022" class="taxonomy-section">
+    <h2 class="taxonomy-title">2022</h2>
+    <div class="entries-list">
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/flipper-zero/" rel="bookmark">It Came. It Finally Came!!
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/personal/fzzzz.png" alt="image-left" class="align-left" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-12-10T00:00:00-06:00">December 10, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/ramSifter9001/" rel="bookmark">RAM Sorter 9001
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/personal/vidy.gif" alt="image-left" class="align-left" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-12-01T00:00:00-06:00">December 1, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/googleNotesToThermal/" rel="bookmark">Huge script, little guy
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/personal/optimal-route.jpg" alt="image-left" class="align-left" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-11-28T00:00:00-06:00">November 28, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/simpli-safer/" rel="bookmark">Simpli Safer
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/personal/simplisafer.PNG" alt="no-alignment" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-10-17T00:00:00-05:00">October 17, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/i-am-groot/" rel="bookmark">I AM g-ROOT
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/personal/buffalo-stats-root.png" alt="no-alignment" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-07-23T00:00:00-05:00">July 23, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/tri-wing-thing/" rel="bookmark">Tri-Wing Ain’t No-Thing
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/personal/coffee1.jpg" alt="no-alignment" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-07-12T00:00:00-05:00">July 12, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/tu-da-max/" rel="bookmark">Webscraping Mills Fleet Farm
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <ul>
+  <li>Scraped 50,000 products before fear set in</li>
+  <li>Hundo liner without redundant lines</li>
+  <li>Runtime unknown. Def the longest so far. 3hrs when manually terminated. No end in site.</li>
+  <li>Let scraper loose on entire site, crawling each category dynamically.
+    <ul>
+      <li>Will limit scraper to 2 categories for price and discount alerts</li>
+    </ul>
+  </li>
+  <li>Ghost in the machine. Debug that thing!
+    <ul>
+      <li>A reoccurring issue plagued this project. Extraneous and unknown prices occured for inaccurate products.</li>
+      <li>This was due to the scraper seeing ‘suggested products’ in footer of url.</li>
+      <li>These tiles have identical xpaths as normal product tiles.</li>
+      <li>Additional, prices created off by one errors</li>
+      <li>This issue lasted an embrassingly long amount of time</li>
+    </ul>
+  </li>
+</ul>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-06-26T00:00:00-05:00">June 26, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/new-dt/" rel="bookmark">Toyota of computers
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/personal/6-13-22-2-2-2.jpg" alt="image-left" class="align-left" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-06-13T00:00:00-05:00">June 13, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/get-ur-fil/" rel="bookmark">Get Ur FIL
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/personal/fil-satoshi.png" alt="image-left" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-06-07T00:00:00-05:00">June 7, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/sally/" rel="bookmark">Webscraping Sally’s Baking Addiction
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <ul>
+  <li>Scraped 1050 recipes from another webpage</li>
+  <li>Killed 9450 ads</li>
+  <li>In Bed after midnight :’(</li>
+  <li>&lt; hundo liner without redundant lines</li>
+  <li>Runtime was 2.5hrs 0_0!</li>
+  <li>Was able to use exactly the same structure as previous recipe scraper
+    <ul>
+      <li>Just changed xpath variables to work with different site</li>
+      <li>Crawl category urls</li>
+      <li>Scrape total pages from pagination footer</li>
+      <li>Get recipe urls/cards from each page</li>
+      <li>Saved all recipes to folder in order to prevent duplicates</li>
+      <li>Ran local parser to organize recipes to folder categories</li>
+    </ul>
+  </li>
+</ul>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-05-11T00:00:00-05:00">May 11, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/ssh-secret/" rel="bookmark">Ssh… It’s secret…
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p>Made SSH keys for a webserver rental. Been familiar with the concept but mostly used logins since machines have been local up to this point.</p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-05-10T00:00:00-05:00">May 10, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/poem-code/" rel="bookmark">Poem &lt;=&gt; Code
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s2">"Cryptic riddles that attempt to both...
+...solve problems and convey meaning."</span>
+</code></pre></div></div>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-04-07T00:00:00-05:00">April 7, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/new-edc/" rel="bookmark">New EDC, broken out of box.
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p><img src="/images/personal/4-5-22-ONE.jpg" alt="image-right" class="align-right" /></p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-04-05T00:00:00-05:00">April 5, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/scraping-recipes/" rel="bookmark">Webscraping Preppy Kitchen
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <ul>
+  <li>Killed 11214 ads</li>
+  <li>In bed by 10:32PM. Nice.</li>
+  <li>Time Saved: This site and 801 recipes wouldn’t exist without code so… all of it?
+    <ul>
+      <li>Workhorse.py class is in the… works.. heh.</li>
+    </ul>
+  </li>
+  <li>Scrapy spider that scraped 801 recipes
+    <ul>
+      <li>~ Hundo liner with 10 redundant lines that could be refactored</li>
+      <li>Runtime of 40+min (record scrape)</li>
+      <li>Had to be run multiple times due to site errors (timeouts?)</li>
+      <li>Recipes that were not scraped get logged to errors.txt</li>
+    </ul>
+  </li>
+  <li>Markdown generator used scrape logs to output files for ‘recipe’ tab of this blog, which is not on public display</li>
+  <li>Spent prolly 6 hrs totz on scripts and tinkering with markdown blog
+    <ul>
+      <li>27 lines of gnarly, throw away code but parses/generates 1600 files in a blink</li>
+    </ul>
+  </li>
+  <li>Recursively Meta
+    <ul>
+      <li>Dynamically generate a static website from generated markdown files of log files generated from a scraped website.</li>
+    </ul>
+  </li>
+</ul>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-04-03T00:00:00-05:00">April 3, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+        
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/hellow-orld/" rel="bookmark">Hellow Orld
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p>When debugging with a print statement, the typo Hellow Orld was made. It has since stuck. Your name is Orld and this is Hellow. Init commit.</p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+      <time class="entry-date dt-published" datetime="2022-04-02T00:00:00-05:00">April 2, 2022
+  </time>
+    </footer>
+  
+</article>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+-->
+
+
+        
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="copyright">
+    
+      <p>&copy; 2023 Uneducated Technology. <br> Powered by <a href="https://www.vultr.com/">Vultr</a>, <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> and <a href="https://mademistakes.com/"> mademistakes </a></p>
+    
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><!---->
+
+
+  </body>
+
+</html>
