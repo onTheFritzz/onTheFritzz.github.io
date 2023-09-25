@@ -166,9 +166,9 @@ However, it turns out that a 1:1 PDF:JPG is significantly larger in size. That i
 <span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
 <span class="kn">import</span> <span class="nn">fitz</span><span class="p">,</span> <span class="n">cv2</span><span class="p">,</span> <span class="n">os</span><span class="p">,</span> <span class="n">re</span>
 
-<span class="n">__rootDir</span> <span class="o">=</span> <span class="s">'.</span><span class="se">\\</span><span class="s">PDFs'</span>
+<span class="n">__rootDir</span> <span class="o">=</span> <span class="s">'.</span><span class="se">\\</span><span class="s">recipes'</span>
 <span class="n">__ppi</span> <span class="o">=</span> <span class="mi">400</span>
-<span class="n">__optimizeQualality</span> <span class="o">=</span> <span class="mi">85</span>
+<span class="n">__optimizeQualality</span> <span class="o">=</span> <span class="mi">50</span>
 
 <span class="k">def</span> <span class="nf">deleteAll</span><span class="p">(</span><span class="n">fileFormat</span><span class="p">):</span> <span class="c1">#Delete Main image JPGs to avoid confusion with Stitched JPGs. ie: Run once.
 </span>    <span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="p">.</span><span class="n">walk</span><span class="p">(</span><span class="n">__rootDir</span><span class="p">):</span>
@@ -208,7 +208,6 @@ However, it turns out that a 1:1 PDF:JPG is significantly larger in size. That i
                     <span class="n">page</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">root</span><span class="si">}</span><span class="s">\{jpgName}-</span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s">.jpg'</span><span class="p">,</span> <span class="s">'JPEG'</span><span class="p">)</span>
                     <span class="k">print</span><span class="p">(</span><span class="s">'Converting PDF into JPG...'</span><span class="p">,</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">root</span><span class="si">}</span><span class="s">\{jpgName}-</span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s">.jpg'</span><span class="p">)</span>
 
-
 <span class="k">def</span> <span class="nf">verticallyStitchJPGs</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="p">.</span><span class="n">walk</span><span class="p">(</span><span class="n">__rootDir</span><span class="p">):</span>
         <span class="n">imgReads</span> <span class="o">=</span> <span class="p">{</span><span class="s">"filePath"</span><span class="p">:</span> <span class="s">''</span><span class="p">,</span> <span class="s">"jpgFiles"</span><span class="p">:</span> <span class="p">[],</span> <span class="s">"deleteImgs"</span><span class="p">:</span> <span class="p">[]}</span>
@@ -243,6 +242,7 @@ However, it turns out that a 1:1 PDF:JPG is significantly larger in size. That i
 <span class="n">deleteAll</span><span class="p">(</span><span class="s">'.jpg'</span><span class="p">)</span>
 <span class="n">removeImageFromPDFs</span><span class="p">()</span>
 <span class="n">convertPDFsIntoJPGs</span><span class="p">()</span>
+<span class="n">deleteAll</span><span class="p">(</span><span class="s">'.pdf'</span><span class="p">)</span>
 <span class="n">verticallyStitchJPGs</span><span class="p">()</span>
 <span class="n">finalOptimizedJPG</span><span class="p">()</span>
 </code></pre></div></div>
