@@ -29,17 +29,17 @@
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Bulk Convert PDFs into Optimized JPGs" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Create a copy of database to test on Delete all files unrelated to task to avoid confusion Reduce file size of output jpgs Remove extraneous images inside PDFs Convert PDFs to JPGs Each PDF page corresponds to 1x JPG Resulting in multiple JPGs per recipe Dynamically reduce/stitch all JPGS into one long JPG Optimize final, stitched JPG to a degree that balances quality with filesize" />
-<meta property="og:description" content="Create a copy of database to test on Delete all files unrelated to task to avoid confusion Reduce file size of output jpgs Remove extraneous images inside PDFs Convert PDFs to JPGs Each PDF page corresponds to 1x JPG Resulting in multiple JPGs per recipe Dynamically reduce/stitch all JPGS into one long JPG Optimize final, stitched JPG to a degree that balances quality with filesize" />
-<link rel="canonical" href="http://localhost:4000/bulk-convert-pdfs/" />
-<meta property="og:url" content="http://localhost:4000/bulk-convert-pdfs/" />
+<meta name="description" content="Create a copy of database to test on Delete all files unrelated to task to avoid confusion Reduce file size of output jpgs Remove extraneous images inside PDFs Convert PDFs to JPGs Each PDF page corresponds to 1x JPG Resulting in multiple JPGs per pdf Dynamically reduce/stitch all JPGS into one long JPG Optimize final, stitched JPG to a degree that balances quality with filesize" />
+<meta property="og:description" content="Create a copy of database to test on Delete all files unrelated to task to avoid confusion Reduce file size of output jpgs Remove extraneous images inside PDFs Convert PDFs to JPGs Each PDF page corresponds to 1x JPG Resulting in multiple JPGs per pdf Dynamically reduce/stitch all JPGS into one long JPG Optimize final, stitched JPG to a degree that balances quality with filesize" />
+<link rel="canonical" href="https://onthefritzz.com/bulk-convert-pdfs/" />
+<meta property="og:url" content="https://onthefritzz.com/bulk-convert-pdfs/" />
 <meta property="og:site_name" content="Uneducated Technology" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-09-25T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bulk Convert PDFs into Optimized JPGs" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-25T00:00:00-05:00","datePublished":"2023-09-25T00:00:00-05:00","description":"Create a copy of database to test on Delete all files unrelated to task to avoid confusion Reduce file size of output jpgs Remove extraneous images inside PDFs Convert PDFs to JPGs Each PDF page corresponds to 1x JPG Resulting in multiple JPGs per recipe Dynamically reduce/stitch all JPGS into one long JPG Optimize final, stitched JPG to a degree that balances quality with filesize","headline":"Bulk Convert PDFs into Optimized JPGs","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/bulk-convert-pdfs/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/ij-logo-round.png"}},"url":"http://localhost:4000/bulk-convert-pdfs/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-25T00:00:00-05:00","datePublished":"2023-09-25T00:00:00-05:00","description":"Create a copy of database to test on Delete all files unrelated to task to avoid confusion Reduce file size of output jpgs Remove extraneous images inside PDFs Convert PDFs to JPGs Each PDF page corresponds to 1x JPG Resulting in multiple JPGs per pdf Dynamically reduce/stitch all JPGS into one long JPG Optimize final, stitched JPG to a degree that balances quality with filesize","headline":"Bulk Convert PDFs into Optimized JPGs","mainEntityOfPage":{"@type":"WebPage","@id":"https://onthefritzz.com/bulk-convert-pdfs/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://onthefritzz.com/images/ij-logo-round.png"}},"url":"https://onthefritzz.com/bulk-convert-pdfs/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -150,23 +150,23 @@
   <li>Convert PDFs to JPGs
     <ul>
       <li>Each PDF page corresponds to 1x JPG</li>
-      <li>Resulting in multiple JPGs per recipe</li>
+      <li>Resulting in multiple JPGs per pdf</li>
       <li>Dynamically reduce/stitch all JPGS into one long JPG</li>
     </ul>
   </li>
   <li>Optimize final, stitched JPG to a degree that balances quality with filesize</li>
 </ul>
 
-<p>Been away for a while cuz I’ve been in learning mode. Mostly been taking Udemy courses regarding App development with Ionic Capacitor amonngst unrelated things. That is to say that a recent issue developed involving embedding PDFs into an Ionic app using React. It’s next to impossible. Many attempts were made using a ton of libraries, external tools, etc… and while the Web App worked fine, the android version of the App would never display the PDFs. It would display jpgs just fine though.
+<p>Been away for a while cuz I’ve been in learning mode. Been taking Udemy courses regarding App development with Ionic Capacitor amongst unrelated things. That is to say that a recent issue developed involving embedding PDFs into an Ionic app using React. Many attempts were made using a ton of libraries, external tools, etc… and while the Web App worked fine, the android version of the App would never display the PDFs. It would display jpgs just fine though. Time to convert 1000s of PDFs into JPGs.
 <br />
 <br />
-Time to convert 1000s of PDFs into JPGs. However, it turns out that a 1:1 PDF:JPG is significantly larger in size. ie: 3GB as opposed to 300MB. A 3GB app is out of the question. So long story short, this is the script I arrived at. Addressing each of the above obstacles. It takes thousands of PDFs and outputs an optimized JPG for each. It could use some refactoring but it’s also a one off script so that’s never gunna happen. It just needs to work.</p>
+However, it turns out that a 1:1 PDF:JPG is significantly larger in size. That is; 3GB as opposed to 349MB. A 3GB app is out of the question. The script below takes thousands of PDFs and outputs an optimized JPG for each. It could use some refactoring but it’s also a one off script so that’s never gunna happen. It just needs to work. End result is a collective filesize coming in at 228MB. Which comes out to a 34% reduction in size for the app. The fact that the it all became smaller is a nice surprise.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">pdf2image</span> <span class="kn">import</span> <span class="n">convert_from_path</span>
 <span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
 <span class="kn">import</span> <span class="nn">fitz</span><span class="p">,</span> <span class="n">cv2</span><span class="p">,</span> <span class="n">os</span><span class="p">,</span> <span class="n">re</span>
 
-<span class="n">__rootDir</span> <span class="o">=</span> <span class="s">'.</span><span class="se">\\</span><span class="s">recipes'</span>
+<span class="n">__rootDir</span> <span class="o">=</span> <span class="s">'.</span><span class="se">\\</span><span class="s">PDFs'</span>
 <span class="n">__ppi</span> <span class="o">=</span> <span class="mi">400</span>
 <span class="n">__optimizeQualality</span> <span class="o">=</span> <span class="mi">85</span>
 
@@ -251,10 +251,10 @@ Time to convert 1000s of PDFs into JPGs. However, it turns out that a 1:1 PDF:JP
 
         
           <!--<div class="page-share">
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbulk-convert-pdfs%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--facebook btn--small"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> <span>Share</span></a>
-  <a href="https://twitter.com/intent/tweet?text=Bulk+Convert+PDFs+into+Optimized+JPGs%20http%3A%2F%2Flocalhost%3A4000%2Fbulk-convert-pdfs%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--twitter btn--small"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> <span>Tweet</span></a>
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fbulk-convert-pdfs%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--linkedin btn--small"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> <span>LinkedIn</span></a>
-  <a href="https://reddit.com/submit?title=Bulk+Convert+PDFs+into+Optimized+JPGs&url=http%3A%2F%2Flocalhost%3A4000%2Fbulk-convert-pdfs%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--reddit btn--small"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i> <span>Reddit</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonthefritzz.com%2Fbulk-convert-pdfs%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--facebook btn--small"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> <span>Share</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Bulk+Convert+PDFs+into+Optimized+JPGs%20https%3A%2F%2Fonthefritzz.com%2Fbulk-convert-pdfs%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--twitter btn--small"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> <span>Tweet</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fonthefritzz.com%2Fbulk-convert-pdfs%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--linkedin btn--small"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> <span>LinkedIn</span></a>
+  <a href="https://reddit.com/submit?title=Bulk+Convert+PDFs+into+Optimized+JPGs&url=https%3A%2F%2Fonthefritzz.com%2Fbulk-convert-pdfs%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--reddit btn--small"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i> <span>Reddit</span></a>
 </div>-->
 
         
