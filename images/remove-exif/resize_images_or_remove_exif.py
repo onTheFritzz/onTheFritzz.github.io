@@ -3,7 +3,7 @@ from math import ceil
 import os
 
 def resizeImage():
-	imageFile = 'sleeper-off.jpg'
+	imageFile = 'newnasnaw.jpg'
 	reduceBy = 3
 
 	image = Image.open(imageFile)
@@ -41,5 +41,5 @@ def removeExif():
 
 		image_without_exif.save(each)
 	
-resizeImage()
+#resizeImage()
 removeExif()
