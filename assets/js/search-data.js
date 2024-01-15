@@ -138,4 +138,9 @@ var store = [{
         "excerpt":"Todays the day for upgrades. Been rocking a NanoPiNeo w/ NAS Hat for many years. Pretty sure the all in cost was around $30. (See Left) It has been home to more than 3 drive upgrades. Countless SD card swaps. It has ran Jellyfin, Plex, PiHole, a CUPs server which...","categories": [],
         "tags": ["NAS","JellyFin"],
         "url": "https://onthefritzz.com/nas-nah/"
+      },{
+        "title": "Jellyfin Subtitle Extractor",
+        "excerpt":"Getting subtitles for Jellyfin isn’t a straight forward task. Subbuzz plugin seems to be the easiest and quickest method for downloading subtitles in bulk but the settings have to be just right. There is Bazarr but the installation/overhead is high. In either case, once you get em, you wanna keep...","categories": [],
+        "tags": ["Subtitles","JellyFin"],
+        "url": "https://onthefritzz.com/jellyfin-subs/"
       }]

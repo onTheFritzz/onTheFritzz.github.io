@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://onthefritzz.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://onthefritzz.com/" rel="alternate" type="text/html" /><updated>2024-01-05T07:37:58-06:00</updated><id>https://onthefritzz.com/feed.xml</id><title type="html">Uneducated Technology</title><subtitle>Follow a meandering career in tech...</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><entry><title type="html">NAS? NAH.</title><link href="https://onthefritzz.com/nas-nah/" rel="alternate" type="text/html" title="NAS? NAH." /><published>2024-01-04T00:00:00-06:00</published><updated>2024-01-04T00:00:00-06:00</updated><id>https://onthefritzz.com/nas-nah</id><content type="html" xml:base="https://onthefritzz.com/nas-nah/"><![CDATA[<p><img src="/images/newnasnaw.jpg" alt="no-alignment" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://onthefritzz.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://onthefritzz.com/" rel="alternate" type="text/html" /><updated>2024-01-15T08:00:22-06:00</updated><id>https://onthefritzz.com/feed.xml</id><title type="html">Uneducated Technology</title><subtitle>Follow a meandering career in tech...</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><entry><title type="html">Jellyfin Subtitle Extractor</title><link href="https://onthefritzz.com/jellyfin-subs/" rel="alternate" type="text/html" title="Jellyfin Subtitle Extractor" /><published>2024-01-13T00:00:00-06:00</published><updated>2024-01-13T00:00:00-06:00</updated><id>https://onthefritzz.com/jellyfin-subs</id><content type="html" xml:base="https://onthefritzz.com/jellyfin-subs/"><![CDATA[<p><img src="/images/subtitle-tree.png" alt="no-alignment" /></p>
+
+<p>Getting subtitles for Jellyfin isn’t a straight forward task. <a href="https://github.com/josdion/subbuzz">Subbuzz</a> plugin seems to be the easiest and quickest method for downloading subtitles in bulk but the settings have to be just right. There is <a href="https://www.bazarr.media/">Bazarr</a> but the installation/overhead is high. In either case, once you get em, you wanna keep em.</p>
+
+<p>Subtitles (at least via the Subbuzz method) are stored in the <code class="language-plaintext highlighter-rouge">/var/lib/jellyfin/metadata/library</code> directory but with a random alphanumeric file name structure. See above. Luckily the .srt files are saved close to the original video filename they’re associated with. This makes them easier to sort. Here’s what we wanna do.</p>
+
+<ul>
+  <li>Backup original file/folders containing subtitles</li>
+  <li>Recursively search folders with random filenames for subtitle files</li>
+  <li>Create a 2D array containing original filenames and file locations</li>
+  <li>Create a 2D array from destination folders and standardized filenames of .SRTs</li>
+  <li>Create directories with correct names for each subtitle file</li>
+  <li>Rename and move original subtitle files to final folder destination</li>
+</ul>
+
+<p>Here’s the goods.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span><span class="p">,</span> <span class="n">shutil</span>
+<span class="n">folderFileSrt</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">targetDestination</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="p">.</span><span class="n">walk</span><span class="p">(</span><span class="s">'./'</span><span class="p">):</span>
+    <span class="k">for</span> <span class="nb">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s">'.srt'</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+            <span class="n">folderFile</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">root</span><span class="si">}</span><span class="s">\{file}'</span>
+            <span class="n">folderFileSrt</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">folderFile</span><span class="p">)</span> <span class="c1"># Store array of [/folder1/file1.srt, folder2/file2.srt]
+</span>
+<span class="k">for</span> <span class="n">subtitle</span> <span class="ow">in</span> <span class="n">folderFileSrt</span><span class="p">:</span> <span class="c1"># For each found subtitle file...
+</span>    <span class="n">outputFile</span> <span class="o">=</span> <span class="n">subtitle</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'.eng.srt'</span><span class="p">,</span> <span class="s">'.srt'</span><span class="p">)</span> <span class="c1"># remove cruff
+</span>    <span class="n">outputFile</span> <span class="o">=</span> <span class="n">outputFile</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'.en.srt'</span><span class="p">,</span> <span class="s">'.srt'</span><span class="p">)</span> <span class="c1"># remove more cruff
+</span>    <span class="n">outputFile</span> <span class="o">=</span> <span class="n">outputFile</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'</span><span class="se">\\</span><span class="s">'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># Get filename
+</span>    <span class="n">outputFolder</span> <span class="o">=</span> <span class="n">outputFile</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'.srt'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Get Folder name
+</span>    <span class="n">fullOutput</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'\{outputFolder}\{outputFile}'</span>
+    <span class="n">targetDestination</span><span class="p">.</span><span class="n">append</span><span class="p">([</span><span class="n">subtitle</span><span class="p">,</span> <span class="n">fullOutput</span><span class="p">])</span> <span class="c1"># Create array with corrected subtitle filename and new output path
+</span>
+<span class="k">for</span> <span class="n">each</span> <span class="ow">in</span> <span class="n">targetDestination</span><span class="p">:</span> <span class="c1"># For each srt file
+</span>    <span class="n">target</span><span class="p">,</span> <span class="n">destination</span> <span class="o">=</span> <span class="n">each</span>
+    <span class="n">finalFileName</span> <span class="o">=</span> <span class="n">destination</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'</span><span class="se">\\</span><span class="s">'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># get raw filename
+</span>
+    <span class="n">destinationFolder</span> <span class="o">=</span> <span class="n">destination</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'.srt'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">destinationFolder</span> <span class="o">=</span> <span class="n">destinationFolder</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'</span><span class="se">\\</span><span class="s">'</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># get raw folder name
+</span>    <span class="n">destinationFolder</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'./output/</span><span class="si">{</span><span class="n">destinationFolder</span><span class="si">}</span><span class="s">'</span> <span class="c1"># Create final destination folder
+</span>
+    <span class="n">os</span><span class="p">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">destinationFolder</span><span class="p">)</span> <span class="c1"># Create folder directory named after destination folders
+</span>    <span class="n">shutil</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">destinationFolder</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">finalFileName</span><span class="si">}</span><span class="s">'</span><span class="p">)</span> <span class="c1"># Move original filename to new location, as final filename
+</span>
+</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Subtitles" /><category term="JellyFin" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">NAS? NAH.</title><link href="https://onthefritzz.com/nas-nah/" rel="alternate" type="text/html" title="NAS? NAH." /><published>2024-01-04T00:00:00-06:00</published><updated>2024-01-04T00:00:00-06:00</updated><id>https://onthefritzz.com/nas-nah</id><content type="html" xml:base="https://onthefritzz.com/nas-nah/"><![CDATA[<p><img src="/images/newnasnaw.jpg" alt="no-alignment" /></p>
 
 <p>Todays the day for upgrades. Been rocking a <a href="https://www.friendlyelec.com/index.php?route=product/product&amp;product_id=222">NanoPiNeo w/ NAS Hat</a> for many years. Pretty sure the all in cost was around $30. (See Left) It has been home to more than 3 drive upgrades. Countless SD card swaps. It has ran Jellyfin, Plex, PiHole, a CUPs server which took an unsorted grocery list, sorted it by aisle and printed the result to a thermal printer. See <a href="https://www.onthefritzz.com/googleNotesToThermal/">here</a>. However it’s become obsolete. My homelab now requires 1 gigabit speeds and this little guy tops out at 100mbps. Sufficient for a great many things but not all. Goodbye little fellow.</p>
 
@@ -688,106 +734,4 @@ for x in range(5):
   #print(f'os.system({PG11Up})')
 print('Done.')
 </span><span class="no">EOT
-</span></code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Buildroot" /><category term="Python" /><category term="GPIO" /><category term="NanoPi Neo" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">VFD 4 UnMe</title><link href="https://onthefritzz.com/vfd/" rel="alternate" type="text/html" title="VFD 4 UnMe" /><published>2023-02-02T00:00:00-06:00</published><updated>2023-02-02T00:00:00-06:00</updated><id>https://onthefritzz.com/vfd</id><content type="html" xml:base="https://onthefritzz.com/vfd/"><![CDATA[<p><img src="/images/vfd.jpg" class="align-center" alt="" /></p>
-
-<p>Made a fun lil weekend project outta some Noritake itron GU140x16G7000 Vacuum Flourescent Display’s that had GPIO pins. Let see what we can do.</p>
-
-<p>First things first. Find the pinout of the display. <a href="https://www.digikey.com/en/products/detail/noritake-company-inc/GU140X16J-7000B/5218726">Digikey</a> please. Good thing the PDF got <em>yoinked</em> cuz it’s a dead link now. Here go: <a href="/images/GU140X16J-datasheet.pdf">Datasheet</a></p>
-
-<p>Referencing the ‘asynchronous serial’ table we know off the top which pins are positive and negative (VCC/GND). We will then assume that SIN stands for Serial IN. Which would require TX from the NanoPi Neo. Little to no history using SBUSY/NC but /RESET pin rings a bell. Lets use that for the 4th pin. Below is the correct setup for attaching the VFD to a NanoPi Neo.</p>
-
-<p><img src="/images/vfd-pinout.jpg" class="align-center" alt="" /></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>VFD Function</th>
-      <th>VFD Pin #</th>
-      <th>Wire Color</th>
-      <th>NPiNeo Pin #</th>
-      <th>NPiNeo GPIO Function</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>VCC</td>
-      <td>1</td>
-      <td>RED</td>
-      <td>4</td>
-      <td>5V OUT</td>
-    </tr>
-    <tr>
-      <td>Serial IN (SIN)</td>
-      <td>2</td>
-      <td>YELLOW</td>
-      <td>8</td>
-      <td>UART1-TX</td>
-    </tr>
-    <tr>
-      <td>GND</td>
-      <td>3</td>
-      <td>BROWN</td>
-      <td>6</td>
-      <td>GND</td>
-    </tr>
-    <tr>
-      <td>RESET</td>
-      <td>6</td>
-      <td>ORANGE</td>
-      <td>10</td>
-      <td>UART1-RX</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>NPiNeo schematic used for reference, below.</p>
-
-<p><img src="/images/npineo-pinout.jpg" /></p>
-
-<p>You can also use the above table to talk to this display using a USB2UART adapter over a COM port on another computer. e.g: Windows –&gt; Putty –&gt; COM4 –&gt; USB2UART Adapter –&gt; VFD</p>
-
-<p>Here are the following instructions for programatically manipulating the VFD on a NanoPi Neo running Armbian. First we install dependencies</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>python3-pip
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>python-is-python3
-pip <span class="nb">install </span>pyserial
-<span class="nb">sudo </span>armbian-config
-</code></pre></div></div>
-
-<ul>
-  <li>system –&gt; hardware –&gt; enable UART 1,2,3<br /></li>
-  <li>reboot!!!</li>
-</ul>
-
-<p>Use python to orient the display. Here’s a quick lil test. It can work on a Windows device too but you need to change <code class="language-plaintext highlighter-rouge">/dev/ttyS1</code> –&gt; <code class="language-plaintext highlighter-rouge">COM4</code> where 4 is the COM port of UART adapter on Windows machine in device manager. ie: <code class="language-plaintext highlighter-rouge">devmgmt.msc</code></p>
-
-<p>Default BAUD rate of 38400 discerned from manufacturer’s <a href="https://www.noritake-elec.com/support/design-resources/tools/gud-10k"> GUD-10K </a> application. BAUD rate wasn’t referenced in original datasheet found and the application never did work properly but served a purpose at least.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">datetime</span><span class="p">,</span> <span class="n">serial</span>
-
-<span class="k">class</span> <span class="nc">GU140x16G7000</span><span class="p">():</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">port</span> <span class="o">=</span> <span class="n">serial</span><span class="p">.</span><span class="n">Serial</span><span class="p">(</span><span class="s">'/dev/ttyS1'</span><span class="p">,</span> <span class="mi">38400</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="p">.</span><span class="mi">01</span><span class="p">)</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">port</span> <span class="o">=</span> <span class="n">port</span>
-
-  <span class="k">def</span> <span class="nf">clearScreen</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">port</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">b</span><span class="s">'</span><span class="se">\x0C</span><span class="s">'</span><span class="p">)</span>
-
-  <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
-    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">content</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">list</span><span class="p">:</span>
-      <span class="n">content</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-
-    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">content</span><span class="p">:</span>
-      <span class="n">x</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s">'utf-8'</span><span class="p">)</span>
-      <span class="bp">self</span><span class="p">.</span><span class="n">port</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-  <span class="k">def</span> <span class="nf">breakTime</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">down</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'      BREAKTIME!    '</span>
-    <span class="n">clear</span> <span class="o">=</span> <span class="bp">False</span>
-    <span class="n">hms</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">().</span><span class="n">strftime</span><span class="p">(</span><span class="s">'%H:%M:%S'</span><span class="p">)</span>
-    <span class="n">up</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'      </span><span class="si">{</span><span class="n">hms</span><span class="si">}</span><span class="s">     '</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">write</span><span class="p">([</span><span class="n">up</span><span class="p">,</span> <span class="n">down</span><span class="p">])</span>
-
-<span class="n">vfd</span> <span class="o">=</span> <span class="n">GU140x16G7000</span><span class="p">()</span>
-<span class="n">vfd</span><span class="p">.</span><span class="n">breakTime</span><span class="p">()</span>
-</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="VFD" /><category term="Serial" /><category term="NanoPi Neo" /><category term="GPIO" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+</span></code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Buildroot" /><category term="Python" /><category term="GPIO" /><category term="NanoPi Neo" /><summary type="html"><![CDATA[]]></summary></entry></feed>
