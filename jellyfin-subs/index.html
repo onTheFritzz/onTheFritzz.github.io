@@ -29,8 +29,8 @@
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Jellyfin Subtitle Extractor" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Follow a meandering career in tech…" />
-<meta property="og:description" content="Follow a meandering career in tech…" />
+<meta name="description" content="Backup original file/folders containing subtitles Recursively search folders with random filenames for subtitle files Create a 2D array containing original filenames and file locations Create a 2D array from destination folders and standardized filenames of .SRTs Create directories with correct names for each subtitle file Rename and move original subtitle files to final folder destination" />
+<meta property="og:description" content="Backup original file/folders containing subtitles Recursively search folders with random filenames for subtitle files Create a 2D array containing original filenames and file locations Create a 2D array from destination folders and standardized filenames of .SRTs Create directories with correct names for each subtitle file Rename and move original subtitle files to final folder destination" />
 <link rel="canonical" href="https://onthefritzz.com/jellyfin-subs/" />
 <meta property="og:url" content="https://onthefritzz.com/jellyfin-subs/" />
 <meta property="og:site_name" content="Uneducated Technology" />
@@ -39,7 +39,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Jellyfin Subtitle Extractor" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-01-13T00:00:00-06:00","datePublished":"2024-01-13T00:00:00-06:00","description":"Follow a meandering career in tech…","headline":"Jellyfin Subtitle Extractor","mainEntityOfPage":{"@type":"WebPage","@id":"https://onthefritzz.com/jellyfin-subs/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://onthefritzz.com/images/ij-logo-round.png"}},"url":"https://onthefritzz.com/jellyfin-subs/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-01-13T00:00:00-06:00","datePublished":"2024-01-13T00:00:00-06:00","description":"Backup original file/folders containing subtitles Recursively search folders with random filenames for subtitle files Create a 2D array containing original filenames and file locations Create a 2D array from destination folders and standardized filenames of .SRTs Create directories with correct names for each subtitle file Rename and move original subtitle files to final folder destination","headline":"Jellyfin Subtitle Extractor","mainEntityOfPage":{"@type":"WebPage","@id":"https://onthefritzz.com/jellyfin-subs/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://onthefritzz.com/images/ij-logo-round.png"}},"url":"https://onthefritzz.com/jellyfin-subs/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -139,13 +139,7 @@
 
       <div class="page-content">
         <div class="e-content">
-          <p><img src="/images/subtitle-tree.png" alt="no-alignment" /></p>
-
-<p>Getting subtitles for Jellyfin isn’t a straight forward task. <a href="https://github.com/josdion/subbuzz">Subbuzz</a> plugin seems to be the easiest and quickest method for downloading subtitles in bulk but the settings have to be just right. There is <a href="https://www.bazarr.media/">Bazarr</a> but the installation/overhead is high. In either case, once you get em, you wanna keep em.</p>
-
-<p>Subtitles (at least via the Subbuzz method) are stored in the <code class="language-plaintext highlighter-rouge">/var/lib/jellyfin/metadata/library</code> directory but with a random alphanumeric file name structure. See above. Luckily the .srt files are saved close to the original video filename they’re associated with. This makes them easier to sort. Here’s what we wanna do.</p>
-
-<ul>
+          <ul>
   <li>Backup original file/folders containing subtitles</li>
   <li>Recursively search folders with random filenames for subtitle files</li>
   <li>Create a 2D array containing original filenames and file locations</li>
@@ -154,7 +148,11 @@
   <li>Rename and move original subtitle files to final folder destination</li>
 </ul>
 
-<p>Here’s the goods.</p>
+<p>Getting subtitles for Jellyfin isn’t a straight forward task. <a href="https://github.com/josdion/subbuzz">Subbuzz</a> plugin seems to be the easiest and quickest method for downloading subtitles in bulk but the settings have to be just right. There is <a href="https://www.bazarr.media/">Bazarr</a> but the installation/overhead is high. In either case, once you get em, you wanna keep em. Unfortunately, this is where they’re stored.</p>
+
+<p><img src="/images/subtitle-tree.png" alt="image-center" /></p>
+
+<p>Subtitles (at least via the Subbuzz method) are stored in the <code class="language-plaintext highlighter-rouge">/var/lib/jellyfin/metadata/library</code> directory but with a random alphanumeric file name structure. Luckily the .srt files are saved similarly to the original video filename they’re associated with. This makes them easier to sort. Here’s the end result.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span><span class="p">,</span> <span class="n">shutil</span>
 <span class="n">folderFileSrt</span> <span class="o">=</span> <span class="p">[]</span>

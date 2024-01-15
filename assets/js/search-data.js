@@ -140,7 +140,7 @@ var store = [{
         "url": "https://onthefritzz.com/nas-nah/"
       },{
         "title": "Jellyfin Subtitle Extractor",
-        "excerpt":"Getting subtitles for Jellyfin isn’t a straight forward task. Subbuzz plugin seems to be the easiest and quickest method for downloading subtitles in bulk but the settings have to be just right. There is Bazarr but the installation/overhead is high. In either case, once you get em, you wanna keep...","categories": [],
+        "excerpt":"Backup original file/folders containing subtitles Recursively search folders with random filenames for subtitle files Create a 2D array containing original filenames and file locations Create a 2D array from destination folders and standardized filenames of .SRTs Create directories with correct names for each subtitle file Rename and move original subtitle...","categories": [],
         "tags": ["Subtitles","JellyFin"],
         "url": "https://onthefritzz.com/jellyfin-subs/"
       }]
