@@ -150,7 +150,7 @@ var store = [{
         "url": "https://onthefritzz.com/eink-display/"
       },{
         "title": "Easy Button",
-        "excerpt":"Lets keep it easy and creat a giant easy button to fire off a frequently used script. Get an Attiny85/Digispark device and giant switch Download and install Arduino IDE Digistump.com is no longer live. Add following url to Arduino &gt; File &gt; Preferences &gt; “boards manager URL” https://raw.githubusercontent.com/digistump/arduino-boards-index/master/package_digistump_index.json Get digispark...","categories": [],
+        "excerpt":"Lets keep it easy and create a giant easy button to fire off a frequently used script. Get an Attiny85/Digispark device and giant switch Download and install Arduino IDE Digistump.com is no longer live. Add following url to Arduino &gt; File &gt; Preferences &gt; “boards manager URL” https://raw.githubusercontent.com/digistump/arduino-boards-index/master/package_digistump_index.json Get digispark...","categories": [],
         "tags": ["digispark","arduino","hardware","gpio"],
         "url": "https://onthefritzz.com/easy-button/"
       }]

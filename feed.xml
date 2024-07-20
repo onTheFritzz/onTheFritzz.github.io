@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://onthefritzz.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://onthefritzz.com/" rel="alternate" type="text/html" /><updated>2024-07-19T22:11:17-05:00</updated><id>https://onthefritzz.com/feed.xml</id><title type="html">Uneducated Technology</title><subtitle>Follow a meandering career in tech...</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><entry><title type="html">Easy Button</title><link href="https://onthefritzz.com/easy-button/" rel="alternate" type="text/html" title="Easy Button" /><published>2024-07-19T00:00:00-05:00</published><updated>2024-07-19T00:00:00-05:00</updated><id>https://onthefritzz.com/easy-button</id><content type="html" xml:base="https://onthefritzz.com/easy-button/"><![CDATA[<p><img src="/images/digispark-buttons-schema.png" alt="image-center" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://onthefritzz.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://onthefritzz.com/" rel="alternate" type="text/html" /><updated>2024-07-19T22:16:35-05:00</updated><id>https://onthefritzz.com/feed.xml</id><title type="html">Uneducated Technology</title><subtitle>Follow a meandering career in tech...</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><entry><title type="html">Easy Button</title><link href="https://onthefritzz.com/easy-button/" rel="alternate" type="text/html" title="Easy Button" /><published>2024-07-19T00:00:00-05:00</published><updated>2024-07-19T00:00:00-05:00</updated><id>https://onthefritzz.com/easy-button</id><content type="html" xml:base="https://onthefritzz.com/easy-button/"><![CDATA[<p><img src="/images/digispark-buttons-schema.png" alt="image-center" /></p>
 
-<p>Lets keep it easy and creat a giant easy button to fire off a frequently used script.</p>
+<p>Lets keep it easy and create a giant easy button to fire off a frequently used script.</p>
 
 <ul>
   <li>Get an Attiny85/Digispark device and giant switch</li>
@@ -15,6 +15,11 @@
   <li>Use above schematic to wire an external switch to Digispark device
     <ul>
       <li>Device has internal PULLUP resistors but they frequently produce erratic results</li>
+    </ul>
+  </li>
+  <li>Create a .bat file that will execute a python script
+    <ul>
+      <li>Right-Click .bat file and assign a shortcut key of CTRL+ALT+X</li>
     </ul>
   </li>
 </ul>
