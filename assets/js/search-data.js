@@ -91,7 +91,7 @@ var store = [{
       },{
         "title": "VFD 4 UnMe",
         "excerpt":"Made a fun lil weekend project outta some Noritake itron GU140x16G7000 Vacuum Flourescent Display’s that had GPIO pins. Let see what we can do. First things first. Find the pinout of the display. Digikey please. Good thing the PDF got yoinked cuz it’s a dead link now. Here go: Datasheet...","categories": [],
-        "tags": ["VFD","NanoPi Neo","GPIO","Sreen"],
+        "tags": ["VFD","NanoPi Neo","GPIO","Screen"],
         "url": "https://onthefritzz.com/vfd/"
       },{
         "title": "Adventure: Buildroot",
@@ -151,6 +151,6 @@ var store = [{
       },{
         "title": "Easy Button",
         "excerpt":"Lets keep it easy and create a giant easy button to fire off a frequently used script. Get an Attiny85/Digispark device and giant switch Download and install Arduino IDE Digistump.com is no longer live. Add following url to Arduino &gt; File &gt; Preferences &gt; “boards manager URL” https://raw.githubusercontent.com/digistump/arduino-boards-index/master/package_digistump_index.json Get digispark...","categories": [],
-        "tags": ["digispark","arduino","hardware","gpio"],
+        "tags": ["Digispark","Arduino","Hardware","GPIO"],
         "url": "https://onthefritzz.com/easy-button/"
       }]
