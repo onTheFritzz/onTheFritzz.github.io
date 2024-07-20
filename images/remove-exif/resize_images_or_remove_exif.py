@@ -3,7 +3,7 @@ from math import ceil
 import os
 
 def resizeImage():
-	imageFile = 'newnasnaw.jpg'
+	imageFile = 'easypeasy.jpg'
 	reduceBy = 3
 
 	image = Image.open(imageFile)
@@ -25,7 +25,8 @@ def removeExif():
 	removeExif = []
 	for root, dirs, files in os.walk('.'):
 		for file in files:
-			if file.split('.')[-1] not in ['jpg', 'png', 'gif']:
+			print(file)
+			if file.split('.')[-1].lower() not in ['jpg', 'png', 'gif']:
 				pass
 			else:
 				print(f'Removed EXIF from: {file}')

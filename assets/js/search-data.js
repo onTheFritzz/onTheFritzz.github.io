@@ -11,7 +11,7 @@ var store = [{
       },{
         "title": "New EDC, broken out of box.",
         "excerpt":"Much like immediately using Internet Explorer to download Chrome, we use the old [worthless] EDC to open the new one.New: Gerber PrybidOld: SlidewinderFolding blades: Cheap and hazardous or expensive and dulled. EDC blades dull too fast to not be replaceable. The cheap folding blades have such a flimsy liner lock,...","categories": [],
-        "tags": ["EDC"],
+        "tags": [],
         "url": "https://onthefritzz.com/new-edc/"
       },{
         "title": "Poem <=> Code",
@@ -26,7 +26,7 @@ var store = [{
       },{
         "title": "Webscraping Sally's Baking Addiction",
         "excerpt":"Scraped 1050 recipes from another webpage Killed 9450 ads In Bed after midnight :’( &lt; hundo liner without redundant lines Runtime was 2.5hrs 0_0! Was able to use exactly the same structure as previous recipe scraper Just changed xpath variables to work with different site Crawl category urls Scrape total...","categories": [],
-        "tags": ["Python","Webscraping","Scrapy"],
+        "tags": ["Python","Webscraping","Scrapy","Automation"],
         "url": "https://onthefritzz.com/sally/"
       },{
         "title": "Get Ur FIL",
@@ -36,7 +36,7 @@ var store = [{
       },{
         "title": "Toyota of computers",
         "excerpt":"The HP w/ AMD proc that’s been rocken for 5+ years was 9 years old. Worst of both worlds. Crappy AMD in a HP. Yuck. But it mostly ran and free is hard to beat. It’s been gradually degrading for some time now. Nail in the coffin was when DIMM...","categories": [],
-        "tags": ["Refurbish"],
+        "tags": ["Refurbish","Hardware"],
         "url": "https://onthefritzz.com/new-dt/"
       },{
         "title": "Webscraping Mills Fleet Farm",
@@ -51,7 +51,7 @@ var store = [{
       },{
         "title": "I AM g-ROOT",
         "excerpt":"Popped first root shell on a Buffalo TS-XLC66 Terrastation NAS. Using java and a version of ACP-Commander, a root shell monolith appeared from nothing. It was read that Buffalo Terastations use hardware to limit root read/write access. This doesn’t appear to be the case as the root directory has been...","categories": [],
-        "tags": ["Root Access","NAS"],
+        "tags": ["Root","NAS"],
         "url": "https://onthefritzz.com/i-am-groot/"
       },{
         "title": "Simpli Safer",
@@ -91,17 +91,17 @@ var store = [{
       },{
         "title": "VFD 4 UnMe",
         "excerpt":"Made a fun lil weekend project outta some Noritake itron GU140x16G7000 Vacuum Flourescent Display’s that had GPIO pins. Let see what we can do. First things first. Find the pinout of the display. Digikey please. Good thing the PDF got yoinked cuz it’s a dead link now. Here go: Datasheet...","categories": [],
-        "tags": ["VFD","Serial","NanoPi Neo","GPIO"],
+        "tags": ["VFD","NanoPi Neo","GPIO","Sreen"],
         "url": "https://onthefritzz.com/vfd/"
       },{
         "title": "Adventure: Buildroot",
         "excerpt":"Objective: Boot to a python controlled GPIO pin as fast as possible.TL;DR: Image that supports python, nano and libgpio while booting in 4 seconds: Download Using python to manipulate GPIOs on a SBC is old news. Doing it in 4 seconds, is not. Stock Armbian has gotten me pretty far...","categories": [],
-        "tags": ["Buildroot","Python","GPIO","NanoPi Neo"],
+        "tags": ["Buildroot","Python","GPIO","NanoPi Neo","Root"],
         "url": "https://onthefritzz.com/buildroot-python/"
       },{
         "title": "Meme Scraper + Randomizer",
         "excerpt":"Memer.py Scrape frontpage memes from Ebaumsworld.com Polite scraping sleep timer Scrape unique meme article number Save article-number.json to folder of the same number This json contains article-number, image url and image title Output README.md with titles, images, Back, Go To Top and Source buttonsgetRandomMemes.py Generate random collection of memes after...","categories": [],
-        "tags": ["Python","Webscraping","Scrapy"],
+        "tags": ["Python","Webscraping","Scrapy","Automation"],
         "url": "https://onthefritzz.com/memer/"
       },{
         "title": "Dummies for a dummy.",
@@ -111,27 +111,27 @@ var store = [{
       },{
         "title": "Webscraping Healthy Recipes",
         "excerpt":"Another recipe scraper! Killed ~5103 ads Added 500+ recipes to my collection Same format as usual for scraping recipes Get links corresponding to each food category Get total amount of pages for each category Get header, picture, pdf, etc.. of each recipes occuring on each page import scrapy, logging, time,...","categories": [],
-        "tags": ["Webscraping","Python","Scrapy"],
+        "tags": ["Webscraping","Python","Scrapy","Automation"],
         "url": "https://onthefritzz.com/webscraping-healthy-recipes/"
       },{
         "title": "Reducing Xbox One S Load Times",
         "excerpt":"Process HDD (sec) SSD (sec) Net (sec) Boot To Home - #1 54.68 54.35 -0.33 Boot To Home - #2 58.79 54.12 -4.67 Home To Spyro Start Page - #1 73.18 56.27 -16.91 Home To Spyro Start Page - #2 77.19 47.09 -30.10 Spyro Start To Gameplay - #1 38.82...","categories": [],
-        "tags": ["Xbox","Hardware"],
+        "tags": ["Xbox","Hardware","Refurbish"],
         "url": "https://onthefritzz.com/xbox-ssd-upgrade/"
       },{
         "title": "Sticky situation",
         "excerpt":"Pretty straight forward. Someone got the ‘B’ button sticky. Take apart, clean with isopropol alcohol. Put back together. Done.Interesting note is that the ‘B’ button is actually more accessible than the other 3 action buttons. ‘B’ is accessible after dissassembling the main housing components, whereas the other 3 buttons require...","categories": [],
-        "tags": ["Xbox","Hardware"],
+        "tags": ["Xbox","Hardware","Refurbish"],
         "url": "https://onthefritzz.com/sticky-controller/"
       },{
         "title": "Zzz....",
         "excerpt":"Part Model Cost Value CPU Ryzen 5 1400 $0.00 $110.00 GPU RTX 3060 $0.00 $299.99 MOBO MSI Bazook B350M $0.00 $149.99 RAM 32GB DDR4 $0.00 $59.99 1TB NVMe SSD - $0.00 $39.99 8TB HDDs (4x2TB)* WD20EZAZ $0.00 $224.99 Case - $0.00 $89.99 5.25in to 3.5in HDD Adapter (x4) - $27.16...","categories": [],
-        "tags": ["Sleeper"],
+        "tags": ["Sleeper","Hardware"],
         "url": "https://onthefritzz.com/sleeper/"
       },{
         "title": "Bulk Convert PDFs into Optimized JPGs",
         "excerpt":"Create a copy of database to test on Delete all files unrelated to task to avoid confusion Reduce file size of output jpgs Remove extraneous images inside PDFs Convert PDFs to JPGs Each PDF page corresponds to 1x JPG Resulting in multiple JPGs per pdf Dynamically reduce/stitch all JPGS into...","categories": [],
-        "tags": ["Python"],
+        "tags": ["Python","Automation"],
         "url": "https://onthefritzz.com/bulk-convert-pdfs/"
       },{
         "title": "NAS? NAH.",
@@ -141,6 +141,16 @@ var store = [{
       },{
         "title": "Jellyfin Subtitle Extractor",
         "excerpt":"Backup original file/folders containing subtitles Recursively search folders with random filenames for subtitle files Create a 2D array containing original filenames and file locations Create a 2D array from destination folders and standardized filenames of .SRTs Create directories with correct names for each subtitle file Rename and move original subtitle...","categories": [],
-        "tags": ["Subtitles","JellyFin"],
+        "tags": ["JellyFin"],
         "url": "https://onthefritzz.com/jellyfin-subs/"
+      },{
+        "title": "Aww, you guys made me ink!",
+        "excerpt":"Project was to revitalize some disposed eReaders into functional wireless displays. Project was a success. It required several different hoops that I prolly spent too long jumping through given the outcome. However here’s the end result. A functional, wireless, status dashboard that can be updated every minute for ~3 days...","categories": [],
+        "tags": ["Screen","API","eInk","GPIO","Hardware","Python","Root"],
+        "url": "https://onthefritzz.com/eink-display/"
+      },{
+        "title": "Easy Button",
+        "excerpt":"Lets keep it easy and creat a giant easy button to fire off a frequently used script. Get an Attiny85/Digispark device and giant switch Download and install Arduino IDE Digistump.com is no longer live. Add following url to Arduino &gt; File &gt; Preferences &gt; “boards manager URL” https://raw.githubusercontent.com/digistump/arduino-boards-index/master/package_digistump_index.json Get digispark...","categories": [],
+        "tags": ["digispark","arduino","hardware","gpio"],
+        "url": "https://onthefritzz.com/easy-button/"
       }]

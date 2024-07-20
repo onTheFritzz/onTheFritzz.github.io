@@ -1,4 +1,420 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://onthefritzz.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://onthefritzz.com/" rel="alternate" type="text/html" /><updated>2024-01-15T08:07:32-06:00</updated><id>https://onthefritzz.com/feed.xml</id><title type="html">Uneducated Technology</title><subtitle>Follow a meandering career in tech...</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><entry><title type="html">Jellyfin Subtitle Extractor</title><link href="https://onthefritzz.com/jellyfin-subs/" rel="alternate" type="text/html" title="Jellyfin Subtitle Extractor" /><published>2024-01-13T00:00:00-06:00</published><updated>2024-01-13T00:00:00-06:00</updated><id>https://onthefritzz.com/jellyfin-subs</id><content type="html" xml:base="https://onthefritzz.com/jellyfin-subs/"><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://onthefritzz.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://onthefritzz.com/" rel="alternate" type="text/html" /><updated>2024-07-19T22:11:17-05:00</updated><id>https://onthefritzz.com/feed.xml</id><title type="html">Uneducated Technology</title><subtitle>Follow a meandering career in tech...</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><entry><title type="html">Easy Button</title><link href="https://onthefritzz.com/easy-button/" rel="alternate" type="text/html" title="Easy Button" /><published>2024-07-19T00:00:00-05:00</published><updated>2024-07-19T00:00:00-05:00</updated><id>https://onthefritzz.com/easy-button</id><content type="html" xml:base="https://onthefritzz.com/easy-button/"><![CDATA[<p><img src="/images/digispark-buttons-schema.png" alt="image-center" /></p>
+
+<p>Lets keep it easy and creat a giant easy button to fire off a frequently used script.</p>
+
+<ul>
+  <li>Get an Attiny85/Digispark device and giant switch</li>
+  <li>Download and install Arduino IDE</li>
+  <li>Digistump.com is no longer live. Add following url to Arduino &gt; File &gt; Preferences &gt; “boards manager URL”
+    <ul>
+      <li>https://raw.githubusercontent.com/digistump/arduino-boards-index/master/package_digistump_index.json</li>
+    </ul>
+  </li>
+  <li>Get digispark drivers <a href="https://github.com/digistump/DigistumpArduino/releases">here</a></li>
+  <li>Flash following code to attiny85</li>
+  <li>Use above schematic to wire an external switch to Digispark device
+    <ul>
+      <li>Device has internal PULLUP resistors but they frequently produce erratic results</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">"DigiKeyboard.h"</span><span class="cp">
+</span>
+<span class="kt">int</span> <span class="n">button2</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">button2</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">button2State</span> <span class="o">=</span> <span class="n">digitalRead</span><span class="p">(</span><span class="n">button2</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">button2State</span> <span class="o">==</span> <span class="n">HIGH</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">DigiKeyboard</span><span class="p">.</span><span class="n">sendKeyStroke</span><span class="p">(</span><span class="n">KEY_X</span><span class="p">,</span> <span class="n">MOD_CONTROL_LEFT</span> <span class="o">|</span> <span class="n">MOD_ALT_LEFT</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>Easy. Peasy.<br />
+<img src="/images/easypeasy.jpg" alt="image-center" /></p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="digispark" /><category term="arduino" /><category term="hardware" /><category term="gpio" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Aww, you guys made me ink!</title><link href="https://onthefritzz.com/eink-display/" rel="alternate" type="text/html" title="Aww, you guys made me ink!" /><published>2024-05-28T00:00:00-05:00</published><updated>2024-05-28T00:00:00-05:00</updated><id>https://onthefritzz.com/eink-display</id><content type="html" xml:base="https://onthefritzz.com/eink-display/"><![CDATA[<p><img src="/images/einkdisplay.png" alt="image-center" /></p>
+
+<p>Project was to revitalize some disposed eReaders into functional wireless displays. Project was a success. It required several different hoops that I prolly spent too long jumping through given the outcome. However here’s the end result. A functional, wireless, status dashboard that can be updated every minute for ~3 days without a charge.</p>
+
+<p>Hoops are as follows:</p>
+<ul>
+  <li>Root multiple Nook eReaders (Model: BNRV300)
+    <ul>
+      <li>Depending on health of batteries, order new ones and replace them.</li>
+    </ul>
+  </li>
+  <li>Use Raspi 3+ in tandem with a DHT11 sensor to serve an <b>unsecured</b> webpage through AP Mode
+    <ul>
+      <li>Alternatively, use GitHub Pages to point to a custom domain that hosts webpage for display</li>
+      <li>Update 7.19.24: Ultimately the ap mode was nixed and display was hosted on an unsecured github page</li>
+    </ul>
+  </li>
+  <li>Create a python script that will use APIs and get custom data points
+    <ul>
+      <li>Generate a basic webpage that will dynamically display on eReader</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Rooting the Nook Simple Touch BNRV300:<br />
+Pretty much all that is to follow is based on <a href="https://shkspr.mobi/blog/2020/02/turn-an-old-ereader-into-an-information-screen-nook-str/">this</a> tutorial.</p>
+
+<ul>
+  <li>Deregister the Nook</li>
+  <li>Download all the required files here: <a href="https://gitlab.com/edent/nook-screen/-/tree/master">Root Nook Files</a></li>
+  <li>Unzip NookManager.zip
+    <ul>
+      <li>Use <a href="https://win32diskimager.org/">Win32Imager</a> or <a href="https://etcher.balena.io/">Balena Etcher</a> to write “NookManager.img” to SD Card</li>
+    </ul>
+  </li>
+  <li>Download and extract Android Debug Bridge (adb.exe). Which is bundled in the Andoid SDK Platform Tools, available <a href="https://developer.android.com/tools/releases/platform-tools">here</a>
+    <ul>
+      <li>From a command window openned to the folder of the the extracted SDK Tools run the following command: <code class="language-plaintext highlighter-rouge">adb install Electric\ Sign_v1.0.3_apkpure.com.apk</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Setup Raspi with DHT Sensor and Bridged Ethernet to Wifi Module set in AP Mode:
+Credit:</p>
+<ul>
+  <li><a href="https://pimylifeup.com/raspberry-pi-dht11-sensor/">DHT11 Sensor Setup</a></li>
+  <li><a href="https://www.raspberrypi.com/documentation/computers/configuration.html#use-your-raspberry-pi-as-a-network-bridge">Bridge Ethernet to AP Mode Hotspot</a></li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Update Raspi</span>
+<span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get upgrade <span class="nt">-y</span>
+
+<span class="c"># Install tool to serve index.html webpage</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>snapd
+<span class="nb">sudo </span>reboot
+<span class="nb">sudo </span>snap <span class="nb">install </span>core
+<span class="nb">sudo </span>snap <span class="nb">install </span>serve
+
+<span class="c"># Install resources to use DHT11 sensor</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>python3 python3-pip python3-venv
+<span class="nb">mkdir</span> ~./ebook
+python3 <span class="nt">-m</span> venv <span class="nb">env
+source env</span>/bin/activate
+python3 <span class="nt">-m</span> pip <span class="nb">install </span>adafruit-circuitpython-dht
+
+<span class="c"># Turn Wifi module into AP Mode (Hotspot) and bridge it to Ethernet that has incoming internet connection</span>
+
+<span class="nb">sudo </span>nmcli connection add <span class="nb">type </span>bridge con-name <span class="s1">'Bridge'</span> ifname bridge0
+
+<span class="nb">sudo </span>nmcli connection add <span class="nb">type </span>ethernet slave-type bridge <span class="se">\</span>
+    con-name <span class="s1">'Ethernet'</span> ifname eth0 master bridge0
+
+<span class="nb">sudo </span>nmcli connection add con-name <span class="s1">'Hotspot'</span> <span class="se">\</span>
+    ifname wlan0 <span class="nb">type </span>wifi slave-type bridge master bridge0 <span class="se">\</span>
+    wifi.mode ap wifi.ssid Hotspot wifi-sec.key-mgmt wpa-psk <span class="se">\</span>
+    wifi-sec.proto rsn wifi-sec.pairwise ccmp <span class="se">\</span>
+    wifi-sec.psk PUTYOURHOTSPOTRPASSWORDHERE
+
+<span class="nb">sudo </span>nmcli connection up Bridge
+<span class="nb">sudo </span>nmcli connection up Hotspot
+
+</code></pre></div></div>
+
+<p>Connect Raspi to DHT11 Sensor
+<img src="/images/dhtraspi.png" alt="image-center" /></p>
+
+<p>Test the DHT11 sensor by either calling e.getWarehouseTemp() instead of the while loop, in the script below. Or reference tutorial above for source code that <b>only</b> pulls the DHT11 sensor stats.</p>
+
+<p>Creating a Python Script to Scrape stats and generate webpage:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">debug</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="kn">import</span> <span class="nn">requests</span><span class="p">,</span> <span class="n">shutil</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">yaml</span><span class="p">,</span> <span class="n">os</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span> <span class="k">as</span> <span class="n">dt</span>
+
+<span class="k">if</span> <span class="n">os</span><span class="p">.</span><span class="n">name</span> <span class="o">!=</span> <span class="s">'nt'</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">board</span><span class="p">,</span> <span class="n">adafruit_dht</span>
+
+<span class="k">class</span> <span class="nc">eReader</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'./config.yaml'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">y</span><span class="p">:</span>
+            <span class="n">yml</span> <span class="o">=</span> <span class="n">yaml</span><span class="p">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+        <span class="c1">#print(yml)
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">distanceEndpoint</span> <span class="o">=</span> <span class="n">yml</span><span class="p">[</span><span class="s">'distanceEndpoint'</span><span class="p">]</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">noaaEndpoint</span> <span class="o">=</span> <span class="n">yml</span><span class="p">[</span><span class="s">'noaaEndpoint'</span><span class="p">]</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">ethEndpoint</span> <span class="o">=</span> <span class="n">yml</span><span class="p">[</span><span class="s">'ethEndpoint'</span><span class="p">]</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">htmlOutputFile</span> <span class="o">=</span> <span class="n">yml</span><span class="p">[</span><span class="s">'htmlOutput'</span><span class="p">]</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">gitterFilePath</span> <span class="o">=</span> <span class="n">yml</span><span class="p">[</span><span class="s">'gitterFilePath'</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">os</span><span class="p">.</span><span class="n">name</span> <span class="o">!=</span> <span class="s">'nt'</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">filePath</span> <span class="o">=</span> <span class="n">yml</span><span class="p">[</span><span class="s">'linuxFilePath'</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">.</span><span class="n">filePath</span> <span class="o">=</span> <span class="n">yml</span><span class="p">[</span><span class="s">'windowsFilePath'</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="s">''</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">display</span> <span class="o">==</span> <span class="s">'breaktime'</span><span class="p">:</span>
+            <span class="n">shutil</span><span class="p">.</span><span class="n">copyfile</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">filePath</span><span class="si">}</span><span class="s">breaktime.html'</span><span class="p">,</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">filePath</span><span class="si">}</span><span class="s">index.html'</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">'Updated display to breaktime.'</span><span class="p">)</span>
+        
+        <span class="k">elif</span> <span class="n">display</span> <span class="o">==</span> <span class="s">'stats'</span><span class="p">:</span>
+            <span class="n">dashboardHtml</span> <span class="o">=</span> <span class="s">"""
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;script&gt;
+    setInterval(function() {
+     window.location.reload();
+    }, 300_000);
+    &lt;/script&gt;
+    &lt;style&gt;
+    .card {
+      /* Add shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    /* Add some padding inside the card container */
+    .container {
+      padding: 2px 16px;
+    }
+
+    .card {
+      border: 1px solid #000;
+      display: inline-block;
+      padding: 10px;
+      margin: 5px;
+      height: 240px; /*240px*/
+      width: 300px;  /*300px*/
+    }
+
+    .weatherImg {
+      opacity: 0.80;
+    }
+
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;center&gt;
+    &lt;div class="card"&gt;
+        &lt;img src="../images/commute.png" alt="Avatar"&gt;
+        &lt;div class="container"&gt;
+          &lt;h8&gt;&lt;b&gt;#COMMUTETITLE#&lt;/b&gt;&lt;/h8&gt;&lt;br&gt;
+          &lt;font size="30"&gt;&lt;b&gt;#COMMUTESTATUS#&lt;/b&gt;&lt;/font&gt;&lt;/h9&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card"&gt;
+        &lt;img src="../images/ether.png" alt="Avatar"&gt;
+        &lt;div class="container"&gt;
+          &lt;h8&gt;&lt;b&gt;#ETHERTITLE#&lt;/b&gt;&lt;/h8&gt;&lt;br&gt;
+          &lt;font size="30"&gt;&lt;b&gt;#ETHERPRICE#&lt;/b&gt;&lt;/font&gt;&lt;/h9&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;div class="card"&gt;
+        &lt;img src="../images/warehouse.png" alt="Avatar"&gt;
+        &lt;div class="container"&gt;
+          &lt;h8&gt;&lt;b&gt;#WAREHOUSETITLE#&lt;/b&gt;&lt;/h8&gt;&lt;/font&gt;&lt;br&gt;
+          &lt;font size="30"&gt;&lt;b&gt;#WAREHOUSETEMP#&lt;/b&gt;&lt;/font&gt;&lt;br&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card"&gt;
+        &lt;!--&lt;img src="thermo.png" alt="Avatar"&gt;--&gt;
+        &lt;img src="../images/weather.png" alt="Avatar"&gt;
+        &lt;!--&lt;div class="weatherImg"&gt;&lt;img src="#WEATHERICON#" alt="Avatar" width="150" height="150"&gt;&lt;/div&gt;--&gt;
+        &lt;div class="container"&gt;
+          &lt;h8&gt;&lt;b&gt;#OUTSIDETITLE#&lt;/b&gt;&lt;/h8&gt;&lt;/font&gt;&lt;br&gt;
+          &lt;font size="30"&gt;&lt;b&gt;#OUTSIDETEMP#&lt;/b&gt;&lt;/font&gt;&lt;br&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br&gt;
+    #TIMESTAMP#
+    &lt;/center&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;                    
+    """</span>
+            <span class="n">travelTitle</span> <span class="o">=</span> <span class="s">'Drive Home'</span>
+
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">filePath</span><span class="si">}</span><span class="s">current-travel-time.txt'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">r</span><span class="p">:</span> <span class="c1">#self.getTravelTime() # '17-21mins'#
+</span>                <span class="n">travelInfo</span> <span class="o">=</span> <span class="n">r</span><span class="p">.</span><span class="n">readlines</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">print</span><span class="p">(</span><span class="n">travelInfo</span><span class="p">)</span>
+
+            <span class="n">whTitle</span> <span class="o">=</span> <span class="s">'Warehouse Temp/Humidity'</span>
+            
+            <span class="k">if</span> <span class="n">os</span><span class="p">.</span><span class="n">name</span> <span class="o">!=</span> <span class="s">'nt'</span><span class="p">:</span>
+                <span class="n">whTempHumid</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">getWarehouseTemp</span><span class="p">()</span> <span class="c1">#'57&amp;#176;F / 45%'
+</span>            <span class="k">else</span><span class="p">:</span>
+                <span class="n">whTempHumid</span> <span class="o">=</span> <span class="s">'12&amp;#176;F / 99%'</span>
+
+            <span class="n">outsideTitle</span> <span class="o">=</span> <span class="s">'Outside Temp/Humidity'</span>
+            <span class="n">outsideTempHumid</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">scrapeNOAA</span><span class="p">()</span>
+
+            <span class="n">cryptoTitle</span> <span class="o">=</span> <span class="s">'Current ETHEREUM'</span>
+            <span class="n">cryptoPrice</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">getCryptoPrice</span><span class="p">()</span>
+
+            <span class="n">currentTime</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'APIs Last Updated: </span><span class="si">{</span><span class="n">dt</span><span class="p">.</span><span class="n">now</span><span class="p">().</span><span class="n">strftime</span><span class="p">(</span><span class="s">"%m-%d-%Y %H</span><span class="si">:</span><span class="o">%</span><span class="n">M</span><span class="si">:</span><span class="o">%</span><span class="n">S</span><span class="s">")</span><span class="si">}</span><span class="s">'</span>
+
+            <span class="n">dashboardHtml</span> <span class="o">=</span> <span class="n">dashboardHtml</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'#WAREHOUSETITLE#'</span><span class="p">,</span> <span class="n">whTitle</span><span class="p">).</span><span class="n">replace</span><span class="p">(</span><span class="s">'#WAREHOUSETEMP#'</span><span class="p">,</span> <span class="n">whTempHumid</span><span class="p">)</span>
+            <span class="n">dashboardHtml</span> <span class="o">=</span> <span class="n">dashboardHtml</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'#COMMUTETITLE#'</span><span class="p">,</span> <span class="n">travelTitle</span><span class="p">).</span><span class="n">replace</span><span class="p">(</span><span class="s">'#COMMUTESTATUS#'</span><span class="p">,</span> <span class="n">travelInfo</span><span class="p">)</span>
+            <span class="n">dashboardHtml</span> <span class="o">=</span> <span class="n">dashboardHtml</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'#OUTSIDETITLE#'</span><span class="p">,</span> <span class="n">outsideTitle</span><span class="p">).</span><span class="n">replace</span><span class="p">(</span><span class="s">'#OUTSIDETEMP#'</span><span class="p">,</span> <span class="n">outsideTempHumid</span><span class="p">)</span>
+            <span class="c1">#dashboardHtml = dashboardHtml.replace('#WEATHERICON#', weatherIcon)
+</span>            <span class="n">dashboardHtml</span> <span class="o">=</span> <span class="n">dashboardHtml</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'#ETHERTITLE#'</span><span class="p">,</span> <span class="n">cryptoTitle</span><span class="p">).</span><span class="n">replace</span><span class="p">(</span><span class="s">'#ETHERPRICE#'</span><span class="p">,</span> <span class="n">cryptoPrice</span><span class="p">)</span>
+            <span class="n">dashboardHtml</span> <span class="o">=</span> <span class="n">dashboardHtml</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'#TIMESTAMP#'</span><span class="p">,</span> <span class="n">currentTime</span><span class="p">)</span>
+            
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">filePath</span><span class="si">}{</span><span class="bp">self</span><span class="p">.</span><span class="n">htmlOutputFile</span><span class="si">}</span><span class="s">'</span><span class="p">,</span> <span class="s">'w+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">html</span><span class="p">:</span>
+              <span class="n">html</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">dashboardHtml</span><span class="p">)</span>
+            
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">filePath</span><span class="si">}</span><span class="s">index.html'</span><span class="p">,</span> <span class="s">'w+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">html</span><span class="p">:</span>
+                <span class="n">html</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">dashboardHtml</span><span class="p">)</span>
+
+            <span class="k">print</span><span class="p">(</span><span class="s">'Updated display to stats.'</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">display</span> <span class="o">==</span> <span class="s">'logo'</span><span class="p">:</span>
+            <span class="n">shutil</span><span class="p">.</span><span class="n">copyfile</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">filePath</span><span class="si">}</span><span class="s">logo.html'</span><span class="p">,</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">filePath</span><span class="si">}</span><span class="s">index.html'</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">'Updated display to logo.'</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">scrapeNOAA</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">noaaGet</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">noaaEndpoint</span><span class="p">)</span>
+                <span class="n">noaaJson</span> <span class="o">=</span> <span class="n">noaaGet</span><span class="p">.</span><span class="n">json</span><span class="p">()</span>
+
+                <span class="n">todayForecast</span> <span class="o">=</span> <span class="n">noaaJson</span><span class="p">[</span><span class="s">'properties'</span><span class="p">][</span><span class="s">'periods'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+
+                <span class="c1">#icon = f'http://api.weather.gov{todayForecast["icon"]}'
+</span>                <span class="n">temp</span><span class="p">,</span> <span class="n">unit</span> <span class="o">=</span> <span class="p">[</span><span class="n">todayForecast</span><span class="p">[</span><span class="s">'temperature'</span><span class="p">],</span> <span class="n">todayForecast</span><span class="p">[</span><span class="s">'temperatureUnit'</span><span class="p">]]</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">humidity</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">todayForecast</span><span class="p">[</span><span class="s">'relativeHumidity'</span><span class="p">][</span><span class="s">'value'</span><span class="p">]</span><span class="si">}</span><span class="s">"</span>
+                <span class="k">except</span><span class="p">:</span>
+                    <span class="n">humidity</span> <span class="o">=</span> <span class="s">"NA"</span>
+
+                <span class="n">printString</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">temp</span><span class="si">}</span><span class="s">*</span><span class="si">{</span><span class="n">unit</span><span class="si">}</span><span class="s"> / </span><span class="si">{</span><span class="n">humidity</span><span class="si">}</span><span class="s">%'</span>
+                <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Outside Temp: </span><span class="si">{</span><span class="n">printString</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+
+                <span class="n">outputArray</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">temp</span><span class="si">}</span><span class="s">&amp;#176;</span><span class="si">{</span><span class="n">unit</span><span class="si">}</span><span class="s"> / </span><span class="si">{</span><span class="n">humidity</span><span class="si">}</span><span class="s">%'</span><span class="c1">#, icon]
+</span>                <span class="k">return</span><span class="p">(</span><span class="n">outputArray</span><span class="p">)</span>
+            
+            <span class="k">except</span><span class="p">:</span>
+                <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="n">outputArray</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s">'NA / NA'</span><span class="p">,</span> <span class="s">'NA'</span><span class="p">]</span>
+                <span class="k">continue</span>
+
+        <span class="k">return</span><span class="p">(</span><span class="n">outputArray</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">getWarehouseTemp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span> <span class="c1"># DHT11 doesn't output stats 100% of the time. Seems to be &gt; 5/1 hit to miss ratio.
+</span>            <span class="k">try</span><span class="p">:</span> <span class="c1"># Try catching temp/humid 5x before moving along
+</span>                <span class="n">dhtDevice</span> <span class="o">=</span> <span class="n">adafruit_dht</span><span class="p">.</span><span class="n">DHT11</span><span class="p">(</span><span class="n">board</span><span class="p">.</span><span class="n">D4</span><span class="p">)</span>
+                <span class="n">tempC</span> <span class="o">=</span> <span class="n">dhtDevice</span><span class="p">.</span><span class="n">temperature</span>
+                <span class="n">tempF</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">tempC</span> <span class="o">*</span> <span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">5</span><span class="p">)</span> <span class="o">+</span> <span class="mi">32</span><span class="p">)</span>
+
+                <span class="n">humidity</span> <span class="o">=</span> <span class="n">dhtDevice</span><span class="p">.</span><span class="n">humidity</span>
+                <span class="n">dhtDevice</span><span class="p">.</span><span class="nb">exit</span><span class="p">()</span>
+
+                <span class="n">printString</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">tempF</span><span class="si">}</span><span class="s">*F / </span><span class="si">{</span><span class="n">humidity</span><span class="si">}</span><span class="s">%'</span>
+                <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Warehouse Temp: </span><span class="si">{</span><span class="n">printString</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+                <span class="n">outputString</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">tempF</span><span class="si">}</span><span class="s">&amp;#176;F / </span><span class="si">{</span><span class="n">humidity</span><span class="si">}</span><span class="s">%'</span>
+                <span class="k">return</span><span class="p">(</span><span class="n">outputString</span><span class="p">)</span>
+            
+            <span class="k">except</span><span class="p">:</span>
+                <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="n">dhtDevice</span><span class="p">.</span><span class="nb">exit</span><span class="p">()</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">'Warehouse temp error!'</span><span class="p">)</span>
+                <span class="n">outputString</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'NA / NA'</span>
+                <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+                <span class="k">continue</span>
+
+        <span class="k">return</span><span class="p">(</span><span class="n">outputString</span><span class="p">)</span>
+        
+    <span class="k">def</span> <span class="nf">getCryptoPrice</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">cryptoPrice</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">ethEndpoint</span><span class="p">)</span>
+        <span class="n">cryptoJson</span> <span class="o">=</span> <span class="n">cryptoPrice</span><span class="p">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="n">cryptoToUSD</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">cryptoJson</span><span class="p">[</span><span class="s">'data'</span><span class="p">][</span><span class="s">'amount'</span><span class="p">]),</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">outputString</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'$</span><span class="si">{</span><span class="n">cryptoToUSD</span><span class="si">}</span><span class="s">'</span>
+
+        <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Crypto: </span><span class="si">{</span><span class="n">outputString</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">outputString</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">getTravelTime</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">responseJson</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">distanceEndpoint</span><span class="p">).</span><span class="n">json</span><span class="p">()</span>
+        <span class="n">durationTime</span> <span class="o">=</span> <span class="n">responseJson</span><span class="p">[</span><span class="s">'rows'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">'elements'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">'duration'</span><span class="p">][</span><span class="s">'text'</span><span class="p">]</span>
+        <span class="n">durationInTraffic</span> <span class="o">=</span> <span class="n">responseJson</span><span class="p">[</span><span class="s">'rows'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">'elements'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">'duration_in_traffic'</span><span class="p">][</span><span class="s">'text'</span><span class="p">]</span>
+        <span class="n">travelTimeRange</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">durationTime</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">" mins"</span><span class="p">,</span> <span class="s">""</span><span class="p">)</span><span class="si">}</span><span class="s">-</span><span class="si">{</span><span class="n">durationInTraffic</span><span class="si">}</span><span class="s">'</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">filePath</span><span class="si">}</span><span class="s">current-travel-time.txt'</span><span class="p">,</span> <span class="s">'w+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+            <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">travelTimeRange</span><span class="p">)</span>
+
+        <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'API Credit Used! - Travel: </span><span class="si">{</span><span class="n">travelTimeRange</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">travelTimeRange</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+  <span class="n">e</span> <span class="o">=</span> <span class="n">eReader</span><span class="p">()</span>
+  <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">now</span> <span class="o">=</span> <span class="n">dt</span><span class="p">.</span><span class="n">now</span><span class="p">().</span><span class="n">strftime</span><span class="p">(</span><span class="s">'%H:%M:%S'</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">now</span><span class="p">)</span>
+    <span class="n">weekNumber</span> <span class="o">=</span> <span class="n">dt</span><span class="p">.</span><span class="n">today</span><span class="p">().</span><span class="n">weekday</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">weekNumber</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">now</span> <span class="o">&lt;</span> <span class="s">'08:00:00'</span><span class="p">:</span>
+            <span class="n">e</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">display</span><span class="o">=</span><span class="s">'logo'</span><span class="p">)</span> 
+
+        <span class="k">elif</span> <span class="n">now</span> <span class="o">&gt;</span> <span class="s">'09:00:00'</span> <span class="ow">and</span> <span class="n">now</span> <span class="o">&lt;</span> <span class="s">'09:15:00'</span><span class="p">:</span>
+            <span class="n">e</span><span class="p">.</span><span class="n">getTravelTime</span><span class="p">()</span>
+            <span class="n">e</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">display</span><span class="o">=</span><span class="s">'stats'</span><span class="p">)</span>
+            <span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="sa">f</span><span class="s">'bash </span><span class="si">{</span><span class="n">e</span><span class="p">.</span><span class="n">gitterFilePath</span><span class="si">}</span><span class="s">gitter.sh &amp;'</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">'Sleeping 900...'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">debug</span> <span class="o">!=</span> <span class="bp">True</span><span class="p">:</span>
+                <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">900</span><span class="p">)</span>
+
+        <span class="c1">#elif now &gt; '10:30:00' and now &lt; '10:45:00':
+</span>        <span class="c1">#    e.update(display='breaktime')
+</span>        <span class="c1">#    print('First Break.')
+</span>
+        <span class="c1">#elif now &gt; '12:30:00' and now &lt; '13:00:00':
+</span>        <span class="c1">#    e.update(display='breaktime')
+</span>        <span class="c1">#    print('Lunch time.')
+</span>
+        <span class="c1">#elif now &gt; '14:30:00' and now &lt; '14:45:00':
+</span>        <span class="c1">#    e.update(display='breaktime')
+</span>        <span class="c1">#    print('Second Break.')
+</span>
+        <span class="k">elif</span> <span class="n">now</span> <span class="o">&gt;</span> <span class="s">'16:15:00'</span> <span class="ow">and</span> <span class="n">now</span> <span class="o">&lt;</span> <span class="s">'17:00:00'</span><span class="p">:</span>
+            <span class="n">e</span><span class="p">.</span><span class="n">getTravelTime</span><span class="p">()</span>
+            <span class="n">e</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">display</span><span class="o">=</span><span class="s">'stats'</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">'Sleeping 500...'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">debug</span> <span class="o">!=</span> <span class="bp">True</span><span class="p">:</span>
+                <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+        
+        <span class="c1">#elif now &gt; '17:00:00':
+</span>        <span class="c1">#    e.update(display='logo')
+</span>        
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">e</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">display</span><span class="o">=</span><span class="s">'stats'</span><span class="p">)</span>
+            <span class="n">shutil</span><span class="p">.</span><span class="n">copyfile</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">e</span><span class="p">.</span><span class="n">filePath</span><span class="si">}{</span><span class="n">e</span><span class="p">.</span><span class="n">htmlOutputFile</span><span class="si">}</span><span class="s">'</span><span class="p">,</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">e</span><span class="p">.</span><span class="n">filePath</span><span class="si">}</span><span class="s">index.html'</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">e</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">display</span><span class="o">=</span><span class="s">'logo'</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">debug</span> <span class="o">==</span> <span class="bp">False</span><span class="p">:</span>
+        <span class="c1">#print('Sleeping 150...')
+</span>        <span class="c1">#time.sleep(150)
+</span>        <span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="sa">f</span><span class="s">'bash </span><span class="si">{</span><span class="n">e</span><span class="p">.</span><span class="n">gitterFilePath</span><span class="si">}</span><span class="s">gitter.sh &amp;'</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'Sleeping 150...'</span><span class="p">)</span>
+        <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">150</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Screen" /><category term="API" /><category term="eInk" /><category term="GPIO" /><category term="Hardware" /><category term="Python" /><category term="Root" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Jellyfin Subtitle Extractor</title><link href="https://onthefritzz.com/jellyfin-subs/" rel="alternate" type="text/html" title="Jellyfin Subtitle Extractor" /><published>2024-01-13T00:00:00-06:00</published><updated>2024-01-13T00:00:00-06:00</updated><id>https://onthefritzz.com/jellyfin-subs</id><content type="html" xml:base="https://onthefritzz.com/jellyfin-subs/"><![CDATA[<ul>
   <li>Backup original file/folders containing subtitles</li>
   <li>Recursively search folders with random filenames for subtitle files</li>
   <li>Create a 2D array containing original filenames and file locations</li>
@@ -42,7 +458,7 @@
     <span class="n">os</span><span class="p">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">destinationFolder</span><span class="p">)</span> <span class="c1"># Create folder directory named after destination folders
 </span>    <span class="n">shutil</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">destinationFolder</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">finalFileName</span><span class="si">}</span><span class="s">'</span><span class="p">)</span> <span class="c1"># Move original filename to new location, as final filename
 </span>
-</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Subtitles" /><category term="JellyFin" /><summary type="html"><![CDATA[Backup original file/folders containing subtitles Recursively search folders with random filenames for subtitle files Create a 2D array containing original filenames and file locations Create a 2D array from destination folders and standardized filenames of .SRTs Create directories with correct names for each subtitle file Rename and move original subtitle files to final folder destination]]></summary></entry><entry><title type="html">NAS? NAH.</title><link href="https://onthefritzz.com/nas-nah/" rel="alternate" type="text/html" title="NAS? NAH." /><published>2024-01-04T00:00:00-06:00</published><updated>2024-01-04T00:00:00-06:00</updated><id>https://onthefritzz.com/nas-nah</id><content type="html" xml:base="https://onthefritzz.com/nas-nah/"><![CDATA[<p><img src="/images/newnasnaw.jpg" alt="no-alignment" /></p>
+</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="JellyFin" /><summary type="html"><![CDATA[Backup original file/folders containing subtitles Recursively search folders with random filenames for subtitle files Create a 2D array containing original filenames and file locations Create a 2D array from destination folders and standardized filenames of .SRTs Create directories with correct names for each subtitle file Rename and move original subtitle files to final folder destination]]></summary></entry><entry><title type="html">NAS? NAH.</title><link href="https://onthefritzz.com/nas-nah/" rel="alternate" type="text/html" title="NAS? NAH." /><published>2024-01-04T00:00:00-06:00</published><updated>2024-01-04T00:00:00-06:00</updated><id>https://onthefritzz.com/nas-nah</id><content type="html" xml:base="https://onthefritzz.com/nas-nah/"><![CDATA[<p><img src="/images/newnasnaw.jpg" alt="no-alignment" /></p>
 
 <p>Todays the day for upgrades. Been rocking a <a href="https://www.friendlyelec.com/index.php?route=product/product&amp;product_id=222">NanoPiNeo w/ NAS Hat</a> for many years. Pretty sure the all in cost was around $30. (See Left) It has been home to more than 3 drive upgrades. Countless SD card swaps. It has ran Jellyfin, Plex, PiHole, a CUPs server which took an unsorted grocery list, sorted it by aisle and printed the result to a thermal printer. See <a href="https://www.onthefritzz.com/googleNotesToThermal/">here</a>. However it’s become obsolete. My homelab now requires 1 gigabit speeds and this little guy tops out at 100mbps. Sufficient for a great many things but not all. Goodbye little fellow.</p>
 
@@ -158,7 +574,7 @@ However, it turns out that a 1:1 PDF:JPG is significantly larger in size. That i
 <span class="n">deleteAll</span><span class="p">(</span><span class="s">'.pdf'</span><span class="p">)</span>
 <span class="n">verticallyStitchJPGs</span><span class="p">()</span>
 <span class="n">finalOptimizedJPG</span><span class="p">()</span>
-</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Python" /><summary type="html"><![CDATA[Create a copy of database to test on Delete all files unrelated to task to avoid confusion Reduce file size of output jpgs Remove extraneous images inside PDFs Convert PDFs to JPGs Each PDF page corresponds to 1x JPG Resulting in multiple JPGs per pdf Dynamically reduce/stitch all JPGS into one long JPG Optimize final, stitched JPG to a degree that balances quality with filesize]]></summary></entry><entry><title type="html">Zzz….</title><link href="https://onthefritzz.com/sleeper/" rel="alternate" type="text/html" title="Zzz…." /><published>2023-08-04T00:00:00-05:00</published><updated>2023-08-04T00:00:00-05:00</updated><id>https://onthefritzz.com/sleeper</id><content type="html" xml:base="https://onthefritzz.com/sleeper/"><![CDATA[<table>
+</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Python" /><category term="Automation" /><summary type="html"><![CDATA[Create a copy of database to test on Delete all files unrelated to task to avoid confusion Reduce file size of output jpgs Remove extraneous images inside PDFs Convert PDFs to JPGs Each PDF page corresponds to 1x JPG Resulting in multiple JPGs per pdf Dynamically reduce/stitch all JPGS into one long JPG Optimize final, stitched JPG to a degree that balances quality with filesize]]></summary></entry><entry><title type="html">Zzz….</title><link href="https://onthefritzz.com/sleeper/" rel="alternate" type="text/html" title="Zzz…." /><published>2023-08-04T00:00:00-05:00</published><updated>2023-08-04T00:00:00-05:00</updated><id>https://onthefritzz.com/sleeper</id><content type="html" xml:base="https://onthefritzz.com/sleeper/"><![CDATA[<table>
   <thead>
     <tr>
       <th>Part</th>
@@ -252,12 +668,12 @@ Special appreciation to B.L.D.Z.R.</p>
 
 <p><img src="/images/sleeper-off.jpg" class="align-center" alt="" />
 <br />
-<img src="/images/sleeper-on.jpg" class="align-center" alt="" /></p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Sleeper" /><summary type="html"><![CDATA[Part Model Cost Value CPU Ryzen 5 1400 $0.00 $110.00 GPU RTX 3060 $0.00 $299.99 MOBO MSI Bazook B350M $0.00 $149.99 RAM 32GB DDR4 $0.00 $59.99 1TB NVMe SSD - $0.00 $39.99 8TB HDDs (4x2TB)* WD20EZAZ $0.00 $224.99 Case - $0.00 $89.99 5.25in to 3.5in HDD Adapter (x4) - $27.16 $27.16 RGB 92mm Fans (x2) - $25.90 $25.90 Thermal Paste - $8.97 $8.97 Rubber Mouting Screws (x12) - $5.89 $5.89 Total - $67.92 $1042.86]]></summary></entry><entry><title type="html">Sticky situation</title><link href="https://onthefritzz.com/sticky-controller/" rel="alternate" type="text/html" title="Sticky situation" /><published>2023-04-30T00:00:00-05:00</published><updated>2023-04-30T00:00:00-05:00</updated><id>https://onthefritzz.com/sticky-controller</id><content type="html" xml:base="https://onthefritzz.com/sticky-controller/"><![CDATA[<p><img src="/images/xbox-one-exploded-controller.jpg" class="align-center" alt="" />
+<img src="/images/sleeper-on.jpg" class="align-center" alt="" /></p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Sleeper" /><category term="Hardware" /><summary type="html"><![CDATA[Part Model Cost Value CPU Ryzen 5 1400 $0.00 $110.00 GPU RTX 3060 $0.00 $299.99 MOBO MSI Bazook B350M $0.00 $149.99 RAM 32GB DDR4 $0.00 $59.99 1TB NVMe SSD - $0.00 $39.99 8TB HDDs (4x2TB)* WD20EZAZ $0.00 $224.99 Case - $0.00 $89.99 5.25in to 3.5in HDD Adapter (x4) - $27.16 $27.16 RGB 92mm Fans (x2) - $25.90 $25.90 Thermal Paste - $8.97 $8.97 Rubber Mouting Screws (x12) - $5.89 $5.89 Total - $67.92 $1042.86]]></summary></entry><entry><title type="html">Sticky situation</title><link href="https://onthefritzz.com/sticky-controller/" rel="alternate" type="text/html" title="Sticky situation" /><published>2023-04-30T00:00:00-05:00</published><updated>2023-04-30T00:00:00-05:00</updated><id>https://onthefritzz.com/sticky-controller</id><content type="html" xml:base="https://onthefritzz.com/sticky-controller/"><![CDATA[<p><img src="/images/xbox-one-exploded-controller.jpg" class="align-center" alt="" />
 <br />
 Pretty straight forward. Someone got the ‘B’ button sticky. Take apart, clean with isopropol alcohol. Put back together. Done.
 <br />
 <br />
-Interesting note is that the ‘B’ button is actually more accessible than the other 3 action buttons. ‘B’ is accessible after dissassembling the main housing components, whereas the other 3 buttons require internal components/boards to be removed from each other.</p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Xbox" /><category term="Hardware" /><summary type="html"><![CDATA[Pretty straight forward. Someone got the ‘B’ button sticky. Take apart, clean with isopropol alcohol. Put back together. Done. Interesting note is that the ‘B’ button is actually more accessible than the other 3 action buttons. ‘B’ is accessible after dissassembling the main housing components, whereas the other 3 buttons require internal components/boards to be removed from each other.]]></summary></entry><entry><title type="html">Reducing Xbox One S Load Times</title><link href="https://onthefritzz.com/xbox-ssd-upgrade/" rel="alternate" type="text/html" title="Reducing Xbox One S Load Times" /><published>2023-04-15T00:00:00-05:00</published><updated>2023-04-15T00:00:00-05:00</updated><id>https://onthefritzz.com/xbox-ssd-upgrade</id><content type="html" xml:base="https://onthefritzz.com/xbox-ssd-upgrade/"><![CDATA[<p><img src="/images/xbox-one-s.jpg" class="align-center" alt="" /></p>
+Interesting note is that the ‘B’ button is actually more accessible than the other 3 action buttons. ‘B’ is accessible after dissassembling the main housing components, whereas the other 3 buttons require internal components/boards to be removed from each other.</p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Xbox" /><category term="Hardware" /><category term="Refurbish" /><summary type="html"><![CDATA[Pretty straight forward. Someone got the ‘B’ button sticky. Take apart, clean with isopropol alcohol. Put back together. Done. Interesting note is that the ‘B’ button is actually more accessible than the other 3 action buttons. ‘B’ is accessible after dissassembling the main housing components, whereas the other 3 buttons require internal components/boards to be removed from each other.]]></summary></entry><entry><title type="html">Reducing Xbox One S Load Times</title><link href="https://onthefritzz.com/xbox-ssd-upgrade/" rel="alternate" type="text/html" title="Reducing Xbox One S Load Times" /><published>2023-04-15T00:00:00-05:00</published><updated>2023-04-15T00:00:00-05:00</updated><id>https://onthefritzz.com/xbox-ssd-upgrade</id><content type="html" xml:base="https://onthefritzz.com/xbox-ssd-upgrade/"><![CDATA[<p><img src="/images/xbox-one-s.jpg" class="align-center" alt="" /></p>
 
 <table>
   <thead>
@@ -337,7 +753,7 @@ Interesting note is that the ‘B’ button is actually more accessible than the
       <li>Indicating everything leading up to the home page on power up is BIOS/ROM/Embedded and unrelated to storage load times.</li>
     </ul>
   </li>
-</ul>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Xbox" /><category term="Hardware" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Webscraping Healthy Recipes</title><link href="https://onthefritzz.com/webscraping-healthy-recipes/" rel="alternate" type="text/html" title="Webscraping Healthy Recipes" /><published>2023-03-29T00:00:00-05:00</published><updated>2023-03-29T00:00:00-05:00</updated><id>https://onthefritzz.com/webscraping-healthy-recipes</id><content type="html" xml:base="https://onthefritzz.com/webscraping-healthy-recipes/"><![CDATA[<ul>
+</ul>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Xbox" /><category term="Hardware" /><category term="Refurbish" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Webscraping Healthy Recipes</title><link href="https://onthefritzz.com/webscraping-healthy-recipes/" rel="alternate" type="text/html" title="Webscraping Healthy Recipes" /><published>2023-03-29T00:00:00-05:00</published><updated>2023-03-29T00:00:00-05:00</updated><id>https://onthefritzz.com/webscraping-healthy-recipes</id><content type="html" xml:base="https://onthefritzz.com/webscraping-healthy-recipes/"><![CDATA[<ul>
   <li>Another recipe scraper!</li>
   <li>Killed ~5103 ads</li>
   <li>Added 500+ recipes to my collection</li>
@@ -446,7 +862,7 @@ Interesting note is that the ‘B’ button is actually more accessible than the
   <span class="n">process</span> <span class="o">=</span> <span class="n">CrawlerProcess</span><span class="p">()</span>
   <span class="n">process</span><span class="p">.</span><span class="n">crawl</span><span class="p">(</span><span class="n">sallySpider</span><span class="p">)</span>
   <span class="n">process</span><span class="p">.</span><span class="n">start</span><span class="p">()</span>
-</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Webscraping" /><category term="Python" /><category term="Scrapy" /><summary type="html"><![CDATA[Another recipe scraper! Killed ~5103 ads Added 500+ recipes to my collection Same format as usual for scraping recipes Get links corresponding to each food category Get total amount of pages for each category Get header, picture, pdf, etc.. of each recipes occuring on each page]]></summary></entry><entry><title type="html">Dummies for a dummy.</title><link href="https://onthefritzz.com/dummys/" rel="alternate" type="text/html" title="Dummies for a dummy." /><published>2023-03-18T00:00:00-05:00</published><updated>2023-03-18T00:00:00-05:00</updated><id>https://onthefritzz.com/dummys</id><content type="html" xml:base="https://onthefritzz.com/dummys/"><![CDATA[<p><img src="/images/vga-dummy-exploded.jpg" class="align-center" alt="" /></p>
+</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Webscraping" /><category term="Python" /><category term="Scrapy" /><category term="Automation" /><summary type="html"><![CDATA[Another recipe scraper! Killed ~5103 ads Added 500+ recipes to my collection Same format as usual for scraping recipes Get links corresponding to each food category Get total amount of pages for each category Get header, picture, pdf, etc.. of each recipes occuring on each page]]></summary></entry><entry><title type="html">Dummies for a dummy.</title><link href="https://onthefritzz.com/dummys/" rel="alternate" type="text/html" title="Dummies for a dummy." /><published>2023-03-18T00:00:00-05:00</published><updated>2023-03-18T00:00:00-05:00</updated><id>https://onthefritzz.com/dummys</id><content type="html" xml:base="https://onthefritzz.com/dummys/"><![CDATA[<p><img src="/images/vga-dummy-exploded.jpg" class="align-center" alt="" /></p>
 
 <p>Overview: HP’s are trash imo. HP’s excel at being ever so slightly annoying, even when nothing is wrong and <strong>especially</strong> when something needs to be fixed. Nothing ever seems to go ‘smoothly’ in a repair and they always have weird quirks. Not enough to convince people not to purchase them but more than enough for an experienced tech to know what to expect when HP’s are involved.</p>
 
@@ -460,276 +876,4 @@ Interesting note is that the ‘B’ button is actually more accessible than the
 
 <p>Pay attention to the numbered pinout <strong>not</strong> the shape. The diagram above is for a <strong>female</strong> vga. I required the <strong>male</strong> connection which more or less inverted the diagram. Pro tip: Most, if not all, VGA cords actually have tiny numbers inside the shielding which correspond correctly to the numbers in the diagram. So to reiterate, base soldering on the numbers not the shape.</p>
 
-<p><img src="/images/vga-ducks-in-a-row.jpg" class="align-center" alt="" /></p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Hardware" /><category term="Soldering" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Meme Scraper + Randomizer</title><link href="https://onthefritzz.com/memer/" rel="alternate" type="text/html" title="Meme Scraper + Randomizer" /><published>2023-02-11T00:00:00-06:00</published><updated>2023-02-11T00:00:00-06:00</updated><id>https://onthefritzz.com/memer</id><content type="html" xml:base="https://onthefritzz.com/memer/"><![CDATA[<h3 id="memerpy">Memer.py</h3>
-<ul>
-  <li>Scrape frontpage memes from Ebaumsworld.com</li>
-  <li>Polite scraping sleep timer</li>
-  <li>Scrape unique meme article number
-    <ul>
-      <li>Save <code class="language-plaintext highlighter-rouge">article-number.json</code> to folder of the same number</li>
-      <li>This json contains article-number, image url and image title</li>
-    </ul>
-  </li>
-  <li>Output <code class="language-plaintext highlighter-rouge">README.md</code> with titles, images, <code class="language-plaintext highlighter-rouge">Back</code>, <code class="language-plaintext highlighter-rouge">Go To Top</code> and <code class="language-plaintext highlighter-rouge">Source</code> buttons</li>
-</ul>
-
-<h3 id="getrandommemespy">getRandomMemes.py</h3>
-<ul>
-  <li>Generate random collection of memes after folders and json files have been created
-    <ul>
-      <li>Save article number to <code class="language-plaintext highlighter-rouge">memer-config.json</code></li>
-    </ul>
-  </li>
-  <li>Always have the freshest memes and do not reuse article number if in <code class="language-plaintext highlighter-rouge">memer-config.json</code>.
-    <ul>
-      <li>ie: Never see the same article twice!</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Memer.py
-</span><span class="kn">import</span> <span class="nn">scrapy</span><span class="p">,</span> <span class="n">logging</span><span class="p">,</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">json</span><span class="p">,</span> <span class="n">os</span>
-<span class="kn">from</span> <span class="nn">scrapy.crawler</span> <span class="kn">import</span> <span class="n">CrawlerProcess</span>
-<span class="kn">from</span> <span class="nn">git</span> <span class="kn">import</span> <span class="n">Repo</span>
-
-<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">().</span><span class="n">strftime</span><span class="p">(</span><span class="s">"%m/%d/%Y-%H:%M:%S"</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">baumerSpider</span><span class="p">(</span><span class="n">scrapy</span><span class="p">.</span><span class="n">Spider</span><span class="p">):</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s">'https://www.ebaumsworld.com'</span><span class="p">]</span>
-    <span class="n">logging</span><span class="p">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s">'scrapy'</span><span class="p">).</span><span class="n">propagate</span> <span class="o">=</span> <span class="bp">False</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">header</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'# All ur Memes R belog to Uz&lt;br&gt;</span><span class="se">\n</span><span class="s">Last updated: </span><span class="si">{</span><span class="n">now</span><span class="si">}</span><span class="se">\n</span><span class="s">&lt;br&gt;</span><span class="se">\n</span><span class="s">All credits to ebaumsworld.com'</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">urlPageStart</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">urlPageEnd</span> <span class="o">=</span> <span class="mi">6</span> <span class="c1"># Get memes from page 1 through this number
-</span>    <span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Counter designation for each article/meme dump
-</span>    <span class="bp">self</span><span class="p">.</span><span class="n">sleepBetweenArticles</span> <span class="o">=</span> <span class="mi">30</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">outputHtml</span> <span class="o">=</span> <span class="s">'FRONTPAGES-README.MD'</span><span class="c1">#f'Article {self.urlPageStart}-{self.urlPageEnd}.md'
-</span>
-    <span class="k">try</span><span class="p">:</span>
-      <span class="n">os</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">outputHtml</span><span class="p">)</span>
-    
-    <span class="k">except</span><span class="p">:</span>
-      <span class="k">pass</span>
-    
-    <span class="k">finally</span><span class="p">:</span>
-      <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">outputHtml</span><span class="p">,</span> <span class="s">'a+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span> 
-        <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">header</span><span class="p">)</span>
-
-  <span class="k">def</span> <span class="nf">sleeper</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seconds</span><span class="p">,</span> <span class="n">note</span><span class="o">=</span><span class="s">''</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">sec</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">seconds</span><span class="p">):</span>
-      <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Sleeping </span><span class="si">{</span><span class="n">sec</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">seconds</span><span class="si">}</span><span class="s"> (sec/s)...'</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">'</span><span class="se">\r</span><span class="s">'</span><span class="p">)</span>
-      <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-  
-  <span class="k">def</span> <span class="nf">jMaker</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
-    <span class="n">jFileName</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="s">'article-number'</span><span class="p">]</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">jFileName</span><span class="p">):</span>
-      <span class="n">os</span><span class="p">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">jFileName</span><span class="p">)</span>
-
-    <span class="n">fileOut</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'./</span><span class="si">{</span><span class="n">jFileName</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">jFileName</span><span class="si">}</span><span class="s">.json'</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fileOut</span><span class="p">,</span> <span class="s">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">wf</span><span class="p">:</span>
-      <span class="n">json</span><span class="p">.</span><span class="n">dump</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">wf</span><span class="p">)</span>
-
-  <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span> <span class="c1"># Get all front page article in start urls
-</span>    <span class="n">urlSuffix</span> <span class="o">=</span> <span class="s">'/?page='</span> <span class="c1"># Page url suffix
-</span>    <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">urlPageStart</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">urlPageEnd</span><span class="p">):</span>
-      <span class="n">pageUrl</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">start_urls</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}{</span><span class="n">urlSuffix</span><span class="si">}{</span><span class="n">page</span><span class="si">}</span><span class="s">'</span>
-      <span class="k">print</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">)</span>
-      <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">recursiveParse</span><span class="p">)</span> <span class="c1"># Recursively parse each page
-</span>
-  <span class="k">def</span> <span class="nf">recursiveParse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span> <span class="c1"># Get links for any list item in 'Featured' front page
-</span>    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="s">'//div[@class="featureFeedDetails"]//a/@href'</span><span class="p">).</span><span class="n">getall</span><span class="p">():</span>
-      <span class="k">if</span> <span class="n">url</span><span class="p">.</span><span class="n">startswith</span><span class="p">(</span><span class="s">'https://gaming.ebaumsworld.com'</span><span class="p">):</span> <span class="c1"># Exclude gaming articles which are categorized under 'pictures'
-</span>        <span class="k">pass</span>
-
-      <span class="k">elif</span> <span class="s">'pictures'</span> <span class="ow">in</span> <span class="n">url</span><span class="p">:</span>
-        <span class="k">yield</span> <span class="n">scrapy</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">start_urls</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}{</span><span class="n">url</span><span class="si">}</span><span class="s">'</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="p">.</span><span class="n">getMemes</span><span class="p">)</span>
-
-  <span class="k">def</span> <span class="nf">getMemes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># Crawling a successful link, up article counter.
-</span>    <span class="n">headerXpath</span> <span class="o">=</span> <span class="s">'//*[@id="detailPage"]/header/h1/text()'</span> <span class="c1"># Xpath for article header
-</span>    <span class="n">memeXpath</span> <span class="o">=</span> <span class="s">'//img[@class="galleryListImage"]/@src'</span> <span class="c1"># Xpath for meme images
-</span>    <span class="n">titleXpath</span> <span class="o">=</span> <span class="s">'//li[@class="galleryListItem"]/text()'</span> <span class="c1"># Xpath for meme titles
-</span>    
-    <span class="n">articleHeader</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="n">headerXpath</span><span class="p">).</span><span class="n">get</span><span class="p">()</span>
-    <span class="n">memes</span> <span class="o">=</span> <span class="p">[</span><span class="n">meme</span><span class="p">.</span><span class="n">get</span><span class="p">()</span> <span class="k">for</span> <span class="n">meme</span> <span class="ow">in</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="n">memeXpath</span><span class="p">)]</span>
-    <span class="n">titles</span> <span class="o">=</span> <span class="p">[]</span>
-    
-    <span class="k">for</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">response</span><span class="p">.</span><span class="n">xpath</span><span class="p">(</span><span class="n">titleXpath</span><span class="p">):</span> <span class="c1"># Get each title text
-</span>      <span class="n">title</span> <span class="o">=</span> <span class="n">title</span><span class="p">.</span><span class="n">get</span><span class="p">().</span><span class="n">strip</span><span class="p">()</span>
-      <span class="k">if</span> <span class="n">title</span> <span class="o">!=</span> <span class="s">''</span><span class="p">:</span> <span class="c1"># Discard extraneous empty values that get scraped
-</span>        <span class="n">titles</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
-    
-    <span class="n">memeBlock</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">titles</span><span class="p">,</span> <span class="n">memes</span><span class="p">))</span> <span class="c1"># Generate 2D array and associate meme images with title
-</span>
-    <span class="n">nextNumber</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># Markdown link to next article/meme collection
-</span>    <span class="n">previousNumber</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span> <span class="o">-</span> <span class="mi">1</span>
-    <span class="n">html</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'## &lt;a href="#linky</span><span class="si">{</span><span class="n">nextNumber</span><span class="si">}</span><span class="s">" id="linky</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span><span class="si">}</span><span class="s">"&gt;</span><span class="si">{</span><span class="n">articleHeader</span><span class="si">}</span><span class="s">&lt;/a&gt;&lt;br&gt;</span><span class="se">\n\n</span><span class="s">'</span>
-
-    <span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">meme</span> <span class="ow">in</span> <span class="n">memeBlock</span><span class="p">:</span>
-      <span class="n">html</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'&lt;span style="font-size:4em"&gt;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s">&lt;/span&gt;&lt;br&gt;&lt;img src="</span><span class="si">{</span><span class="n">meme</span><span class="si">}</span><span class="s">" style="width:100%"&gt;&lt;br&gt;</span><span class="se">\n\n</span><span class="s">'</span>
-    <span class="n">html</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'&lt;a href="#linky</span><span class="si">{</span><span class="n">previousNumber</span><span class="si">}</span><span class="s">"&gt;GO TO PREVIOUS&lt;/a&gt;</span><span class="se">\n\n</span><span class="s">'</span>  
-    <span class="n">html</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'&lt;a href="</span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="si">}</span><span class="s">"&gt;Source URL &lt;b&gt;with&lt;/b&gt; Ads&lt;/a&gt;</span><span class="se">\n\n</span><span class="s">'</span>
-    <span class="n">html</span> <span class="o">+=</span> <span class="s">'&lt;a href="#linky1"&gt;GO TO TOP&lt;/a&gt;</span><span class="se">\n</span><span class="s">'</span>
-
-    <span class="n">j</span> <span class="o">=</span> <span class="p">{</span>
-      <span class="s">'article-number'</span><span class="p">:</span> <span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'/'</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span>
-      <span class="s">'header'</span><span class="p">:</span> <span class="n">articleHeader</span><span class="p">,</span>
-      <span class="s">'titles-images'</span><span class="p">:</span> <span class="n">memeBlock</span>
-    <span class="p">}</span>
-    
-    <span class="bp">self</span><span class="p">.</span><span class="n">jMaker</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'/'</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
-
-    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">articleCounter</span><span class="si">}</span><span class="s"> - Scraped ...</span><span class="si">{</span><span class="n">response</span><span class="p">.</span><span class="n">url</span><span class="p">[</span><span class="o">-</span><span class="mi">50</span><span class="si">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s"> successfully.'</span><span class="p">)</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">outputHtml</span><span class="p">,</span> <span class="s">'a+'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
-      <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
-    <span class="bp">self</span><span class="p">.</span><span class="n">sleeper</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">sleepBetweenArticles</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
-  <span class="n">process</span> <span class="o">=</span> <span class="n">CrawlerProcess</span><span class="p">()</span>
-  <span class="n">process</span><span class="p">.</span><span class="n">crawl</span><span class="p">(</span><span class="n">baumerSpider</span><span class="p">)</span>
-  <span class="n">process</span><span class="p">.</span><span class="n">start</span><span class="p">()</span>
-
-</code></pre></div></div>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#getRandomMemes.py
-</span><span class="kn">import</span> <span class="nn">random</span><span class="p">,</span> <span class="n">json</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">os</span>
-<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">choice</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span> <span class="k">as</span> <span class="n">dt</span>
-
-<span class="k">def</span> <span class="nf">jLoad</span><span class="p">(</span><span class="n">fileName</span><span class="p">):</span>
-  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">r</span><span class="p">:</span>
-    <span class="k">return</span> <span class="n">json</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">getValue</span><span class="p">(</span><span class="n">jFile</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
-  <span class="k">try</span><span class="p">:</span>
-    <span class="n">jk</span> <span class="o">=</span> <span class="n">jFile</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">jk</span>
-  <span class="k">except</span><span class="p">:</span>
-    <span class="k">raise</span> <span class="nb">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s">'"</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s">" is prolly not a valid key'</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">getRandomMemes</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
-  <span class="n">articleBlock</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'# All Ur Meemz R Belog to Uz</span><span class="se">\n</span><span class="s">Last Updated </span><span class="si">{</span><span class="n">dt</span><span class="p">.</span><span class="n">now</span><span class="p">().</span><span class="n">strftime</span><span class="p">(</span><span class="s">"%m.%d.%Y-%H</span><span class="si">:</span><span class="o">%</span><span class="n">M</span><span class="si">:</span><span class="o">%</span><span class="n">S</span><span class="s">")</span><span class="si">}</span><span class="s">&lt;br&gt;All credits to ebaumsworld.com</span><span class="se">\n\n</span><span class="s">'</span>
-  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">number</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-    <span class="c1"># Generate random number provided it has not been used before
-</span>    <span class="n">articleNo</span> <span class="o">=</span> <span class="n">choice</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">memeFiles</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">j</span><span class="p">[</span><span class="s">'memes-used'</span><span class="p">]])</span>
-    <span class="n">j</span><span class="p">[</span><span class="s">'memes-used'</span><span class="p">].</span><span class="n">append</span><span class="p">(</span><span class="n">articleNo</span><span class="p">)</span>
-    <span class="c1"># After meme index number has been generated, add to 'do not use' list
-</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">memerConfig</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
-      <span class="n">json</span><span class="p">.</span><span class="n">dump</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="c1"># Dump new list, including current random, 'do not use' number
-</span>
-    <span class="n">folder</span> <span class="o">=</span> <span class="n">memeFiles</span><span class="p">[</span><span class="n">articleNo</span><span class="p">].</span><span class="n">split</span><span class="p">(</span><span class="s">'.json'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Folder of article number that was picked at random
-</span>    <span class="n">folderFileArticle</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">walkDir</span><span class="si">}</span><span class="se">\\</span><span class="si">{</span><span class="n">folder</span><span class="si">}</span><span class="se">\\</span><span class="si">{</span><span class="n">memeFiles</span><span class="p">[</span><span class="n">articleNo</span><span class="p">]</span><span class="si">}</span><span class="s">'</span> <span class="c1"># Full file path of randomly selected meme article
-</span>
-    <span class="n">article</span> <span class="o">=</span> <span class="n">jLoad</span><span class="p">(</span><span class="n">folderFileArticle</span><span class="p">)</span>
-    <span class="n">header</span> <span class="o">=</span> <span class="n">getValue</span><span class="p">(</span><span class="n">article</span><span class="p">,</span> <span class="s">'header'</span><span class="p">)</span>
-    <span class="n">titlesImages</span> <span class="o">=</span> <span class="n">getValue</span><span class="p">(</span><span class="n">article</span><span class="p">,</span> <span class="s">'titles-images'</span><span class="p">)</span>
-
-    <span class="n">gototop</span> <span class="o">=</span> <span class="s">'&lt;a href="#link0"&gt;GO TO TOP&lt;/a&gt;'</span>
-    <span class="n">previous</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'&lt;a href="#link</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">"&gt;GO TO PREVIOUS&lt;/a&gt;'</span>
-    <span class="n">sourceLink</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'&lt;a href="https://www.ebaumsworld.com/pictures/-/</span><span class="si">{</span><span class="n">folder</span><span class="si">}</span><span class="s">/"&gt;Original Article &lt;b&gt;with&lt;/b&gt; Ads&lt;/a&gt;'</span>
-
-    <span class="n">articleBlock</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'## &lt;a href="#link</span><span class="si">{</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s">" id="link</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">"&gt;</span><span class="si">{</span><span class="n">header</span><span class="si">}</span><span class="s">&lt;/a&gt;</span><span class="se">\n</span><span class="s">'</span>
-
-    <span class="k">for</span> <span class="n">ti</span> <span class="ow">in</span> <span class="n">titlesImages</span><span class="p">:</span>
-      <span class="n">title</span><span class="p">,</span> <span class="n">image</span> <span class="o">=</span> <span class="n">ti</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ti</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-      <span class="n">articleBlock</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="se">\n</span><span class="s">&lt;img src="</span><span class="si">{</span><span class="n">image</span><span class="si">}</span><span class="s">"&gt;</span><span class="se">\n\n</span><span class="s">'</span>
-    
-    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'Writing article </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
-    <span class="n">articleBlock</span> <span class="o">+=</span> <span class="sa">f</span><span class="s">'</span><span class="se">\n</span><span class="si">{</span><span class="n">sourceLink</span><span class="si">}</span><span class="se">\n\n</span><span class="si">{</span><span class="n">gototop</span><span class="si">}</span><span class="se">\n\n</span><span class="si">{</span><span class="n">previous</span><span class="si">}</span><span class="se">\n\n</span><span class="s">'</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'README.MD'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">a</span><span class="p">:</span>
-      <span class="n">a</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">articleBlock</span><span class="p">)</span>
-    <span class="n">articleBlock</span> <span class="o">=</span> <span class="s">''</span>
-
-<span class="n">memerConfig</span> <span class="o">=</span> <span class="s">'memer-config.json'</span>
-<span class="n">walkDir</span> <span class="o">=</span> <span class="s">'./all-files'</span> <span class="c1">#f'{os.environ["USERPROFILE"]}\\Desktop\\files' # Location of article jsons
-</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'README.md'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span> <span class="c1"># Generate file if doesn't exist or clear file from previous run
-</span>  <span class="n">w</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">''</span><span class="p">)</span>
-
-<span class="n">j</span> <span class="o">=</span> <span class="n">jLoad</span><span class="p">(</span><span class="n">memerConfig</span><span class="p">)</span>
-<span class="n">memeFiles</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># List of all meme json files
-</span><span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="p">.</span><span class="n">walk</span><span class="p">(</span><span class="n">walkDir</span><span class="p">):</span>
-  <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># Do not include files in parent directory
-</span>    <span class="n">memeFiles</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-
-<span class="n">getRandomMemes</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Python" /><category term="Webscraping" /><category term="Scrapy" /><summary type="html"><![CDATA[Memer.py Scrape frontpage memes from Ebaumsworld.com Polite scraping sleep timer Scrape unique meme article number Save article-number.json to folder of the same number This json contains article-number, image url and image title Output README.md with titles, images, Back, Go To Top and Source buttons]]></summary></entry><entry><title type="html">Adventure: Buildroot</title><link href="https://onthefritzz.com/buildroot-python/" rel="alternate" type="text/html" title="Adventure: Buildroot" /><published>2023-02-05T00:00:00-06:00</published><updated>2023-02-05T00:00:00-06:00</updated><id>https://onthefritzz.com/buildroot-python</id><content type="html" xml:base="https://onthefritzz.com/buildroot-python/"><![CDATA[<p><img src="/images/buildroot-example.png" /></p>
-
-<p>Objective: Boot to a python controlled GPIO pin as fast as possible.<br />
-TL;DR: Image that supports python, nano and libgpio while booting in 4 seconds: <a href="/images/boots-in-four-secs-with-libgpiod-python.img">Download</a></p>
-
-<p>Using python to manipulate GPIOs on a SBC is old news. Doing it in 4 seconds, is not. Stock Armbian has gotten me pretty far and honestly, 35 seconds to login prompt from a base install is much appreciated. At the same time, waiting 35 seconds to flip a switch is far too long. How fast can we boot to trigger a GPIO pin? Enter buildroot.</p>
-
-<p>Never touched buildroot, only ever had it referenced in passing. Simply put, its roll your own linux. However, you’re welcoming a hard time in terms of device and driver support. Good thing we only need two things. Python and libgpiod. The end result will not even support the onboard USB or ethernet port, literally attached to the device.</p>
-
-<p>Here’s where we ended after alot of trial and error.</p>
-
-<ul>
-  <li>Download buildroot: https://git.busybox.net/buildroot/</li>
-  <li>Extract the contents</li>
-  <li><code class="language-plaintext highlighter-rouge">cd</code> into it’s directory</li>
-</ul>
-
-<p>Make sure the version downloaded contains defconfigs for the desired board. Here’s an example of where it would be located for the NanoPi Neo board we’re using: <br />
-<code class="language-plaintext highlighter-rouge">buildroot-2022.02.9\configs\friendlyarm_nanopi_neo_defconfig</code></p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>build-essential
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>python3-dev <span class="nt">-y</span>
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>libncurses5-dev libncursesw5-dev <span class="nt">-y</span>
-<span class="nb">cd</span> ./buildroot-buildroot-2022.02.9 <span class="c"># Replace with your buildroot version</span>
-make friendlyarm_nanopi_neo_defconfig
-</code></pre></div></div>
-
-<p>There should be a command prompt UI now. Here’s the following prompts/boxes that were checked in order to support <code class="language-plaintext highlighter-rouge">python</code>, <code class="language-plaintext highlighter-rouge">libgpiod</code> and <code class="language-plaintext highlighter-rouge">nano</code>.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make menuconfig
-</code></pre></div></div>
-<ul>
-  <li>Toolchain –&gt; Enable WCHAR support</li>
-  <li>Target packages –&gt; Interpreter languages and scripting –&gt; python3 –&gt; <em>select</em></li>
-  <li>Target packages –&gt; Interpreter languages and scripting –&gt; pythonn3 module format to install –&gt; .py sources and .pyc compiled</li>
-  <li>Target packages –&gt; Text editors and viewers –&gt; nano –&gt; <em>select</em></li>
-  <li>Target packages –&gt; Libraries –&gt; Hardware handling –&gt; libgpiod –&gt; <em>select</em></li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make uboot-menuconfig
-</code></pre></div></div>
-<ul>
-  <li>delay in seconds before automatically booting –&gt; Set to 0</li>
-  <li>Device drivers —&gt; USB Support –&gt; Uncheck evertything here</li>
-</ul>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
-</code></pre></div></div>
-
-<p>There should now be an sdcard.img file in the <code class="language-plaintext highlighter-rouge">buildroot-2022.02.9/output/images/</code> folder.
-The following commands are to start a python script immediately after boot, prior to even logging in.</p>
-
-<p>The following will save a file <code class="language-plaintext highlighter-rouge">999app.sh</code> into <code class="language-plaintext highlighter-rouge">/etc/init.d</code> which will start python script on boot.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&lt;&lt;</span><span class="no">EOT</span><span class="sh"> &gt;&gt; /etc/init.d/999app.sh
-#!/bin/sh
-python3 /etc/init.d/buildrootGPIO.py
-</span><span class="no">EOT
-</span></code></pre></div></div>
-
-<p>Create a dead simple python script that will trigger a relay using libgrpiod:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&lt;&lt;</span><span class="no">EOT</span><span class="sh"> &gt;&gt; /etc/init.d/buildrootGPIO.py
-import time, os
-
-PG11 = 203
-PG11Down = f'gpioset 0 {PG11}=0'
-PG11Up = f'gpioset 0 {PG11}=1'
-
-for x in range(5):
-  time.sleep(1)
-  os.system(PG11Down)
-  #print(f'os.system({PG11Down})')
-  
-  time.sleep(1)
-  os.system(PG11Up)
-  #print(f'os.system({PG11Up})')
-print('Done.')
-</span><span class="no">EOT
-</span></code></pre></div></div>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Buildroot" /><category term="Python" /><category term="GPIO" /><category term="NanoPi Neo" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+<p><img src="/images/vga-ducks-in-a-row.jpg" class="align-center" alt="" /></p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;title&quot;=&gt;nil, &quot;url&quot;=&gt;nil, &quot;icon&quot;=&gt;nil}]}</name></author><category term="Hardware" /><category term="Soldering" /><summary type="html"><![CDATA[]]></summary></entry></feed>
